@@ -1,29 +1,29 @@
-# AssocStructurePayment
+# # AssocStructurePayment
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**structure** | [**\EmonsiteApi\Models\StructurePayment**](StructurePayment.md) |  | [optional] 
-**payment_id** | **string** |  | [optional] 
-**params** | **string** |  | [optional] 
-**impact** | **string** |  | [optional] 
-**impact_percent** | **string** |  | [optional] 
-**amount_display** | **string** |  | [optional] 
-**active** | **bool** |  | [optional] 
-**ordering** | **int** |  | [optional] 
-**type** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**add_user_id** | **string** |  | [optional] 
-**upd_user_id** | **string** |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**upd_dt** | **int** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
-**versions** | [**\EmonsiteApi\Models\AssocStructurePaymentV[]**](AssocStructurePaymentV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
-**default_lang** | **string** |  | [optional] 
-**version_by_lang** | **string[]** |  | [optional] 
+**structure** | [**\EmonsiteApi\Models\StructurePayment**](StructurePayment.md) |  | [optional]
+**paymentId** | **string** |  | [optional] [readonly]
+**params** | **string** |  | [optional] [readonly]
+**impact** | **string** |  | [optional] [readonly]
+**impactPercent** | **string** |  | [optional] [readonly]
+**amountDisplay** | **string** |  | [optional] [readonly]
+**active** | **bool** |  | [optional]
+**ordering** | **int** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**addUserId** | **string** |  | [optional]
+**updUserId** | **string** |  | [optional]
+**addDt** | **int** |  | [optional] [readonly]
+**updDt** | **int** |  | [optional] [readonly]
+**createdAt** | **\DateTime** |  | [optional] [readonly]
+**updatedAt** | **\DateTime** |  | [optional] [readonly]
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional]
+**versions** | [**\EmonsiteApi\Models\AssocStructurePaymentV[]**](AssocStructurePaymentV.md) | IMPLEMENTEZ le mapping dans l&#39;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional]
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional]
+**defaultLang** | **string** |  | [optional] [readonly]
+**versionByLang** | **string[]** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

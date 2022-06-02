@@ -1,19 +1,19 @@
-# UserDomainMailAlias
+# # UserDomainMailAlias
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_domain** | [**\EmonsiteApi\Models\UserDomain**](UserDomain.md) |  | [optional] 
-**domain** | **string** |  | [optional] 
-**username** | **string** |  | [optional] 
-**alias** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**upd_dt** | **int** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**creator** | **string** |  | [optional] 
-**updator** | **string** |  | [optional] 
+**userDomain** | [**\EmonsiteApi\Models\UserDomain**](UserDomain.md) |  | [optional]
+**domain** | **string** |  | [optional] [readonly]
+**username** | **string** |  | [optional] [readonly]
+**alias** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**addDt** | **int** |  | [optional] [readonly]
+**updDt** | **int** |  | [optional] [readonly]
+**createdAt** | **\DateTime** |  | [optional] [readonly]
+**updatedAt** | **\DateTime** |  | [optional] [readonly]
+**creator** | **string** |  | [optional]
+**updator** | **string** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

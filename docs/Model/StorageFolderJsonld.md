@@ -1,24 +1,24 @@
-# StorageFolderJsonld
+# # StorageFolderJsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**dirtype** | **string** | TODO enum bundle | [optional] 
-**name** | **string** |  | [optional] 
-**parent** | [**AnyOfStorageFolderJsonldParent**](AnyOfStorageFolderJsonldParent.md) |  | [optional] 
-**children** | [**\EmonsiteApi\Models\StorageFolderJsonld[]**](StorageFolderJsonld.md) |  | [optional] 
-**position** | **int** |  | [optional] 
-**id** | **string** |  | [optional] 
-**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**upd_dt** | **int** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**add_user_id** | **string** |  | [optional] 
-**upd_user_id** | **string** |  | [optional] 
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**dirtype** | **string** | TODO enum bundle | [optional] [readonly]
+**name** | **string** |  | [optional] [readonly]
+**parent** | [**\EmonsiteApi\Models\StorageFolderJsonldParent**](StorageFolderJsonldParent.md) |  | [optional]
+**children** | [**\EmonsiteApi\Models\StorageFolderJsonld[]**](StorageFolderJsonld.md) |  | [optional] [readonly]
+**position** | **int** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional]
+**addDt** | **int** |  | [optional] [readonly]
+**updDt** | **int** |  | [optional] [readonly]
+**createdAt** | **\DateTime** |  | [optional] [readonly]
+**updatedAt** | **\DateTime** |  | [optional] [readonly]
+**addUserId** | **string** |  | [optional]
+**updUserId** | **string** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

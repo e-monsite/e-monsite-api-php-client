@@ -1,22 +1,22 @@
-# EcoZoneJsonld
+# # EcoZoneJsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**name** | **string** |  | [optional] 
-**countries** | **string[]** |  | [optional] 
-**active** | **bool** |  | [optional] 
-**id** | **string** |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**upd_dt** | **int** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**add_user_id** | **string** |  | [optional] 
-**upd_user_id** | **string** |  | [optional] 
-**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**name** | **string** |  | [optional] [readonly]
+**countries** | **string[]** |  | [optional] [readonly]
+**active** | **bool** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**addDt** | **int** |  | [optional] [readonly]
+**updDt** | **int** |  | [optional] [readonly]
+**createdAt** | **\DateTime** |  | [optional] [readonly]
+**updatedAt** | **\DateTime** |  | [optional] [readonly]
+**addUserId** | **string** |  | [optional]
+**updUserId** | **string** |  | [optional]
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

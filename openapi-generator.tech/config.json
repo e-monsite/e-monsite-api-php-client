@@ -1,0 +1,22 @@
+{
+	"composerVendorName": "e-monsite",
+	"composerProjectName": "e-monsite-api-php-client",
+	"gitUserId": "e-monsite",
+	"gitRepoId": "e-monsite-api-php-client",
+	"gitRepoBaseURL": "https://github.com/",
+	"allowUnicodeIdentifiers": true,
+	"apiPackage": "Api",
+	"disallowAdditionalPropertiesIfNotPresent": true,
+	"ensureUniqueParams": true,
+	"enumUnknownDefaultCase": false,
+	"hideGenerationTimestamp": true,
+	"invokerPackage": "EmonsiteApi",
+	"legacyDiscriminatorBehavior": true,
+	"modelPackage": "Models",
+	"packageName": "EmonsiteApiPhpClient",
+	"prependFormOrBodyParameters": false,
+	"sortModelPropertiesByRequiredFlag": true,
+	"sortParamsByRequiredFlag": true,
+	"srcBasePath": "src",
+	"variableNamingConvention": "camelCase"
+}

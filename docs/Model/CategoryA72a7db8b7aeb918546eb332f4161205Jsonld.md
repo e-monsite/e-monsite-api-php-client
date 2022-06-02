@@ -1,17 +1,17 @@
-# CategoryA72a7db8b7aeb918546eb332f4161205Jsonld
+# # CategoryA72a7db8b7aeb918546eb332f4161205Jsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**site_id** | **string** |  | 
-**parent_id** | **string** |  | [optional] 
-**model_id** | **string** | TODO validation de l&#x27;input | [optional] 
-**name** | **string** |  | 
-**published** | **bool** |  | [optional] 
-**masked** | **bool** |  | [optional] 
+**siteId** | **string** |  |
+**name** | **string** |  |
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**parentId** | **string** |  | [optional]
+**modelId** | **string** | TODO validation de l&#39;input | [optional]
+**published** | **bool** |  | [optional]
+**masked** | **bool** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

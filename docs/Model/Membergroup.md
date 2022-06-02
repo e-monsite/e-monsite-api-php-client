@@ -1,17 +1,17 @@
-# Membergroup
+# # Membergroup
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**add_user_id** | **string** |  | [optional] 
-**upd_user_id** | **string** |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**upd_dt** | **int** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
+**name** | **string** |  | [optional]
+**id** | **string** |  | [optional] [readonly]
+**addUserId** | **string** |  | [optional]
+**updUserId** | **string** |  | [optional]
+**addDt** | **int** |  | [optional] [readonly]
+**updDt** | **int** |  | [optional] [readonly]
+**createdAt** | **\DateTime** |  | [optional] [readonly]
+**updatedAt** | **\DateTime** |  | [optional] [readonly]
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

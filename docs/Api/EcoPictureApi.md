@@ -1,25 +1,33 @@
 # EmonsiteApi\EcoPictureApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getEcoPictureItem**](EcoPictureApi.md#getecopictureitem) | **GET** /eco_pictures/{id} | Retrieves a EcoPictureOutputDto resource.
-[**postEcoPictureCollection**](EcoPictureApi.md#postecopicturecollection) | **POST** /eco_pictures | Creates a EcoPicture resource.
+[**getEcoPictureItem()**](EcoPictureApi.md#getEcoPictureItem) | **GET** /eco_pictures/{id} | Retrieves a EcoPictureOutputDto resource.
+[**postEcoPictureCollection()**](EcoPictureApi.md#postEcoPictureCollection) | **POST** /eco_pictures | Creates a EcoPicture resource.
 
-# **getEcoPictureItem**
-> \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld getEcoPictureItem($id)
+
+## `getEcoPictureItem()`
+
+```php
+getEcoPictureItem($id): \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
+```
 
 Retrieves a EcoPictureOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\EcoPictureApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -27,7 +35,7 @@ $apiInstance = new EmonsiteApi\Api\EcoPictureApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $result = $apiInstance->getEcoPictureItem($id);
@@ -35,7 +43,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling EcoPictureApi->getEcoPictureItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -54,24 +61,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **postEcoPictureCollection**
-> \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld postEcoPictureCollection($body)
+## `postEcoPictureCollection()`
+
+```php
+postEcoPictureCollection($ecoPicture79ef563d06537e846c283ccecbecc002Jsonld): \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
+```
 
 Creates a EcoPicture resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\EcoPictureApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -79,22 +95,21 @@ $apiInstance = new EmonsiteApi\Api\EcoPictureApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld(); // \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld | The new EcoPicture resource
+$ecoPicture79ef563d06537e846c283ccecbecc002Jsonld = new \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld(); // \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld | The new EcoPicture resource
 
 try {
-    $result = $apiInstance->postEcoPictureCollection($body);
+    $result = $apiInstance->postEcoPictureCollection($ecoPicture79ef563d06537e846c283ccecbecc002Jsonld);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EcoPictureApi->postEcoPictureCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld**](../Model/EcoPicture79ef563d06537e846c283ccecbecc002Jsonld.md)| The new EcoPicture resource | [optional]
+ **ecoPicture79ef563d06537e846c283ccecbecc002Jsonld** | [**\EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld**](../Model/EcoPicture79ef563d06537e846c283ccecbecc002Jsonld.md)| The new EcoPicture resource | [optional]
 
 ### Return type
 
@@ -106,60 +121,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/ld+json`, `application/json`, `text/html`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **postEcoPictureCollection**
-> \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld postEcoPictureCollection($body)
-
-Creates a EcoPicture resource.
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-// Configure API key authorization: apiKey
-$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new EmonsiteApi\Api\EcoPictureApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$body = new \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld(); // \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld | The new EcoPicture resource
-
-try {
-    $result = $apiInstance->postEcoPictureCollection($body);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling EcoPictureApi->postEcoPictureCollection: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld**](../Model/EcoPicture79ef563d06537e846c283ccecbecc002Jsonld.md)| The new EcoPicture resource | [optional]
-
-### Return type
-
-[**\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld**](../Model/EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld.md)
-
-### Authorization
-
-[apiKey](../../README.md#apiKey)
-
-### HTTP request headers
-
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

@@ -1,26 +1,26 @@
-# EcoPacklink
+# # EcoPacklink
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**eco_config** | [**\EmonsiteApi\Models\EcoSite**](EcoSite.md) |  | [optional] 
-**api_key** | **string** |  | [optional] 
-**active_carriers** | **string[]** |  | [optional] 
-**firstname** | **string** |  | [optional] 
-**lastname** | **string** |  | [optional] 
-**company** | **string** |  | [optional] 
-**email** | **string** |  | [optional] 
-**address** | **string** |  | [optional] 
-**city** | **string** |  | [optional] 
-**zip** | **string** |  | [optional] 
-**country** | **string** |  | [optional] 
-**phone** | **string** |  | [optional] 
-**packages** | **string[]** |  | [optional] 
-**package_defined** | **bool** | Détermine si un colis type a été renseigné | [optional] 
-**sender_defined** | **bool** | Détermine si les coordonnées d&#x27;expéditeurs ont été renseignés | [optional] 
-**zones** | [**\EmonsiteApi\Models\EcoPacklinkHasZone[]**](EcoPacklinkHasZone.md) |  | [optional] 
-**tax** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
+**ecoConfig** | [**\EmonsiteApi\Models\EcoSite**](EcoSite.md) |  | [optional]
+**apiKey** | **string** |  | [optional]
+**activeCarriers** | **string[]** |  | [optional]
+**firstname** | **string** |  | [optional]
+**lastname** | **string** |  | [optional]
+**company** | **string** |  | [optional]
+**email** | **string** |  | [optional]
+**address** | **string** |  | [optional]
+**city** | **string** |  | [optional]
+**zip** | **string** |  | [optional]
+**country** | **string** |  | [optional]
+**phone** | **string** |  | [optional]
+**packages** | **string[]** |  | [optional]
+**packageDefined** | **bool** | Détermine si un colis type a été renseigné | [optional] [readonly]
+**senderDefined** | **bool** | Détermine si les coordonnées d&#39;expéditeurs ont été renseignés | [optional] [readonly]
+**zones** | [**\EmonsiteApi\Models\EcoPacklinkHasZone[]**](EcoPacklinkHasZone.md) |  | [optional]
+**tax** | **string** |  | [optional]
+**id** | **string** |  | [optional] [readonly]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,28 +1,36 @@
 # EmonsiteApi\BeginCategoryApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteBeginCategoryItem**](BeginCategoryApi.md#deletebegincategoryitem) | **DELETE** /begin_categories/{id} | Removes the BeginCategory resource.
-[**getBeginCategoryCollection**](BeginCategoryApi.md#getbegincategorycollection) | **GET** /begin_categories | Retrieves the collection of BeginCategoryOutputDto resources.
-[**getBeginCategoryItem**](BeginCategoryApi.md#getbegincategoryitem) | **GET** /begin_categories/{id} | Retrieves a BeginCategoryOutputDto resource.
-[**patchBeginCategoryItem**](BeginCategoryApi.md#patchbegincategoryitem) | **PATCH** /begin_categories/{id} | Updates the BeginCategory resource.
-[**postBeginCategoryCollection**](BeginCategoryApi.md#postbegincategorycollection) | **POST** /begin_categories | Creates a BeginCategory resource.
+[**deleteBeginCategoryItem()**](BeginCategoryApi.md#deleteBeginCategoryItem) | **DELETE** /begin_categories/{id} | Removes the BeginCategory resource.
+[**getBeginCategoryCollection()**](BeginCategoryApi.md#getBeginCategoryCollection) | **GET** /begin_categories | Retrieves the collection of BeginCategoryOutputDto resources.
+[**getBeginCategoryItem()**](BeginCategoryApi.md#getBeginCategoryItem) | **GET** /begin_categories/{id} | Retrieves a BeginCategoryOutputDto resource.
+[**patchBeginCategoryItem()**](BeginCategoryApi.md#patchBeginCategoryItem) | **PATCH** /begin_categories/{id} | Updates the BeginCategory resource.
+[**postBeginCategoryCollection()**](BeginCategoryApi.md#postBeginCategoryCollection) | **POST** /begin_categories | Creates a BeginCategory resource.
 
-# **deleteBeginCategoryItem**
-> deleteBeginCategoryItem($id)
+
+## `deleteBeginCategoryItem()`
+
+```php
+deleteBeginCategoryItem($id)
+```
 
 Removes the BeginCategory resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -30,14 +38,13 @@ $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $apiInstance->deleteBeginCategoryItem($id);
 } catch (Exception $e) {
     echo 'Exception when calling BeginCategoryApi->deleteBeginCategoryItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -56,24 +63,33 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getBeginCategoryCollection**
-> \EmonsiteApi\Models\InlineResponse2001 getBeginCategoryCollection($page, $items_per_page)
+## `getBeginCategoryCollection()`
+
+```php
+getBeginCategoryCollection($page, $itemsPerPage): \EmonsiteApi\Models\GetBeginCategoryCollection200Response
+```
 
 Retrieves the collection of BeginCategoryOutputDto resources.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -82,15 +98,14 @@ $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     $config
 );
 $page = 1; // int | The collection page number
-$items_per_page = 30; // int | The number of items per page
+$itemsPerPage = 30; // int | The number of items per page
 
 try {
-    $result = $apiInstance->getBeginCategoryCollection($page, $items_per_page);
+    $result = $apiInstance->getBeginCategoryCollection($page, $itemsPerPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BeginCategoryApi->getBeginCategoryCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -98,11 +113,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| The collection page number | [optional] [default to 1]
- **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
+ **itemsPerPage** | **int**| The number of items per page | [optional] [default to 30]
 
 ### Return type
 
-[**\EmonsiteApi\Models\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\EmonsiteApi\Models\GetBeginCategoryCollection200Response**](../Model/GetBeginCategoryCollection200Response.md)
 
 ### Authorization
 
@@ -110,24 +125,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getBeginCategoryItem**
-> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld getBeginCategoryItem($id)
+## `getBeginCategoryItem()`
+
+```php
+getBeginCategoryItem($id): \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+```
 
 Retrieves a BeginCategoryOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -135,7 +159,7 @@ $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $result = $apiInstance->getBeginCategoryItem($id);
@@ -143,7 +167,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling BeginCategoryApi->getBeginCategoryItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -162,24 +185,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **patchBeginCategoryItem**
-> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld patchBeginCategoryItem($id, $body)
+## `patchBeginCategoryItem()`
+
+```php
+patchBeginCategoryItem($id, $beginCategoryF0c108203dccba65ff19d7e99e810cf3): \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+```
 
 Updates the BeginCategory resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -187,16 +219,15 @@ $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
-$body = new \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3(); // \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 | The updated BeginCategory resource
+$id = 'id_example'; // string
+$beginCategoryF0c108203dccba65ff19d7e99e810cf3 = new \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3(); // \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 | The updated BeginCategory resource
 
 try {
-    $result = $apiInstance->patchBeginCategoryItem($id, $body);
+    $result = $apiInstance->patchBeginCategoryItem($id, $beginCategoryF0c108203dccba65ff19d7e99e810cf3);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BeginCategoryApi->patchBeginCategoryItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -204,7 +235,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3**](../Model/BeginCategoryF0c108203dccba65ff19d7e99e810cf3.md)| The updated BeginCategory resource | [optional]
+ **beginCategoryF0c108203dccba65ff19d7e99e810cf3** | [**\EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3**](../Model/BeginCategoryF0c108203dccba65ff19d7e99e810cf3.md)| The updated BeginCategory resource | [optional]
 
 ### Return type
 
@@ -216,24 +247,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/merge-patch+json
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/merge-patch+json`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **postBeginCategoryCollection**
-> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld postBeginCategoryCollection($body)
+## `postBeginCategoryCollection()`
+
+```php
+postBeginCategoryCollection($beginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld): \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+```
 
 Creates a BeginCategory resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -241,22 +281,21 @@ $apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
+$beginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld = new \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
 
 try {
-    $result = $apiInstance->postBeginCategoryCollection($body);
+    $result = $apiInstance->postBeginCategoryCollection($beginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling BeginCategoryApi->postBeginCategoryCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
+ **beginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld** | [**\EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
 
 ### Return type
 
@@ -268,60 +307,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/ld+json`, `application/json`, `text/html`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **postBeginCategoryCollection**
-> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld postBeginCategoryCollection($body)
-
-Creates a BeginCategory resource.
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-// Configure API key authorization: apiKey
-$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$body = new \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
-
-try {
-    $result = $apiInstance->postBeginCategoryCollection($body);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling BeginCategoryApi->postBeginCategoryCollection: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
-
-### Return type
-
-[**\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
-
-### Authorization
-
-[apiKey](../../README.md#apiKey)
-
-### HTTP request headers
-
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
