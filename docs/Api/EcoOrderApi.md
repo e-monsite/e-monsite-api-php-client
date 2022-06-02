@@ -1,26 +1,34 @@
 # EmonsiteApi\EcoOrderApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getEcoOrderCollection**](EcoOrderApi.md#getecoordercollection) | **GET** /eco_orders | Retrieves the collection of EcoOrderOutputDto resources.
-[**getEcoOrderItem**](EcoOrderApi.md#getecoorderitem) | **GET** /eco_orders/{id} | Retrieves a EcoOrderOutputDto resource.
-[**patchEcoOrderItem**](EcoOrderApi.md#patchecoorderitem) | **PATCH** /eco_orders/{id} | Updates the EcoOrder resource.
+[**getEcoOrderCollection()**](EcoOrderApi.md#getEcoOrderCollection) | **GET** /eco_orders | Retrieves the collection of EcoOrderOutputDto resources.
+[**getEcoOrderItem()**](EcoOrderApi.md#getEcoOrderItem) | **GET** /eco_orders/{id} | Retrieves a EcoOrderOutputDto resource.
+[**patchEcoOrderItem()**](EcoOrderApi.md#patchEcoOrderItem) | **PATCH** /eco_orders/{id} | Updates the EcoOrder resource.
 
-# **getEcoOrderCollection**
-> \EmonsiteApi\Models\InlineResponse20016 getEcoOrderCollection($site_id, $order_add_dt, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $page, $items_per_page)
+
+## `getEcoOrderCollection()`
+
+```php
+getEcoOrderCollection($siteId, $orderAddDt, $addDtBefore, $addDtStrictlyBefore, $addDtAfter, $addDtStrictlyAfter, $page, $itemsPerPage): \EmonsiteApi\Models\GetEcoOrderCollection200Response
+```
 
 Retrieves the collection of EcoOrderOutputDto resources.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -28,40 +36,39 @@ $apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$site_id = "site_id_example"; // string | 
-$order_add_dt = "order_add_dt_example"; // string | 
-$add_dt_before = "add_dt_before_example"; // string | 
-$add_dt_strictly_before = "add_dt_strictly_before_example"; // string | 
-$add_dt_after = "add_dt_after_example"; // string | 
-$add_dt_strictly_after = "add_dt_strictly_after_example"; // string | 
+$siteId = 'siteId_example'; // string
+$orderAddDt = 'orderAddDt_example'; // string
+$addDtBefore = 'addDtBefore_example'; // string
+$addDtStrictlyBefore = 'addDtStrictlyBefore_example'; // string
+$addDtAfter = 'addDtAfter_example'; // string
+$addDtStrictlyAfter = 'addDtStrictlyAfter_example'; // string
 $page = 1; // int | The collection page number
-$items_per_page = 30; // int | The number of items per page
+$itemsPerPage = 30; // int | The number of items per page
 
 try {
-    $result = $apiInstance->getEcoOrderCollection($site_id, $order_add_dt, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $page, $items_per_page);
+    $result = $apiInstance->getEcoOrderCollection($siteId, $orderAddDt, $addDtBefore, $addDtStrictlyBefore, $addDtAfter, $addDtStrictlyAfter, $page, $itemsPerPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EcoOrderApi->getEcoOrderCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **site_id** | **string**|  |
- **order_add_dt** | **string**|  | [optional]
- **add_dt_before** | **string**|  | [optional]
- **add_dt_strictly_before** | **string**|  | [optional]
- **add_dt_after** | **string**|  | [optional]
- **add_dt_strictly_after** | **string**|  | [optional]
+ **siteId** | **string**|  |
+ **orderAddDt** | **string**|  | [optional]
+ **addDtBefore** | **string**|  | [optional]
+ **addDtStrictlyBefore** | **string**|  | [optional]
+ **addDtAfter** | **string**|  | [optional]
+ **addDtStrictlyAfter** | **string**|  | [optional]
  **page** | **int**| The collection page number | [optional] [default to 1]
- **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
+ **itemsPerPage** | **int**| The number of items per page | [optional] [default to 30]
 
 ### Return type
 
-[**\EmonsiteApi\Models\InlineResponse20016**](../Model/InlineResponse20016.md)
+[**\EmonsiteApi\Models\GetEcoOrderCollection200Response**](../Model/GetEcoOrderCollection200Response.md)
 
 ### Authorization
 
@@ -69,24 +76,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getEcoOrderItem**
-> \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld getEcoOrderItem($id, $site_id)
+## `getEcoOrderItem()`
+
+```php
+getEcoOrderItem($id, $siteId): \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld
+```
 
 Retrieves a EcoOrderOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -94,16 +110,15 @@ $apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
-$site_id = "site_id_example"; // string | 
+$id = 'id_example'; // string
+$siteId = 'siteId_example'; // string
 
 try {
-    $result = $apiInstance->getEcoOrderItem($id, $site_id);
+    $result = $apiInstance->getEcoOrderItem($id, $siteId);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EcoOrderApi->getEcoOrderItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -111,7 +126,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **site_id** | **string**|  |
+ **siteId** | **string**|  |
 
 ### Return type
 
@@ -123,24 +138,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **patchEcoOrderItem**
-> \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld patchEcoOrderItem($site_id, $id, $body)
+## `patchEcoOrderItem()`
+
+```php
+patchEcoOrderItem($id, $siteId, $ecoOrder93bd0f9e3377e379cb5585eb311ed117): \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld
+```
 
 Updates the EcoOrder resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -148,26 +172,25 @@ $apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     new GuzzleHttp\Client(),
     $config
 );
-$site_id = "site_id_example"; // string | 
-$id = "id_example"; // string | 
-$body = new \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117(); // \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 | The updated EcoOrder resource
+$id = 'id_example'; // string
+$siteId = 'siteId_example'; // string
+$ecoOrder93bd0f9e3377e379cb5585eb311ed117 = new \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117(); // \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 | The updated EcoOrder resource
 
 try {
-    $result = $apiInstance->patchEcoOrderItem($site_id, $id, $body);
+    $result = $apiInstance->patchEcoOrderItem($id, $siteId, $ecoOrder93bd0f9e3377e379cb5585eb311ed117);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EcoOrderApi->patchEcoOrderItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **site_id** | **string**|  |
  **id** | **string**|  |
- **body** | [**\EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117**](../Model/EcoOrder93bd0f9e3377e379cb5585eb311ed117.md)| The updated EcoOrder resource | [optional]
+ **siteId** | **string**|  |
+ **ecoOrder93bd0f9e3377e379cb5585eb311ed117** | [**\EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117**](../Model/EcoOrder93bd0f9e3377e379cb5585eb311ed117.md)| The updated EcoOrder resource | [optional]
 
 ### Return type
 
@@ -179,8 +202,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/merge-patch+json
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/merge-patch+json`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

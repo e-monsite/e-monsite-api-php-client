@@ -1,32 +1,32 @@
-# EcoLoyaltyPoints
+# # EcoLoyaltyPoints
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
-**active** | **bool** |  | [optional] 
-**active_topaid_order** | **bool** |  | [optional] 
-**name** | **string** |  | [optional] 
-**type** | **int** |  | [optional] 
-**seuil** | **float** |  | [optional] 
-**palier** | **float** |  | [optional] 
-**taux_attribution** | **int** |  | [optional] 
-**taux_redemption** | **float** |  | [optional] 
-**show_product** | **bool** |  | [optional] 
-**start_points** | **int** |  | [optional] 
-**show_taux_redemption** | **bool** |  | [optional] 
-**show_taux_redemption_cart** | **bool** |  | [optional] 
-**access_rights** | **int** |  | [optional] 
-**categories_rights** | **int** |  | [optional] 
-**categories** | **string[]** |  | [optional] 
-**groups** | [**\EmonsiteApi\Models\Membergroup[]**](Membergroup.md) |  | [optional] 
-**add_user_id** | **string** |  | [optional] 
-**upd_user_id** | **string** |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**upd_dt** | **int** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
+**id** | **string** |  | [optional] [readonly]
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional]
+**active** | **bool** |  | [optional] [readonly]
+**activeTopaidOrder** | **bool** |  | [optional] [readonly]
+**name** | **string** |  | [optional] [readonly]
+**type** | **int** |  | [optional] [readonly]
+**seuil** | **float** |  | [optional] [readonly]
+**palier** | **float** |  | [optional] [readonly]
+**tauxAttribution** | **int** |  | [optional] [readonly]
+**tauxRedemption** | **float** |  | [optional] [readonly]
+**showProduct** | **bool** |  | [optional] [readonly]
+**startPoints** | **int** |  | [optional] [readonly]
+**showTauxRedemption** | **bool** |  | [optional] [readonly]
+**showTauxRedemptionCart** | **bool** |  | [optional] [readonly]
+**accessRights** | **int** |  | [optional] [readonly]
+**categoriesRights** | **int** |  | [optional] [readonly]
+**categories** | **string[]** |  | [optional] [readonly]
+**groups** | [**\EmonsiteApi\Models\Membergroup[]**](Membergroup.md) |  | [optional] [readonly]
+**addUserId** | **string** |  | [optional]
+**updUserId** | **string** |  | [optional]
+**addDt** | **int** |  | [optional] [readonly]
+**updDt** | **int** |  | [optional] [readonly]
+**createdAt** | **\DateTime** |  | [optional] [readonly]
+**updatedAt** | **\DateTime** |  | [optional] [readonly]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

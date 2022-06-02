@@ -1,25 +1,25 @@
-# EcoOrderDetail7aba138374756b6a38adb2fea47d2260
+# # EcoOrderDetail7aba138374756b6a38adb2fea47d2260
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**product** | [****](.md) |  | [optional] 
-**combination** | [****](.md) |  | [optional] 
-**name** | **string** |  | [optional] 
-**url** | **string** |  | [optional] 
-**picture_url** | **string** |  | [optional] 
-**quantity** | **int** |  | [optional] 
-**tax_id** | **string** |  | [optional] 
-**reference** | **string** |  | [optional] 
-**weight** | **float** |  | [optional] 
-**reduction_price** | **float** |  | [optional] 
-**reduction_percent** | **float** |  | [optional] 
-**pu_ht** | **float** |  | [optional] 
-**pu_ttc** | **float** |  | [optional] 
-**downloadable_product** | **bool** |  | [optional] 
-**ean13** | **string** |  | [optional] 
-**custom_field** | **string[]** |  | [optional] 
+**id** | **string** |  | [optional]
+**product** | **mixed** |  | [optional]
+**combination** | **mixed** |  | [optional]
+**name** | **string** |  | [optional]
+**url** | **string** |  | [optional]
+**pictureUrl** | **string** |  | [optional]
+**quantity** | **int** |  | [optional]
+**taxId** | **string** |  | [optional]
+**reference** | **string** |  | [optional]
+**weight** | **float** |  | [optional]
+**reductionPrice** | **float** |  | [optional]
+**reductionPercent** | **float** |  | [optional]
+**puHt** | **float** |  | [optional]
+**puTtc** | **float** |  | [optional]
+**downloadableProduct** | **bool** |  | [optional]
+**ean13** | **string** |  | [optional]
+**customField** | **string[]** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,14 +1,14 @@
-# EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld
+# # EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**name** | **string** |  | [optional] 
-**rate** | **float** |  | [optional] 
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional]
+**name** | **string** |  | [optional]
+**rate** | **float** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

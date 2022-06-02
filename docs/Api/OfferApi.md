@@ -1,25 +1,33 @@
 # EmonsiteApi\OfferApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getOfferCollection**](OfferApi.md#getoffercollection) | **GET** /offers | Retrieves the collection of OfferOutputDto resources.
-[**getOfferItem**](OfferApi.md#getofferitem) | **GET** /offers/{id} | Retrieves a OfferOutputDto resource.
+[**getOfferCollection()**](OfferApi.md#getOfferCollection) | **GET** /offers | Retrieves the collection of OfferOutputDto resources.
+[**getOfferItem()**](OfferApi.md#getOfferItem) | **GET** /offers/{id} | Retrieves a OfferOutputDto resource.
 
-# **getOfferCollection**
-> \EmonsiteApi\Models\InlineResponse20021 getOfferCollection($page, $items_per_page)
+
+## `getOfferCollection()`
+
+```php
+getOfferCollection($page, $itemsPerPage): \EmonsiteApi\Models\GetOfferCollection200Response
+```
 
 Retrieves the collection of OfferOutputDto resources.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\OfferApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -28,15 +36,14 @@ $apiInstance = new EmonsiteApi\Api\OfferApi(
     $config
 );
 $page = 1; // int | The collection page number
-$items_per_page = 30; // int | The number of items per page
+$itemsPerPage = 30; // int | The number of items per page
 
 try {
-    $result = $apiInstance->getOfferCollection($page, $items_per_page);
+    $result = $apiInstance->getOfferCollection($page, $itemsPerPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OfferApi->getOfferCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -44,11 +51,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| The collection page number | [optional] [default to 1]
- **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
+ **itemsPerPage** | **int**| The number of items per page | [optional] [default to 30]
 
 ### Return type
 
-[**\EmonsiteApi\Models\InlineResponse20021**](../Model/InlineResponse20021.md)
+[**\EmonsiteApi\Models\GetOfferCollection200Response**](../Model/GetOfferCollection200Response.md)
 
 ### Authorization
 
@@ -56,24 +63,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getOfferItem**
-> \EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld getOfferItem($id)
+## `getOfferItem()`
+
+```php
+getOfferItem($id): \EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld
+```
 
 Retrieves a OfferOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\OfferApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -81,7 +97,7 @@ $apiInstance = new EmonsiteApi\Api\OfferApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $result = $apiInstance->getOfferItem($id);
@@ -89,7 +105,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling OfferApi->getOfferItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -108,8 +123,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

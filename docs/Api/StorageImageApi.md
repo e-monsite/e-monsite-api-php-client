@@ -1,27 +1,35 @@
 # EmonsiteApi\StorageImageApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getStorageImageCollection**](StorageImageApi.md#getstorageimagecollection) | **GET** /storage_images | Retrieves the collection of StorageImageOutputDto resources.
-[**getStorageImageItem**](StorageImageApi.md#getstorageimageitem) | **GET** /storage_images/{id} | Retrieves a StorageImageOutputDto resource.
-[**patchStorageImageItem**](StorageImageApi.md#patchstorageimageitem) | **PATCH** /storage_images/{id} | Updates the StorageImage resource.
-[**postStorageImageCollection**](StorageImageApi.md#poststorageimagecollection) | **POST** /storage_images | Creates a StorageImage resource.
+[**getStorageImageCollection()**](StorageImageApi.md#getStorageImageCollection) | **GET** /storage_images | Retrieves the collection of StorageImageOutputDto resources.
+[**getStorageImageItem()**](StorageImageApi.md#getStorageImageItem) | **GET** /storage_images/{id} | Retrieves a StorageImageOutputDto resource.
+[**patchStorageImageItem()**](StorageImageApi.md#patchStorageImageItem) | **PATCH** /storage_images/{id} | Updates the StorageImage resource.
+[**postStorageImageCollection()**](StorageImageApi.md#postStorageImageCollection) | **POST** /storage_images | Creates a StorageImage resource.
 
-# **getStorageImageCollection**
-> \EmonsiteApi\Models\InlineResponse20026 getStorageImageCollection($site_id, $order_add_dt, $page, $items_per_page)
+
+## `getStorageImageCollection()`
+
+```php
+getStorageImageCollection($siteId, $orderAddDt, $page, $itemsPerPage): \EmonsiteApi\Models\GetStorageImageCollection200Response
+```
 
 Retrieves the collection of StorageImageOutputDto resources.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -29,32 +37,31 @@ $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     new GuzzleHttp\Client(),
     $config
 );
-$site_id = "site_id_example"; // string | 
-$order_add_dt = "order_add_dt_example"; // string | 
+$siteId = 'siteId_example'; // string
+$orderAddDt = 'orderAddDt_example'; // string
 $page = 1; // int | The collection page number
-$items_per_page = 30; // int | The number of items per page
+$itemsPerPage = 30; // int | The number of items per page
 
 try {
-    $result = $apiInstance->getStorageImageCollection($site_id, $order_add_dt, $page, $items_per_page);
+    $result = $apiInstance->getStorageImageCollection($siteId, $orderAddDt, $page, $itemsPerPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling StorageImageApi->getStorageImageCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **site_id** | **string**|  |
- **order_add_dt** | **string**|  | [optional]
+ **siteId** | **string**|  |
+ **orderAddDt** | **string**|  | [optional]
  **page** | **int**| The collection page number | [optional] [default to 1]
- **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
+ **itemsPerPage** | **int**| The number of items per page | [optional] [default to 30]
 
 ### Return type
 
-[**\EmonsiteApi\Models\InlineResponse20026**](../Model/InlineResponse20026.md)
+[**\EmonsiteApi\Models\GetStorageImageCollection200Response**](../Model/GetStorageImageCollection200Response.md)
 
 ### Authorization
 
@@ -62,24 +69,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getStorageImageItem**
-> \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld getStorageImageItem($id, $site_id)
+## `getStorageImageItem()`
+
+```php
+getStorageImageItem($id, $siteId): \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
+```
 
 Retrieves a StorageImageOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -87,16 +103,15 @@ $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
-$site_id = "site_id_example"; // string | 
+$id = 'id_example'; // string
+$siteId = 'siteId_example'; // string
 
 try {
-    $result = $apiInstance->getStorageImageItem($id, $site_id);
+    $result = $apiInstance->getStorageImageItem($id, $siteId);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling StorageImageApi->getStorageImageItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -104,7 +119,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **site_id** | **string**|  |
+ **siteId** | **string**|  |
 
 ### Return type
 
@@ -116,24 +131,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **patchStorageImageItem**
-> \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld patchStorageImageItem($site_id, $id, $body)
+## `patchStorageImageItem()`
+
+```php
+patchStorageImageItem($id, $siteId, $storageImage292cb7fe7e2c3f669075bf385747b767): \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
+```
 
 Updates the StorageImage resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -141,26 +165,25 @@ $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     new GuzzleHttp\Client(),
     $config
 );
-$site_id = "site_id_example"; // string | 
-$id = "id_example"; // string | 
-$body = new \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767(); // \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 | The updated StorageImage resource
+$id = 'id_example'; // string
+$siteId = 'siteId_example'; // string
+$storageImage292cb7fe7e2c3f669075bf385747b767 = new \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767(); // \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 | The updated StorageImage resource
 
 try {
-    $result = $apiInstance->patchStorageImageItem($site_id, $id, $body);
+    $result = $apiInstance->patchStorageImageItem($id, $siteId, $storageImage292cb7fe7e2c3f669075bf385747b767);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling StorageImageApi->patchStorageImageItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **site_id** | **string**|  |
  **id** | **string**|  |
- **body** | [**\EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767**](../Model/StorageImage292cb7fe7e2c3f669075bf385747b767.md)| The updated StorageImage resource | [optional]
+ **siteId** | **string**|  |
+ **storageImage292cb7fe7e2c3f669075bf385747b767** | [**\EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767**](../Model/StorageImage292cb7fe7e2c3f669075bf385747b767.md)| The updated StorageImage resource | [optional]
 
 ### Return type
 
@@ -172,24 +195,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/merge-patch+json
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/merge-patch+json`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **postStorageImageCollection**
-> \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld postStorageImageCollection($image_site_id, $image_file)
+## `postStorageImageCollection()`
+
+```php
+postStorageImageCollection($imageSiteId, $imageFile): \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
+```
 
 Creates a StorageImage resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -197,24 +229,23 @@ $apiInstance = new EmonsiteApi\Api\StorageImageApi(
     new GuzzleHttp\Client(),
     $config
 );
-$image_site_id = "image_site_id_example"; // string | 
-$image_file = "image_file_example"; // string | 
+$imageSiteId = 'imageSiteId_example'; // string
+$imageFile = "/path/to/file.txt"; // \SplFileObject
 
 try {
-    $result = $apiInstance->postStorageImageCollection($image_site_id, $image_file);
+    $result = $apiInstance->postStorageImageCollection($imageSiteId, $imageFile);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling StorageImageApi->postStorageImageCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **image_site_id** | **string**|  | [optional]
- **image_file** | **string****string**|  | [optional]
+ **imageSiteId** | **string**|  | [optional]
+ **imageFile** | **\SplFileObject****\SplFileObject**|  | [optional]
 
 ### Return type
 
@@ -226,8 +257,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: multipart/form-data
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `multipart/form-data`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

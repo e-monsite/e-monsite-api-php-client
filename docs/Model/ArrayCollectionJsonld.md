@@ -1,16 +1,16 @@
-# ArrayCollectionJsonld
+# # ArrayCollectionJsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**elements** | **string[]** | An array containing the entries of this collection. | [optional] 
-**keys** | [****](.md) | {@inheritDoc} | [optional] 
-**values** | [****](.md) | {@inheritDoc} | [optional] 
-**empty** | **bool** | {@inheritDoc} | [optional] 
-**iterator** | **string[]** | {@inheritDoc} | [optional] 
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**elements** | **string[]** | An array containing the entries of this collection. | [optional]
+**keys** | **mixed** | {@inheritDoc} | [optional] [readonly]
+**values** | **mixed** | {@inheritDoc} | [optional] [readonly]
+**empty** | **bool** | {@inheritDoc} | [optional] [readonly]
+**iterator** | **string[]** | {@inheritDoc} | [optional] [readonly]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

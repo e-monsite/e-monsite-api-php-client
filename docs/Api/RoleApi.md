@@ -1,29 +1,37 @@
 # EmonsiteApi\RoleApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteRoleItem**](RoleApi.md#deleteroleitem) | **DELETE** /roles/{id} | Removes the Role resource.
-[**getRoleCollection**](RoleApi.md#getrolecollection) | **GET** /roles | Retrieves the collection of RoleOutputDto resources.
-[**getRoleItem**](RoleApi.md#getroleitem) | **GET** /roles/{id} | Retrieves a RoleOutputDto resource.
-[**patchRoleItem**](RoleApi.md#patchroleitem) | **PATCH** /roles/{id} | Updates the Role resource.
-[**postRoleCollection**](RoleApi.md#postrolecollection) | **POST** /roles | Creates a Role resource.
-[**resourcesRoleItem**](RoleApi.md#resourcesroleitem) | **GET** /roles-resources | Get all role resources
+[**deleteRoleItem()**](RoleApi.md#deleteRoleItem) | **DELETE** /roles/{id} | Removes the Role resource.
+[**getRoleCollection()**](RoleApi.md#getRoleCollection) | **GET** /roles | Retrieves the collection of RoleOutputDto resources.
+[**getRoleItem()**](RoleApi.md#getRoleItem) | **GET** /roles/{id} | Retrieves a RoleOutputDto resource.
+[**patchRoleItem()**](RoleApi.md#patchRoleItem) | **PATCH** /roles/{id} | Updates the Role resource.
+[**postRoleCollection()**](RoleApi.md#postRoleCollection) | **POST** /roles | Creates a Role resource.
+[**resourcesRoleItem()**](RoleApi.md#resourcesRoleItem) | **GET** /roles-resources | Get all role resources
 
-# **deleteRoleItem**
-> deleteRoleItem($id)
+
+## `deleteRoleItem()`
+
+```php
+deleteRoleItem($id)
+```
 
 Removes the Role resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -31,14 +39,13 @@ $apiInstance = new EmonsiteApi\Api\RoleApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $apiInstance->deleteRoleItem($id);
 } catch (Exception $e) {
     echo 'Exception when calling RoleApi->deleteRoleItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -57,24 +64,33 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getRoleCollection**
-> \EmonsiteApi\Models\InlineResponse20022 getRoleCollection($page, $items_per_page)
+## `getRoleCollection()`
+
+```php
+getRoleCollection($page, $itemsPerPage): \EmonsiteApi\Models\GetRoleCollection200Response
+```
 
 Retrieves the collection of RoleOutputDto resources.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -83,15 +99,14 @@ $apiInstance = new EmonsiteApi\Api\RoleApi(
     $config
 );
 $page = 1; // int | The collection page number
-$items_per_page = 30; // int | The number of items per page
+$itemsPerPage = 30; // int | The number of items per page
 
 try {
-    $result = $apiInstance->getRoleCollection($page, $items_per_page);
+    $result = $apiInstance->getRoleCollection($page, $itemsPerPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling RoleApi->getRoleCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -99,11 +114,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| The collection page number | [optional] [default to 1]
- **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
+ **itemsPerPage** | **int**| The number of items per page | [optional] [default to 30]
 
 ### Return type
 
-[**\EmonsiteApi\Models\InlineResponse20022**](../Model/InlineResponse20022.md)
+[**\EmonsiteApi\Models\GetRoleCollection200Response**](../Model/GetRoleCollection200Response.md)
 
 ### Authorization
 
@@ -111,24 +126,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getRoleItem**
-> \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld getRoleItem($id)
+## `getRoleItem()`
+
+```php
+getRoleItem($id): \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+```
 
 Retrieves a RoleOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -136,7 +160,7 @@ $apiInstance = new EmonsiteApi\Api\RoleApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $result = $apiInstance->getRoleItem($id);
@@ -144,7 +168,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling RoleApi->getRoleItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -163,24 +186,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **patchRoleItem**
-> \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld patchRoleItem($id, $body)
+## `patchRoleItem()`
+
+```php
+patchRoleItem($id, $role8335fa6e7449daa5d9298e9ce37ab462): \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+```
 
 Updates the Role resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -188,16 +220,15 @@ $apiInstance = new EmonsiteApi\Api\RoleApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
-$body = new \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462(); // \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 | The updated Role resource
+$id = 'id_example'; // string
+$role8335fa6e7449daa5d9298e9ce37ab462 = new \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462(); // \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 | The updated Role resource
 
 try {
-    $result = $apiInstance->patchRoleItem($id, $body);
+    $result = $apiInstance->patchRoleItem($id, $role8335fa6e7449daa5d9298e9ce37ab462);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling RoleApi->patchRoleItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -205,7 +236,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462**](../Model/Role8335fa6e7449daa5d9298e9ce37ab462.md)| The updated Role resource | [optional]
+ **role8335fa6e7449daa5d9298e9ce37ab462** | [**\EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462**](../Model/Role8335fa6e7449daa5d9298e9ce37ab462.md)| The updated Role resource | [optional]
 
 ### Return type
 
@@ -217,24 +248,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/merge-patch+json
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/merge-patch+json`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **postRoleCollection**
-> \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld postRoleCollection($body)
+## `postRoleCollection()`
+
+```php
+postRoleCollection($role398f80f76f54ad7f04b1f3d6647c661aJsonld): \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+```
 
 Creates a Role resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -242,22 +282,21 @@ $apiInstance = new EmonsiteApi\Api\RoleApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld(); // \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld | The new Role resource
+$role398f80f76f54ad7f04b1f3d6647c661aJsonld = new \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld(); // \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld | The new Role resource
 
 try {
-    $result = $apiInstance->postRoleCollection($body);
+    $result = $apiInstance->postRoleCollection($role398f80f76f54ad7f04b1f3d6647c661aJsonld);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling RoleApi->postRoleCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld**](../Model/Role398f80f76f54ad7f04b1f3d6647c661aJsonld.md)| The new Role resource | [optional]
+ **role398f80f76f54ad7f04b1f3d6647c661aJsonld** | [**\EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld**](../Model/Role398f80f76f54ad7f04b1f3d6647c661aJsonld.md)| The new Role resource | [optional]
 
 ### Return type
 
@@ -269,76 +308,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/ld+json`, `application/json`, `text/html`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **postRoleCollection**
-> \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld postRoleCollection($body)
+## `resourcesRoleItem()`
 
-Creates a Role resource.
-
-### Example
 ```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-// Configure API key authorization: apiKey
-$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new EmonsiteApi\Api\RoleApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$body = new \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld(); // \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld | The new Role resource
-
-try {
-    $result = $apiInstance->postRoleCollection($body);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling RoleApi->postRoleCollection: ', $e->getMessage(), PHP_EOL;
-}
-?>
+resourcesRoleItem(): \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
 ```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld**](../Model/Role398f80f76f54ad7f04b1f3d6647c661aJsonld.md)| The new Role resource | [optional]
-
-### Return type
-
-[**\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld**](../Model/Role41c793592002936a9986d67e92f37a9bJsonld.md)
-
-### Authorization
-
-[apiKey](../../README.md#apiKey)
-
-### HTTP request headers
-
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **resourcesRoleItem**
-> \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld resourcesRoleItem()
 
 Get all role resources
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\RoleApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -353,10 +349,10 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling RoleApi->resourcesRoleItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -369,8 +365,9 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

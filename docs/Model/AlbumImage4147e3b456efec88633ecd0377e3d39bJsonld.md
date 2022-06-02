@@ -1,20 +1,20 @@
-# AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld
+# # AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**category** | **string** |  | [optional] 
-**site_id** | **string** |  | [optional] 
-**weight** | **int** |  | [optional] 
-**mime_type** | **string** |  | [optional] 
-**trashed** | **bool** |  | [optional] 
-**storage_name** | [****](.md) |  | [optional] 
-**public_path** | **string** |  | [optional] 
-**url** | **string** |  | [optional] 
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**category** | **string** |  | [optional]
+**siteId** | **string** |  | [optional] [readonly]
+**weight** | **int** |  | [optional] [readonly]
+**mimeType** | **string** |  | [optional] [readonly]
+**trashed** | **bool** |  | [optional]
+**storageName** | **mixed** |  | [optional] [readonly]
+**publicPath** | **string** |  | [optional] [readonly]
+**url** | **string** |  | [optional] [readonly]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

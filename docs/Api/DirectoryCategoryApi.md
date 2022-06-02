@@ -1,28 +1,36 @@
 # EmonsiteApi\DirectoryCategoryApi
 
-All URIs are relative to */*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**deleteDirectoryCategoryItem**](DirectoryCategoryApi.md#deletedirectorycategoryitem) | **DELETE** /directory_categories/{id} | Removes the DirectoryCategory resource.
-[**getDirectoryCategoryCollection**](DirectoryCategoryApi.md#getdirectorycategorycollection) | **GET** /directory_categories | Retrieves the collection of DirectoryCategoryOutputDto resources.
-[**getDirectoryCategoryItem**](DirectoryCategoryApi.md#getdirectorycategoryitem) | **GET** /directory_categories/{id} | Retrieves a DirectoryCategoryOutputDto resource.
-[**patchDirectoryCategoryItem**](DirectoryCategoryApi.md#patchdirectorycategoryitem) | **PATCH** /directory_categories/{id} | Updates the DirectoryCategory resource.
-[**postDirectoryCategoryCollection**](DirectoryCategoryApi.md#postdirectorycategorycollection) | **POST** /directory_categories | Creates a DirectoryCategory resource.
+[**deleteDirectoryCategoryItem()**](DirectoryCategoryApi.md#deleteDirectoryCategoryItem) | **DELETE** /directory_categories/{id} | Removes the DirectoryCategory resource.
+[**getDirectoryCategoryCollection()**](DirectoryCategoryApi.md#getDirectoryCategoryCollection) | **GET** /directory_categories | Retrieves the collection of DirectoryCategoryOutputDto resources.
+[**getDirectoryCategoryItem()**](DirectoryCategoryApi.md#getDirectoryCategoryItem) | **GET** /directory_categories/{id} | Retrieves a DirectoryCategoryOutputDto resource.
+[**patchDirectoryCategoryItem()**](DirectoryCategoryApi.md#patchDirectoryCategoryItem) | **PATCH** /directory_categories/{id} | Updates the DirectoryCategory resource.
+[**postDirectoryCategoryCollection()**](DirectoryCategoryApi.md#postDirectoryCategoryCollection) | **POST** /directory_categories | Creates a DirectoryCategory resource.
 
-# **deleteDirectoryCategoryItem**
-> deleteDirectoryCategoryItem($id)
+
+## `deleteDirectoryCategoryItem()`
+
+```php
+deleteDirectoryCategoryItem($id)
+```
 
 Removes the DirectoryCategory resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -30,14 +38,13 @@ $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $apiInstance->deleteDirectoryCategoryItem($id);
 } catch (Exception $e) {
     echo 'Exception when calling DirectoryCategoryApi->deleteDirectoryCategoryItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -56,24 +63,33 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: Not defined
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getDirectoryCategoryCollection**
-> \EmonsiteApi\Models\InlineResponse20011 getDirectoryCategoryCollection($parent, $parent, $page, $items_per_page)
+## `getDirectoryCategoryCollection()`
+
+```php
+getDirectoryCategoryCollection($parent, $parent2, $page, $itemsPerPage): \EmonsiteApi\Models\GetDirectoryCategoryCollection200Response
+```
 
 Retrieves the collection of DirectoryCategoryOutputDto resources.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -81,18 +97,17 @@ $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$parent = "parent_example"; // string | 
-$parent = array("parent_example"); // string[] | 
+$parent = 'parent_example'; // string
+$parent2 = array('parent_example'); // string[]
 $page = 1; // int | The collection page number
-$items_per_page = 30; // int | The number of items per page
+$itemsPerPage = 30; // int | The number of items per page
 
 try {
-    $result = $apiInstance->getDirectoryCategoryCollection($parent, $parent, $page, $items_per_page);
+    $result = $apiInstance->getDirectoryCategoryCollection($parent, $parent2, $page, $itemsPerPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DirectoryCategoryApi->getDirectoryCategoryCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -100,13 +115,13 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **parent** | **string**|  | [optional]
- **parent** | [**string[]**](../Model/string.md)|  | [optional]
+ **parent2** | [**string[]**](../Model/string.md)|  | [optional]
  **page** | **int**| The collection page number | [optional] [default to 1]
- **items_per_page** | **int**| The number of items per page | [optional] [default to 30]
+ **itemsPerPage** | **int**| The number of items per page | [optional] [default to 30]
 
 ### Return type
 
-[**\EmonsiteApi\Models\InlineResponse20011**](../Model/InlineResponse20011.md)
+[**\EmonsiteApi\Models\GetDirectoryCategoryCollection200Response**](../Model/GetDirectoryCategoryCollection200Response.md)
 
 ### Authorization
 
@@ -114,24 +129,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **getDirectoryCategoryItem**
-> \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld getDirectoryCategoryItem($id)
+## `getDirectoryCategoryItem()`
+
+```php
+getDirectoryCategoryItem($id): \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+```
 
 Retrieves a DirectoryCategoryOutputDto resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -139,7 +163,7 @@ $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
+$id = 'id_example'; // string
 
 try {
     $result = $apiInstance->getDirectoryCategoryItem($id);
@@ -147,7 +171,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling DirectoryCategoryApi->getDirectoryCategoryItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -166,24 +189,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: Not defined
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **patchDirectoryCategoryItem**
-> \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld patchDirectoryCategoryItem($id, $body)
+## `patchDirectoryCategoryItem()`
+
+```php
+patchDirectoryCategoryItem($id, $directoryCategory866944aa50655fd7df7140606ff983e5): \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+```
 
 Updates the DirectoryCategory resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -191,16 +223,15 @@ $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$id = "id_example"; // string | 
-$body = new \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5(); // \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 | The updated DirectoryCategory resource
+$id = 'id_example'; // string
+$directoryCategory866944aa50655fd7df7140606ff983e5 = new \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5(); // \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 | The updated DirectoryCategory resource
 
 try {
-    $result = $apiInstance->patchDirectoryCategoryItem($id, $body);
+    $result = $apiInstance->patchDirectoryCategoryItem($id, $directoryCategory866944aa50655fd7df7140606ff983e5);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DirectoryCategoryApi->patchDirectoryCategoryItem: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -208,7 +239,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5**](../Model/DirectoryCategory866944aa50655fd7df7140606ff983e5.md)| The updated DirectoryCategory resource | [optional]
+ **directoryCategory866944aa50655fd7df7140606ff983e5** | [**\EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5**](../Model/DirectoryCategory866944aa50655fd7df7140606ff983e5.md)| The updated DirectoryCategory resource | [optional]
 
 ### Return type
 
@@ -220,24 +251,33 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/merge-patch+json
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/merge-patch+json`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
-# **postDirectoryCategoryCollection**
-> \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld postDirectoryCategoryCollection($body)
+## `postDirectoryCategoryCollection()`
+
+```php
+postDirectoryCategoryCollection($directoryCategory88821a0000ba036256fd388bd5e0b115Jsonld): \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+```
 
 Creates a DirectoryCategory resource.
 
 ### Example
+
 ```php
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
+
+
 // Configure API key authorization: apiKey
 $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -245,22 +285,21 @@ $apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld(); // \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld | The new DirectoryCategory resource
+$directoryCategory88821a0000ba036256fd388bd5e0b115Jsonld = new \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld(); // \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld | The new DirectoryCategory resource
 
 try {
-    $result = $apiInstance->postDirectoryCategoryCollection($body);
+    $result = $apiInstance->postDirectoryCategoryCollection($directoryCategory88821a0000ba036256fd388bd5e0b115Jsonld);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DirectoryCategoryApi->postDirectoryCategoryCollection: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld**](../Model/DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld.md)| The new DirectoryCategory resource | [optional]
+ **directoryCategory88821a0000ba036256fd388bd5e0b115Jsonld** | [**\EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld**](../Model/DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld.md)| The new DirectoryCategory resource | [optional]
 
 ### Return type
 
@@ -272,60 +311,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
+- **Content-Type**: `application/ld+json`, `application/json`, `text/html`
+- **Accept**: `application/ld+json`, `application/json`, `text/html`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
-# **postDirectoryCategoryCollection**
-> \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld postDirectoryCategoryCollection($body)
-
-Creates a DirectoryCategory resource.
-
-### Example
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-// Configure API key authorization: apiKey
-$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-$apiInstance = new EmonsiteApi\Api\DirectoryCategoryApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$body = new \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld(); // \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld | The new DirectoryCategory resource
-
-try {
-    $result = $apiInstance->postDirectoryCategoryCollection($body);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling DirectoryCategoryApi->postDirectoryCategoryCollection: ', $e->getMessage(), PHP_EOL;
-}
-?>
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld**](../Model/DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld.md)| The new DirectoryCategory resource | [optional]
-
-### Return type
-
-[**\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld**](../Model/DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld.md)
-
-### Authorization
-
-[apiKey](../../README.md#apiKey)
-
-### HTTP request headers
-
- - **Content-Type**: application/ld+json, application/json, text/html
- - **Accept**: application/ld+json, application/json, text/html
-
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
-
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

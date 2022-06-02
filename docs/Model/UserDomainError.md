@@ -1,16 +1,16 @@
-# UserDomainError
+# # UserDomainError
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_domain** | [**AnyOfUserDomainErrorUserDomain**](AnyOfUserDomainErrorUserDomain.md) |  | [optional] 
-**add_dt** | **int** |  | [optional] 
-**add_user_id** | **string** |  | [optional] 
-**registrar** | **string** |  | [optional] 
-**error_code** | **string** |  | [optional] 
-**error_message** | **string** |  | [optional] 
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
+**userDomain** | [**\EmonsiteApi\Models\UserDomainErrorUserDomain**](UserDomainErrorUserDomain.md) |  | [optional]
+**addDt** | **int** |  | [optional] [readonly]
+**addUserId** | **string** |  | [optional] [readonly]
+**registrar** | **string** |  | [optional] [readonly]
+**errorCode** | **string** |  | [optional] [readonly]
+**errorMessage** | **string** |  | [optional] [readonly]
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

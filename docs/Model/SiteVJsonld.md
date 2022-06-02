@@ -1,25 +1,25 @@
-# SiteVJsonld
+# # SiteVJsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**title** | **string** |  | [optional] 
-**description** | **string** |  | [optional] 
-**tagline** | **string** |  | [optional] 
-**tag_line** | **string** |  | [optional] 
-**zone_top** | **string** |  | [optional] 
-**splashscreen_content** | **string** |  | [optional] 
-**splashscreen_link_text** | **string** |  | [optional] 
-**not_found_page_title** | **string** |  | [optional] 
-**dateformat** | **string** |  | [optional] 
-**breadcrumb** | **string** |  | [optional] 
-**sitemap** | **string** |  | [optional] 
-**lang** | **string** |  | [optional] 
-**item** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
-**active** | **bool** |  | [optional] 
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**title** | **string** |  | [optional]
+**description** | **string** |  | [optional]
+**tagline** | **string** |  | [optional]
+**tagLine** | **string** |  | [optional]
+**zoneTop** | **string** |  | [optional] [readonly]
+**splashscreenContent** | **string** |  | [optional]
+**splashscreenLinkText** | **string** |  | [optional]
+**notFoundPageTitle** | **string** |  | [optional]
+**dateformat** | **string** |  | [optional]
+**breadcrumb** | **string** |  | [optional]
+**sitemap** | **string** |  | [optional] [readonly]
+**lang** | **string** |  | [optional]
+**item** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional]
+**active** | **bool** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

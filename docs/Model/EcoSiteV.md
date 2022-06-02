@@ -1,19 +1,19 @@
-# EcoSiteV
+# # EcoSiteV
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**shop_name** | **string** |  | [optional] 
-**status_text_stock** | **string** |  | [optional] 
-**status_text_replenishment** | **string** |  | [optional] 
-**status_text_break** | **string** |  | [optional] 
-**status_text_breaking_soon** | **string** |  | [optional] 
-**breadcrumb** | **string** | pas utilisé apparemment TODO remove | [optional] 
-**text_discounts** | **string** |  | [optional] 
-**special_annotations** | **string** |  | [optional] 
-**lang** | **string** |  | [optional] 
-**item** | [**\EmonsiteApi\Models\EcoSite**](EcoSite.md) |  | [optional] 
-**active** | **bool** |  | [optional] 
+**shopName** | **string** |  | [optional]
+**statusTextStock** | **string** |  | [optional]
+**statusTextReplenishment** | **string** |  | [optional]
+**statusTextBreak** | **string** |  | [optional]
+**statusTextBreakingSoon** | **string** |  | [optional]
+**breadcrumb** | **string** | pas utilisé apparemment TODO remove | [optional]
+**textDiscounts** | **string** |  | [optional]
+**specialAnnotations** | **string** |  | [optional]
+**lang** | **string** |  | [optional]
+**item** | [**\EmonsiteApi\Models\EcoSite**](EcoSite.md) |  | [optional]
+**active** | **bool** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

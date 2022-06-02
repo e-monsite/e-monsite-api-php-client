@@ -1,18 +1,18 @@
-# Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld
+# # Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **string** |  | [optional] 
-**type** | **string** |  | [optional] 
-**context** | **string** |  | [optional] 
-**id** | **string** |  | [optional] 
-**created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**role** | **string** |  | [optional] 
-**active** | **bool** |  | [optional] 
-**temporary** | **bool** | true quand le support se connecte en admin par ex. | [optional] 
-**user** | [****](.md) |  | [optional] 
-**site** | [****](.md) |  | [optional] 
+**id** | **string** |  | [optional] [readonly]
+**type** | **string** |  | [optional] [readonly]
+**context** | **string** |  | [optional] [readonly]
+**id** | **string** |  | [optional]
+**createdAt** | **\DateTime** |  | [optional]
+**role** | **string** |  | [optional]
+**active** | **bool** |  | [optional]
+**temporary** | **bool** | true quand le support se connecte en admin par ex. | [optional]
+**user** | **mixed** |  | [optional]
+**site** | **mixed** |  | [optional]
 
-[[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
-
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
