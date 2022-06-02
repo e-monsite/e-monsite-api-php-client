@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **module** | **string** |  | [optional] 
 **zone** | **string** |  | [optional] 
 **tax** | **string** |  | [optional] 
-**structure** | [**\Emonsite\Models\StructurePaymentJsonld**](StructurePaymentJsonld.md) |  | [optional] 
+**structure** | [**\EmonsiteApi\Models\StructurePaymentJsonld**](StructurePaymentJsonld.md) |  | [optional] 
 **only_storepickup** | **bool** |  | [optional] 
 **id** | **string** |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **upd_dt** | **int** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**site** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

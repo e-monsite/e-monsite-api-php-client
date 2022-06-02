@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Emonsite;
+namespace EmonsiteApi;
 
 /**
  * EdirectoryOrderOptionsVTest Class Doc Comment
  *
  * @category    Class
  * @description EdirectoryOrderOptionsV
- * @package     Emonsite
+ * @package     EmonsiteApi
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

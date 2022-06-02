@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * AssocStructurePaymentVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class AssocStructurePaymentVJsonld implements ModelInterface, ArrayAccess
 'name' => 'string',
 'description' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\AssocStructurePaymentJsonld',
+'item' => '\EmonsiteApi\Models\AssocStructurePaymentJsonld',
 'active' => 'bool'    ];
 
     /**
@@ -385,7 +385,7 @@ class AssocStructurePaymentVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\AssocStructurePaymentJsonld
+     * @return \EmonsiteApi\Models\AssocStructurePaymentJsonld
      */
     public function getItem()
     {
@@ -395,7 +395,7 @@ class AssocStructurePaymentVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\AssocStructurePaymentJsonld $item item
+     * @param \EmonsiteApi\Models\AssocStructurePaymentJsonld $item item
      *
      * @return $this
      */

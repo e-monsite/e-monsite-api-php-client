@@ -5,12 +5,12 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **line_class** | **string** |  | [optional] 
 **cell_class** | **string** |  | [optional] 
-**lines** | [**\Emonsite\Models\BlockEditableZonesBottomSiteLine[]**](BlockEditableZonesBottomSiteLine.md) |  | [optional] 
-**rows** | [**\Emonsite\Models\BlockLineInterface[]**](BlockLineInterface.md) |  | [optional] 
-**line** | [**\Emonsite\Models\BlockLineInterface[]**](BlockLineInterface.md) |  | [optional] 
-**row** | [**\Emonsite\Models\BlockLineInterface[]**](BlockLineInterface.md) |  | [optional] 
+**lines** | [**\EmonsiteApi\Models\BlockEditableZonesBottomSiteLine[]**](BlockEditableZonesBottomSiteLine.md) |  | [optional] 
+**rows** | [**\EmonsiteApi\Models\BlockLineInterface[]**](BlockLineInterface.md) |  | [optional] 
+**line** | [**\EmonsiteApi\Models\BlockLineInterface[]**](BlockLineInterface.md) |  | [optional] 
+**row** | [**\EmonsiteApi\Models\BlockLineInterface[]**](BlockLineInterface.md) |  | [optional] 
 **id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * MemberoptionsV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class MemberoptionsV implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'registration_rgpd_text' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\Memberoptions',
+'item' => '\EmonsiteApi\Models\Memberoptions',
 'active' => 'bool'    ];
 
     /**
@@ -265,7 +265,7 @@ class MemberoptionsV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\Memberoptions
+     * @return \EmonsiteApi\Models\Memberoptions
      */
     public function getItem()
     {
@@ -275,7 +275,7 @@ class MemberoptionsV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\Memberoptions $item item
+     * @param \EmonsiteApi\Models\Memberoptions $item item
      *
      * @return $this
      */

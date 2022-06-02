@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoSiteV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,7 +65,7 @@ class EcoSiteV implements ModelInterface, ArrayAccess
 'text_discounts' => 'string',
 'special_annotations' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\EcoSite',
+'item' => '\EmonsiteApi\Models\EcoSite',
 'active' => 'bool'    ];
 
     /**
@@ -475,7 +475,7 @@ class EcoSiteV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\EcoSite
+     * @return \EmonsiteApi\Models\EcoSite
      */
     public function getItem()
     {
@@ -485,7 +485,7 @@ class EcoSiteV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\EcoSite $item item
+     * @param \EmonsiteApi\Models\EcoSite $item item
      *
      * @return $this
      */

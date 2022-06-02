@@ -1,4 +1,4 @@
-# Emonsite\SslLeApi
+# EmonsiteApi\SslLeApi
 
 All URIs are relative to */*
 
@@ -16,17 +16,17 @@ Retrieve certbot validation challenge matching token
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SslLeApi(
+$apiInstance = new EmonsiteApi\Api\SslLeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$ = new \Emonsite\Models\null(); //  | 
+$ = new \EmonsiteApi\Models\null(); //  | 
 
 try {
     $apiInstance->getSslleValidationSslLeItem($);

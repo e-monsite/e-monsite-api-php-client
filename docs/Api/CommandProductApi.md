@@ -1,4 +1,4 @@
-# Emonsite\CommandProductApi
+# EmonsiteApi\CommandProductApi
 
 All URIs are relative to */*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**postCommandProductCollection**](CommandProductApi.md#postcommandproductcollection) | **POST** /command_products | Creates a CommandProduct resource.
 
 # **getCommandProductCollection**
-> \Emonsite\Models\InlineResponse2008 getCommandProductCollection($command_id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2008 getCommandProductCollection($command_id, $page, $items_per_page)
 
 Retrieves the collection of CommandProductOutputDto resources.
 
@@ -18,11 +18,11 @@ Retrieves the collection of CommandProductOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandProductApi(
+$apiInstance = new EmonsiteApi\Api\CommandProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\EmonsiteApi\Models\InlineResponse2008**](../Model/InlineResponse2008.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCommandProductItem**
-> \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld getCommandProductItem($id)
+> \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld getCommandProductItem($id)
 
 Retrieves a CommandProductOutputDto resource.
 
@@ -74,11 +74,11 @@ Retrieves a CommandProductOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandProductApi(
+$apiInstance = new EmonsiteApi\Api\CommandProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld**](../Model/CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld.md)
+[**\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld**](../Model/CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld.md)
 
 ### Authorization
 
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCommandProductCollection**
-> \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld postCommandProductCollection($body)
+> \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld postCommandProductCollection($body)
 
 Creates a CommandProduct resource.
 
@@ -126,17 +126,17 @@ Creates a CommandProduct resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandProductApi(
+$apiInstance = new EmonsiteApi\Api\CommandProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld(); // \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld | The new CommandProduct resource
+$body = new \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld(); // \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld | The new CommandProduct resource
 
 try {
     $result = $apiInstance->postCommandProductCollection($body);
@@ -151,11 +151,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld**](../Model/CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld.md)| The new CommandProduct resource | [optional]
+ **body** | [**\EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld**](../Model/CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld.md)| The new CommandProduct resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld**](../Model/CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld.md)
+[**\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld**](../Model/CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld.md)
 
 ### Authorization
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCommandProductCollection**
-> \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld postCommandProductCollection($body)
+> \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld postCommandProductCollection($body)
 
 Creates a CommandProduct resource.
 
@@ -178,17 +178,17 @@ Creates a CommandProduct resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandProductApi(
+$apiInstance = new EmonsiteApi\Api\CommandProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld(); // \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld | The new CommandProduct resource
+$body = new \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld(); // \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld | The new CommandProduct resource
 
 try {
     $result = $apiInstance->postCommandProductCollection($body);
@@ -203,11 +203,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld**](../Model/CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld.md)| The new CommandProduct resource | [optional]
+ **body** | [**\EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld**](../Model/CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld.md)| The new CommandProduct resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld**](../Model/CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld.md)
+[**\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld**](../Model/CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld.md)
 
 ### Authorization
 

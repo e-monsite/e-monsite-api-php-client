@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
-**versions** | [**\Emonsite\Models\BrandMailtemplateV[]**](BrandMailtemplateV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\BrandMailtemplateV[]**](BrandMailtemplateV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 **brand** | **string** |  | [optional] 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Emonsite;
+namespace EmonsiteApi;
 
 /**
  * BeginChoiceE3028f4ebfb2c48645a56fd863368df3JsonldTest Class Doc Comment
  *
  * @category    Class
  * @description BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
- * @package     Emonsite
+ * @package     EmonsiteApi
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

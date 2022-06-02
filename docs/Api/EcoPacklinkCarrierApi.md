@@ -1,4 +1,4 @@
-# Emonsite\EcoPacklinkCarrierApi
+# EmonsiteApi\EcoPacklinkCarrierApi
 
 All URIs are relative to */*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getEcoPacklinkCarrierItem**](EcoPacklinkCarrierApi.md#getecopacklinkcarrieritem) | **GET** /eco_packlink_carriers/{id} | Retrieves a EcoPacklinkOutputDto resource.
 
 # **getEcoPacklinkCarrierItem**
-> \Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld getEcoPacklinkCarrierItem($id)
+> \EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld getEcoPacklinkCarrierItem($id)
 
 Retrieves a EcoPacklinkOutputDto resource.
 
@@ -16,11 +16,11 @@ Retrieves a EcoPacklinkOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoPacklinkCarrierApi(
+$apiInstance = new EmonsiteApi\Api\EcoPacklinkCarrierApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld**](../Model/EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld.md)
+[**\EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld**](../Model/EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld.md)
 
 ### Authorization
 

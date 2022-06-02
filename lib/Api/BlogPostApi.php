@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * BlogPostApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class BlogPostApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2003
+     * @return \EmonsiteApi\Models\InlineResponse2003
      */
     public function getBlogPostCollection($site_id, $published = null, $order_publish_from = null, $page = '1', $items_per_page = '30')
     {
@@ -118,13 +118,13 @@ class BlogPostApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBlogPostCollectionWithHttpInfo($site_id, $published = null, $order_publish_from = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2003';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2003';
         $request = $this->getBlogPostCollectionRequest($site_id, $published, $order_publish_from, $page, $items_per_page);
 
         try {
@@ -176,7 +176,7 @@ class BlogPostApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2003',
+                        '\EmonsiteApi\Models\InlineResponse2003',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class BlogPostApi
      */
     public function getBlogPostCollectionAsyncWithHttpInfo($site_id, $published = null, $order_publish_from = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2003';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2003';
         $request = $this->getBlogPostCollectionRequest($site_id, $published, $order_publish_from, $page, $items_per_page);
 
         return $this->client
@@ -393,9 +393,9 @@ class BlogPostApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld
+     * @return \EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld
      */
     public function getBlogPostItem($id, $site_id)
     {
@@ -411,13 +411,13 @@ class BlogPostApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBlogPostItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld';
+        $returnType = '\EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld';
         $request = $this->getBlogPostItemRequest($id, $site_id);
 
         try {
@@ -469,7 +469,7 @@ class BlogPostApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld',
+                        '\EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -513,7 +513,7 @@ class BlogPostApi
      */
     public function getBlogPostItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld';
+        $returnType = '\EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld';
         $request = $this->getBlogPostItemRequest($id, $site_id);
 
         return $this->client

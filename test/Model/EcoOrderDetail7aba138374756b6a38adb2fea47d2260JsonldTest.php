@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Please update the test case below to test the model.
  */
 
-namespace Emonsite;
+namespace EmonsiteApi;
 
 /**
  * EcoOrderDetail7aba138374756b6a38adb2fea47d2260JsonldTest Class Doc Comment
  *
  * @category    Class
  * @description EcoOrderDetail7aba138374756b6a38adb2fea47d2260Jsonld
- * @package     Emonsite
+ * @package     EmonsiteApi
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

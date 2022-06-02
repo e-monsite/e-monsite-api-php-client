@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * CommandApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class CommandApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld
+     * @return \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld
      */
     public function activateCommandItem($id)
     {
@@ -110,13 +110,13 @@ class CommandApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function activateCommandItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
+        $returnType = '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
         $request = $this->activateCommandItemRequest($id);
 
         try {
@@ -168,7 +168,7 @@ class CommandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld',
+                        '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class CommandApi
      */
     public function activateCommandItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
+        $returnType = '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
         $request = $this->activateCommandItemRequest($id);
 
         return $this->client
@@ -385,9 +385,9 @@ class CommandApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2009
+     * @return \EmonsiteApi\Models\InlineResponse2009
      */
     public function getCommandCollection($reference = null, $reference = null, $brand = null, $brand = null, $products_offer_id = null, $user_username = null, $email = null, $products_site_id = null, $products_site_id = null, $paymean = null, $paymean = null, $status = null, $status = null, $total = null, $total = null, $add_dt_before = null, $add_dt_strictly_before = null, $add_dt_after = null, $add_dt_strictly_after = null, $payment_dt_before = null, $payment_dt_strictly_before = null, $payment_dt_after = null, $payment_dt_strictly_after = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
@@ -427,13 +427,13 @@ class CommandApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2009, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommandCollectionWithHttpInfo($reference = null, $reference = null, $brand = null, $brand = null, $products_offer_id = null, $user_username = null, $email = null, $products_site_id = null, $products_site_id = null, $paymean = null, $paymean = null, $status = null, $status = null, $total = null, $total = null, $add_dt_before = null, $add_dt_strictly_before = null, $add_dt_after = null, $add_dt_strictly_after = null, $payment_dt_before = null, $payment_dt_strictly_before = null, $payment_dt_after = null, $payment_dt_strictly_after = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2009';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2009';
         $request = $this->getCommandCollectionRequest($reference, $reference, $brand, $brand, $products_offer_id, $user_username, $email, $products_site_id, $products_site_id, $paymean, $paymean, $status, $status, $total, $total, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $payment_dt_before, $payment_dt_strictly_before, $payment_dt_after, $payment_dt_strictly_after, $order_add_dt, $page, $items_per_page);
 
         try {
@@ -485,7 +485,7 @@ class CommandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2009',
+                        '\EmonsiteApi\Models\InlineResponse2009',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -577,7 +577,7 @@ class CommandApi
      */
     public function getCommandCollectionAsyncWithHttpInfo($reference = null, $reference = null, $brand = null, $brand = null, $products_offer_id = null, $user_username = null, $email = null, $products_site_id = null, $products_site_id = null, $paymean = null, $paymean = null, $status = null, $status = null, $total = null, $total = null, $add_dt_before = null, $add_dt_strictly_before = null, $add_dt_after = null, $add_dt_strictly_after = null, $payment_dt_before = null, $payment_dt_strictly_before = null, $payment_dt_after = null, $payment_dt_strictly_after = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2009';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2009';
         $request = $this->getCommandCollectionRequest($reference, $reference, $brand, $brand, $products_offer_id, $user_username, $email, $products_site_id, $products_site_id, $paymean, $paymean, $status, $status, $total, $total, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $payment_dt_before, $payment_dt_strictly_before, $payment_dt_after, $payment_dt_strictly_after, $order_add_dt, $page, $items_per_page);
 
         return $this->client
@@ -860,9 +860,9 @@ class CommandApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld
+     * @return \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld
      */
     public function getCommandItem($id)
     {
@@ -877,13 +877,13 @@ class CommandApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommandItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
+        $returnType = '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
         $request = $this->getCommandItemRequest($id);
 
         try {
@@ -935,7 +935,7 @@ class CommandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld',
+                        '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -977,7 +977,7 @@ class CommandApi
      */
     public function getCommandItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
+        $returnType = '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
         $request = $this->getCommandItemRequest($id);
 
         return $this->client
@@ -1126,11 +1126,11 @@ class CommandApi
      * Updates the Command resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
+     * @param  \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld
+     * @return \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld
      */
     public function patchCommandItem($id, $body = null)
     {
@@ -1144,15 +1144,15 @@ class CommandApi
      * Updates the Command resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
+     * @param  \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchCommandItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
+        $returnType = '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
         $request = $this->patchCommandItemRequest($id, $body);
 
         try {
@@ -1204,7 +1204,7 @@ class CommandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld',
+                        '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1220,7 +1220,7 @@ class CommandApi
      * Updates the Command resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
+     * @param  \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1241,14 +1241,14 @@ class CommandApi
      * Updates the Command resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
+     * @param  \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchCommandItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
+        $returnType = '\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld';
         $request = $this->patchCommandItemRequest($id, $body);
 
         return $this->client
@@ -1292,7 +1292,7 @@ class CommandApi
      * Create request for operation 'patchCommandItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
+     * @param  \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0 $body The updated Command resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

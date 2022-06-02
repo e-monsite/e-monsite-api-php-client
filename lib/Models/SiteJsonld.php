@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * SiteJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -151,14 +151,14 @@ class SiteJsonld implements ModelInterface, ArrayAccess
 'instagramtoken_expiration_dt' => 'int',
 'instagram_token_expired' => 'bool',
 'nb_days_before_instagram_token_expire' => 'int',
-'storage_folders' => '\Emonsite\Models\StorageFolderJsonld[]',
-'storage_folder' => '\Emonsite\Models\StorageFolderJsonld[]',
-'site_langs' => '\Emonsite\Models\SiteLangJsonld[]',
-'default_site_lang' => '\Emonsite\Models\SiteLangJsonld',
+'storage_folders' => '\EmonsiteApi\Models\StorageFolderJsonld[]',
+'storage_folder' => '\EmonsiteApi\Models\StorageFolderJsonld[]',
+'site_langs' => '\EmonsiteApi\Models\SiteLangJsonld[]',
+'default_site_lang' => '\EmonsiteApi\Models\SiteLangJsonld',
 'active_site_langs' => 'string[]',
 'lang' => 'string[]',
-'custom_theme_variations' => '\Emonsite\Models\CustomThemeVariationJsonld[]',
-'custom_theme_variation' => '\Emonsite\Models\CustomThemeVariationJsonld',
+'custom_theme_variations' => '\EmonsiteApi\Models\CustomThemeVariationJsonld[]',
+'custom_theme_variation' => '\EmonsiteApi\Models\CustomThemeVariationJsonld',
 'modules' => 'string[]',
 'module' => 'string[]',
 'wuro_enabled' => 'bool',
@@ -175,17 +175,17 @@ class SiteJsonld implements ModelInterface, ArrayAccess
 'eco_orders' => 'string[]',
 'eco_collection_points' => 'string[]',
 'carriers' => 'string[]',
-'cel_soft_deletion' => '\Emonsite\Models\SiteJsonld',
-'webhooks' => '\Emonsite\Models\WebhookJsonld[]',
+'cel_soft_deletion' => '\EmonsiteApi\Models\SiteJsonld',
+'webhooks' => '\EmonsiteApi\Models\WebhookJsonld[]',
 'nb_days_since_creation' => 'int',
-'structures_payment' => '\Emonsite\Models\StructurePaymentJsonld[]',
+'structures_payment' => '\EmonsiteApi\Models\StructurePaymentJsonld[]',
 'editable_zones_bottom_site_block' => 'AnyOfSiteJsonldEditableZonesBottomSiteBlock',
 'member_options' => 'AnyOfSiteJsonldMemberOptions',
 'legal' => 'AnyOfSiteJsonldLegal',
 'in_store_pick_up_points' => '',
-'structure_widgets' => '\Emonsite\Models\StructureWidgetsJsonld[]',
+'structure_widgets' => '\EmonsiteApi\Models\StructureWidgetsJsonld[]',
 'default_menu_h_widget' => 'AnyOfSiteJsonldDefaultMenuHWidget',
-'structures' => '\Emonsite\Models\StructureJsonld[]',
+'structures' => '\EmonsiteApi\Models\StructureJsonld[]',
 'not_found_page_block' => 'AnyOfSiteJsonldNotFoundPageBlock',
 'browser_extension_enabled' => 'bool',
 'edirectory_order_options' => 'AnyOfSiteJsonldEdirectoryOrderOptions',
@@ -195,8 +195,8 @@ class SiteJsonld implements ModelInterface, ArrayAccess
 'updated_at' => '\DateTime',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
-'versions' => '\Emonsite\Models\SiteVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\SiteVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'version_by_lang' => 'string[]'    ];
 
     /**
@@ -3325,7 +3325,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets storage_folders
      *
-     * @return \Emonsite\Models\StorageFolderJsonld[]
+     * @return \EmonsiteApi\Models\StorageFolderJsonld[]
      */
     public function getStorageFolders()
     {
@@ -3335,7 +3335,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets storage_folders
      *
-     * @param \Emonsite\Models\StorageFolderJsonld[] $storage_folders storage_folders
+     * @param \EmonsiteApi\Models\StorageFolderJsonld[] $storage_folders storage_folders
      *
      * @return $this
      */
@@ -3349,7 +3349,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets storage_folder
      *
-     * @return \Emonsite\Models\StorageFolderJsonld[]
+     * @return \EmonsiteApi\Models\StorageFolderJsonld[]
      */
     public function getStorageFolder()
     {
@@ -3359,7 +3359,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets storage_folder
      *
-     * @param \Emonsite\Models\StorageFolderJsonld[] $storage_folder storage_folder
+     * @param \EmonsiteApi\Models\StorageFolderJsonld[] $storage_folder storage_folder
      *
      * @return $this
      */
@@ -3373,7 +3373,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site_langs
      *
-     * @return \Emonsite\Models\SiteLangJsonld[]
+     * @return \EmonsiteApi\Models\SiteLangJsonld[]
      */
     public function getSiteLangs()
     {
@@ -3383,7 +3383,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site_langs
      *
-     * @param \Emonsite\Models\SiteLangJsonld[] $site_langs site_langs
+     * @param \EmonsiteApi\Models\SiteLangJsonld[] $site_langs site_langs
      *
      * @return $this
      */
@@ -3397,7 +3397,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets default_site_lang
      *
-     * @return \Emonsite\Models\SiteLangJsonld
+     * @return \EmonsiteApi\Models\SiteLangJsonld
      */
     public function getDefaultSiteLang()
     {
@@ -3407,7 +3407,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets default_site_lang
      *
-     * @param \Emonsite\Models\SiteLangJsonld $default_site_lang default_site_lang
+     * @param \EmonsiteApi\Models\SiteLangJsonld $default_site_lang default_site_lang
      *
      * @return $this
      */
@@ -3469,7 +3469,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets custom_theme_variations
      *
-     * @return \Emonsite\Models\CustomThemeVariationJsonld[]
+     * @return \EmonsiteApi\Models\CustomThemeVariationJsonld[]
      */
     public function getCustomThemeVariations()
     {
@@ -3479,7 +3479,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets custom_theme_variations
      *
-     * @param \Emonsite\Models\CustomThemeVariationJsonld[] $custom_theme_variations custom_theme_variations
+     * @param \EmonsiteApi\Models\CustomThemeVariationJsonld[] $custom_theme_variations custom_theme_variations
      *
      * @return $this
      */
@@ -3493,7 +3493,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets custom_theme_variation
      *
-     * @return \Emonsite\Models\CustomThemeVariationJsonld
+     * @return \EmonsiteApi\Models\CustomThemeVariationJsonld
      */
     public function getCustomThemeVariation()
     {
@@ -3503,7 +3503,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets custom_theme_variation
      *
-     * @param \Emonsite\Models\CustomThemeVariationJsonld $custom_theme_variation custom_theme_variation
+     * @param \EmonsiteApi\Models\CustomThemeVariationJsonld $custom_theme_variation custom_theme_variation
      *
      * @return $this
      */
@@ -3901,7 +3901,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cel_soft_deletion
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getCelSoftDeletion()
     {
@@ -3911,7 +3911,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cel_soft_deletion
      *
-     * @param \Emonsite\Models\SiteJsonld $cel_soft_deletion cel_soft_deletion
+     * @param \EmonsiteApi\Models\SiteJsonld $cel_soft_deletion cel_soft_deletion
      *
      * @return $this
      */
@@ -3925,7 +3925,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets webhooks
      *
-     * @return \Emonsite\Models\WebhookJsonld[]
+     * @return \EmonsiteApi\Models\WebhookJsonld[]
      */
     public function getWebhooks()
     {
@@ -3935,7 +3935,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets webhooks
      *
-     * @param \Emonsite\Models\WebhookJsonld[] $webhooks webhooks
+     * @param \EmonsiteApi\Models\WebhookJsonld[] $webhooks webhooks
      *
      * @return $this
      */
@@ -3973,7 +3973,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets structures_payment
      *
-     * @return \Emonsite\Models\StructurePaymentJsonld[]
+     * @return \EmonsiteApi\Models\StructurePaymentJsonld[]
      */
     public function getStructuresPayment()
     {
@@ -3983,7 +3983,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets structures_payment
      *
-     * @param \Emonsite\Models\StructurePaymentJsonld[] $structures_payment structures_payment
+     * @param \EmonsiteApi\Models\StructurePaymentJsonld[] $structures_payment structures_payment
      *
      * @return $this
      */
@@ -4093,7 +4093,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets structure_widgets
      *
-     * @return \Emonsite\Models\StructureWidgetsJsonld[]
+     * @return \EmonsiteApi\Models\StructureWidgetsJsonld[]
      */
     public function getStructureWidgets()
     {
@@ -4103,7 +4103,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets structure_widgets
      *
-     * @param \Emonsite\Models\StructureWidgetsJsonld[] $structure_widgets structure_widgets
+     * @param \EmonsiteApi\Models\StructureWidgetsJsonld[] $structure_widgets structure_widgets
      *
      * @return $this
      */
@@ -4141,7 +4141,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets structures
      *
-     * @return \Emonsite\Models\StructureJsonld[]
+     * @return \EmonsiteApi\Models\StructureJsonld[]
      */
     public function getStructures()
     {
@@ -4151,7 +4151,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets structures
      *
-     * @param \Emonsite\Models\StructureJsonld[] $structures structures
+     * @param \EmonsiteApi\Models\StructureJsonld[] $structures structures
      *
      * @return $this
      */
@@ -4381,7 +4381,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\SiteVJsonld[]
+     * @return \EmonsiteApi\Models\SiteVJsonld[]
      */
     public function getVersions()
     {
@@ -4391,7 +4391,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\SiteVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\SiteVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -4405,7 +4405,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -4415,7 +4415,7 @@ class SiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EdirectoryOrderOptionsVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class EdirectoryOrderOptionsVJsonld implements ModelInterface, ArrayAccess
 'order_intro' => 'string',
 'submit_intro' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\EdirectoryOrderOptionsJsonld',
+'item' => '\EmonsiteApi\Models\EdirectoryOrderOptionsJsonld',
 'active' => 'bool'    ];
 
     /**
@@ -385,7 +385,7 @@ class EdirectoryOrderOptionsVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\EdirectoryOrderOptionsJsonld
+     * @return \EmonsiteApi\Models\EdirectoryOrderOptionsJsonld
      */
     public function getItem()
     {
@@ -395,7 +395,7 @@ class EdirectoryOrderOptionsVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\EdirectoryOrderOptionsJsonld $item item
+     * @param \EmonsiteApi\Models\EdirectoryOrderOptionsJsonld $item item
      *
      * @return $this
      */

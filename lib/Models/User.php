@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * User Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -79,7 +79,7 @@ class User implements ModelInterface, ArrayAccess
 'nb_reminder_validation_mail_sent' => 'int',
 'chatbot_active' => 'bool',
 'site_users' => 'string[]',
-'domains' => '\Emonsite\Models\UserDomain[]',
+'domains' => '\EmonsiteApi\Models\UserDomain[]',
 'recent_updated_sites_users' => 'string[]',
 'recent_created_site_user' => 'string[]',
 'agency_customer' => 'bool',
@@ -88,7 +88,7 @@ class User implements ModelInterface, ArrayAccess
 'site_user_marketing_send' => 'string',
 'author_name' => 'string',
 'sessions' => 'string[]',
-'sso_accounts' => '\Emonsite\Models\UserSsoAccount[]',
+'sso_accounts' => '\EmonsiteApi\Models\UserSsoAccount[]',
 'user_has_role' => 'string'    ];
 
     /**
@@ -949,7 +949,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Gets domains
      *
-     * @return \Emonsite\Models\UserDomain[]
+     * @return \EmonsiteApi\Models\UserDomain[]
      */
     public function getDomains()
     {
@@ -959,7 +959,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Sets domains
      *
-     * @param \Emonsite\Models\UserDomain[] $domains domains
+     * @param \EmonsiteApi\Models\UserDomain[] $domains domains
      *
      * @return $this
      */
@@ -1165,7 +1165,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Gets sso_accounts
      *
-     * @return \Emonsite\Models\UserSsoAccount[]
+     * @return \EmonsiteApi\Models\UserSsoAccount[]
      */
     public function getSsoAccounts()
     {
@@ -1175,7 +1175,7 @@ class User implements ModelInterface, ArrayAccess
     /**
      * Sets sso_accounts
      *
-     * @param \Emonsite\Models\UserSsoAccount[] $sso_accounts sso_accounts
+     * @param \EmonsiteApi\Models\UserSsoAccount[] $sso_accounts sso_accounts
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * UserDomainJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -107,9 +107,9 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
 'nationalidentificationnumber' => 'string',
 'vat' => 'string',
 'check_auto_renew_after' => '\DateTime',
-'domain_errors' => '\Emonsite\Models\UserDomainErrorJsonld[]',
-'mail_aliases' => '\Emonsite\Models\UserDomainMailAliasJsonld[]',
-'mailboxes' => '\Emonsite\Models\UserDomainMailboxJsonld[]',
+'domain_errors' => '\EmonsiteApi\Models\UserDomainErrorJsonld[]',
+'mail_aliases' => '\EmonsiteApi\Models\UserDomainMailAliasJsonld[]',
+'mailboxes' => '\EmonsiteApi\Models\UserDomainMailboxJsonld[]',
 'id' => 'string',
 'add_dt' => 'int',
 'upd_dt' => 'int',
@@ -1783,7 +1783,7 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets domain_errors
      *
-     * @return \Emonsite\Models\UserDomainErrorJsonld[]
+     * @return \EmonsiteApi\Models\UserDomainErrorJsonld[]
      */
     public function getDomainErrors()
     {
@@ -1793,7 +1793,7 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets domain_errors
      *
-     * @param \Emonsite\Models\UserDomainErrorJsonld[] $domain_errors domain_errors
+     * @param \EmonsiteApi\Models\UserDomainErrorJsonld[] $domain_errors domain_errors
      *
      * @return $this
      */
@@ -1807,7 +1807,7 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets mail_aliases
      *
-     * @return \Emonsite\Models\UserDomainMailAliasJsonld[]
+     * @return \EmonsiteApi\Models\UserDomainMailAliasJsonld[]
      */
     public function getMailAliases()
     {
@@ -1817,7 +1817,7 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets mail_aliases
      *
-     * @param \Emonsite\Models\UserDomainMailAliasJsonld[] $mail_aliases mail_aliases
+     * @param \EmonsiteApi\Models\UserDomainMailAliasJsonld[] $mail_aliases mail_aliases
      *
      * @return $this
      */
@@ -1831,7 +1831,7 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets mailboxes
      *
-     * @return \Emonsite\Models\UserDomainMailboxJsonld[]
+     * @return \EmonsiteApi\Models\UserDomainMailboxJsonld[]
      */
     public function getMailboxes()
     {
@@ -1841,7 +1841,7 @@ class UserDomainJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets mailboxes
      *
-     * @param \Emonsite\Models\UserDomainMailboxJsonld[] $mailboxes mailboxes
+     * @param \EmonsiteApi\Models\UserDomainMailboxJsonld[] $mailboxes mailboxes
      *
      * @return $this
      */

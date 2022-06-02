@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoPacklinkCarrierApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class EcoPacklinkCarrierApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld
+     * @return \EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld
      */
     public function getEcoPacklinkCarrierItem($id)
     {
@@ -110,13 +110,13 @@ class EcoPacklinkCarrierApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoPacklinkCarrierItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld';
         $request = $this->getEcoPacklinkCarrierItemRequest($id);
 
         try {
@@ -168,7 +168,7 @@ class EcoPacklinkCarrierApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld',
+                        '\EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class EcoPacklinkCarrierApi
      */
     public function getEcoPacklinkCarrierItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPacklinkCarrier36308a1b3d24cc804f1a513e820d895bJsonld';
         $request = $this->getEcoPacklinkCarrierItemRequest($id);
 
         return $this->client

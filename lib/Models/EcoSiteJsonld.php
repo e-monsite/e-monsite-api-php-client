@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoSiteJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -157,7 +157,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
 'google_content_api_token_expires_at' => '\DateTime',
 'google_merchant_id' => 'string',
 'google_content_api_token_expired' => 'bool',
-'google_content_api_updates' => '\Emonsite\Models\CollectionJsonld',
+'google_content_api_updates' => '\EmonsiteApi\Models\CollectionJsonld',
 'facet_config' => 'AnyOfEcoSiteJsonldFacetConfig',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
@@ -165,11 +165,11 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
-'versions' => '\Emonsite\Models\EcoSiteVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\EcoSiteVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]',
-'site' => '\Emonsite\Models\SiteJsonld'    ];
+'site' => '\EmonsiteApi\Models\SiteJsonld'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -3301,7 +3301,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets google_content_api_updates
      *
-     * @return \Emonsite\Models\CollectionJsonld
+     * @return \EmonsiteApi\Models\CollectionJsonld
      */
     public function getGoogleContentApiUpdates()
     {
@@ -3311,7 +3311,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets google_content_api_updates
      *
-     * @param \Emonsite\Models\CollectionJsonld $google_content_api_updates google_content_api_updates
+     * @param \EmonsiteApi\Models\CollectionJsonld $google_content_api_updates google_content_api_updates
      *
      * @return $this
      */
@@ -3493,7 +3493,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\EcoSiteVJsonld[]
+     * @return \EmonsiteApi\Models\EcoSiteVJsonld[]
      */
     public function getVersions()
     {
@@ -3503,7 +3503,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\EcoSiteVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\EcoSiteVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -3517,7 +3517,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -3527,7 +3527,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */
@@ -3589,7 +3589,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -3599,7 +3599,7 @@ class EcoSiteJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

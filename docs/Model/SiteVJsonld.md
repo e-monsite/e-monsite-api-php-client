@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **breadcrumb** | **string** |  | [optional] 
 **sitemap** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

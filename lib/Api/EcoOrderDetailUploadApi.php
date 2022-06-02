@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoOrderDetailUploadApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class EcoOrderDetailUploadApi
      * @param   $  (required)
      * @param   $  (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoOrderDetailUploadJsonld
+     * @return \EmonsiteApi\Models\EcoOrderDetailUploadJsonld
      */
     public function downloadEcoOrderDetailUploadItem($, $)
     {
@@ -112,13 +112,13 @@ class EcoOrderDetailUploadApi
      * @param   $ (required)
      * @param   $ (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoOrderDetailUploadJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoOrderDetailUploadJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function downloadEcoOrderDetailUploadItemWithHttpInfo($, $)
     {
-        $returnType = '\Emonsite\Models\EcoOrderDetailUploadJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoOrderDetailUploadJsonld';
         $request = $this->downloadEcoOrderDetailUploadItemRequest($, $);
 
         try {
@@ -170,7 +170,7 @@ class EcoOrderDetailUploadApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoOrderDetailUploadJsonld',
+                        '\EmonsiteApi\Models\EcoOrderDetailUploadJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class EcoOrderDetailUploadApi
      */
     public function downloadEcoOrderDetailUploadItemAsyncWithHttpInfo($, $)
     {
-        $returnType = '\Emonsite\Models\EcoOrderDetailUploadJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoOrderDetailUploadJsonld';
         $request = $this->downloadEcoOrderDetailUploadItemRequest($, $);
 
         return $this->client

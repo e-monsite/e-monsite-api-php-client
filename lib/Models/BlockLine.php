@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockLine Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,14 +64,14 @@ class BlockLine implements ModelInterface, ArrayAccess
 'position' => 'int',
 'pagination' => 'bool',
 'options' => 'string[]',
-'cells' => '\Emonsite\Models\BlockCell[]',
-'cell' => '\Emonsite\Models\BlockCellInterface[]',
+'cells' => '\EmonsiteApi\Models\BlockCell[]',
+'cell' => '\EmonsiteApi\Models\BlockCellInterface[]',
 'default_lang' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\BlockLineV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\BlockLineV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'version_by_lang' => 'string[]',
-'site' => '\Emonsite\Models\Site'    ];
+'site' => '\EmonsiteApi\Models\Site'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -481,7 +481,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Gets cells
      *
-     * @return \Emonsite\Models\BlockCell[]
+     * @return \EmonsiteApi\Models\BlockCell[]
      */
     public function getCells()
     {
@@ -491,7 +491,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Sets cells
      *
-     * @param \Emonsite\Models\BlockCell[] $cells FAIRE LE MAPPING DANS L'ENTITY
+     * @param \EmonsiteApi\Models\BlockCell[] $cells FAIRE LE MAPPING DANS L'ENTITY
      *
      * @return $this
      */
@@ -505,7 +505,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Gets cell
      *
-     * @return \Emonsite\Models\BlockCellInterface[]
+     * @return \EmonsiteApi\Models\BlockCellInterface[]
      */
     public function getCell()
     {
@@ -515,7 +515,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Sets cell
      *
-     * @param \Emonsite\Models\BlockCellInterface[] $cell cell
+     * @param \EmonsiteApi\Models\BlockCellInterface[] $cell cell
      *
      * @return $this
      */
@@ -577,7 +577,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BlockLineV[]
+     * @return \EmonsiteApi\Models\BlockLineV[]
      */
     public function getVersions()
     {
@@ -587,7 +587,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BlockLineV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BlockLineV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -601,7 +601,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -611,7 +611,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */
@@ -649,7 +649,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -659,7 +659,7 @@ class BlockLine implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

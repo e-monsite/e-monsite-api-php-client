@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **retraction** | **string** |  | [optional] 
 **privacy_policy** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\Legal**](Legal.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\Legal**](Legal.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

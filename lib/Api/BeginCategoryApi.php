@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * BeginCategoryApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class BeginCategoryApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class BeginCategoryApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -324,9 +324,9 @@ class BeginCategoryApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2001
+     * @return \EmonsiteApi\Models\InlineResponse2001
      */
     public function getBeginCategoryCollection($page = '1', $items_per_page = '30')
     {
@@ -342,13 +342,13 @@ class BeginCategoryApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBeginCategoryCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2001';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2001';
         $request = $this->getBeginCategoryCollectionRequest($page, $items_per_page);
 
         try {
@@ -400,7 +400,7 @@ class BeginCategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2001',
+                        '\EmonsiteApi\Models\InlineResponse2001',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class BeginCategoryApi
      */
     public function getBeginCategoryCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2001';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2001';
         $request = $this->getBeginCategoryCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -589,9 +589,9 @@ class BeginCategoryApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+     * @return \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
      */
     public function getBeginCategoryItem($id)
     {
@@ -606,13 +606,13 @@ class BeginCategoryApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBeginCategoryItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->getBeginCategoryItemRequest($id);
 
         try {
@@ -664,7 +664,7 @@ class BeginCategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
+                        '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class BeginCategoryApi
      */
     public function getBeginCategoryItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->getBeginCategoryItemRequest($id);
 
         return $this->client
@@ -855,11 +855,11 @@ class BeginCategoryApi
      * Updates the BeginCategory resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+     * @return \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
      */
     public function patchBeginCategoryItem($id, $body = null)
     {
@@ -873,15 +873,15 @@ class BeginCategoryApi
      * Updates the BeginCategory resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchBeginCategoryItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->patchBeginCategoryItemRequest($id, $body);
 
         try {
@@ -933,7 +933,7 @@ class BeginCategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
+                        '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,7 +949,7 @@ class BeginCategoryApi
      * Updates the BeginCategory resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -970,14 +970,14 @@ class BeginCategoryApi
      * Updates the BeginCategory resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchBeginCategoryItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->patchBeginCategoryItemRequest($id, $body);
 
         return $this->client
@@ -1021,7 +1021,7 @@ class BeginCategoryApi
      * Create request for operation 'patchBeginCategoryItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 $body The updated BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1129,11 +1129,11 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+     * @return \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
      */
     public function postBeginCategoryCollection($body = null)
     {
@@ -1146,15 +1146,15 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBeginCategoryCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->postBeginCategoryCollectionRequest($body);
 
         try {
@@ -1206,7 +1206,7 @@ class BeginCategoryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
+                        '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1221,7 +1221,7 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1241,14 +1241,14 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postBeginCategoryCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->postBeginCategoryCollectionRequest($body);
 
         return $this->client
@@ -1291,7 +1291,7 @@ class BeginCategoryApi
     /**
      * Create request for operation 'postBeginCategoryCollection'
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1385,11 +1385,11 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
+     * @return \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld
      */
     public function postBeginCategoryCollection($body = null)
     {
@@ -1402,15 +1402,15 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBeginCategoryCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->postBeginCategoryCollectionRequest($body);
 
         try {
@@ -1462,7 +1462,7 @@ class BeginCategoryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
+                        '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1477,7 +1477,7 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1497,14 +1497,14 @@ class BeginCategoryApi
      *
      * Creates a BeginCategory resource.
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postBeginCategoryCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld';
         $request = $this->postBeginCategoryCollectionRequest($body);
 
         return $this->client
@@ -1547,7 +1547,7 @@ class BeginCategoryApi
     /**
      * Create request for operation 'postBeginCategoryCollection'
      *
-     * @param  \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
+     * @param  \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld $body The new BeginCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

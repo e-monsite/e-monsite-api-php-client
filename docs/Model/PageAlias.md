@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **model_id** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\Page**](Page.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\Page**](Page.md) |  | [optional] 
 **category** | **string** |  | [optional] 
 **ordering** | **int** |  | [optional] 
 **id** | **string** |  | [optional] 
@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **upd_user_id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

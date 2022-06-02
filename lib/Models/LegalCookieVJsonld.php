@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * LegalCookieVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class LegalCookieVJsonld implements ModelInterface, ArrayAccess
 'long_description' => 'string',
 'privacy_policy_url' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\LegalCookieJsonld',
+'item' => '\EmonsiteApi\Models\LegalCookieJsonld',
 'active' => 'bool'    ];
 
     /**
@@ -445,7 +445,7 @@ class LegalCookieVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\LegalCookieJsonld
+     * @return \EmonsiteApi\Models\LegalCookieJsonld
      */
     public function getItem()
     {
@@ -455,7 +455,7 @@ class LegalCookieVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\LegalCookieJsonld $item item
+     * @param \EmonsiteApi\Models\LegalCookieJsonld $item item
      *
      * @return $this
      */

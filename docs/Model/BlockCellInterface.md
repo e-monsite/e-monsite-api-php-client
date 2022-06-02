@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **css_style** | **string** | Preset CSS de la cellule (quid ?) | [optional] 
 **position** | **int** |  | [optional] 
 **design_options** | **string** | Pour sauvegarder les options de design | [optional] 
-**line** | [**\Emonsite\Models\BlockLineInterface**](BlockLineInterface.md) |  | [optional] 
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) | La version dans la langue demandé ou la langue par défault | [optional] 
-**versions** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**line** | [**\EmonsiteApi\Models\BlockLineInterface**](BlockLineInterface.md) |  | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) | La version dans la langue demandé ou la langue par défault | [optional] 
+**versions** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 

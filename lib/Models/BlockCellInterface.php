@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockCellInterface Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -66,9 +66,9 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
 'css_style' => 'string',
 'position' => 'int',
 'design_options' => 'string',
-'line' => '\Emonsite\Models\BlockLineInterface',
-'version' => '\Emonsite\Models\VersionInterface[]',
-'versions' => '\Emonsite\Models\VersionInterface[]',
+'line' => '\EmonsiteApi\Models\BlockLineInterface',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\VersionInterface[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -523,7 +523,7 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
     /**
      * Gets line
      *
-     * @return \Emonsite\Models\BlockLineInterface
+     * @return \EmonsiteApi\Models\BlockLineInterface
      */
     public function getLine()
     {
@@ -533,7 +533,7 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
     /**
      * Sets line
      *
-     * @param \Emonsite\Models\BlockLineInterface $line line
+     * @param \EmonsiteApi\Models\BlockLineInterface $line line
      *
      * @return $this
      */
@@ -547,7 +547,7 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -557,7 +557,7 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version La version dans la langue demandé ou la langue par défault
+     * @param \EmonsiteApi\Models\VersionInterface[] $version La version dans la langue demandé ou la langue par défault
      *
      * @return $this
      */
@@ -571,7 +571,7 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersions()
     {
@@ -581,7 +581,7 @@ class BlockCellInterface implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\VersionInterface[] $versions versions
+     * @param \EmonsiteApi\Models\VersionInterface[] $versions versions
      *
      * @return $this
      */

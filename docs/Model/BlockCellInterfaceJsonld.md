@@ -16,9 +16,9 @@ Name | Type | Description | Notes
 **css_style** | **string** | Preset CSS de la cellule (quid ?) | [optional] 
 **position** | **int** |  | [optional] 
 **design_options** | **string** | Pour sauvegarder les options de design | [optional] 
-**line** | [**\Emonsite\Models\BlockLineInterfaceJsonld**](BlockLineInterfaceJsonld.md) |  | [optional] 
-**version** | [**\Emonsite\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) | La version dans la langue demandé ou la langue par défault | [optional] 
-**versions** | [**\Emonsite\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
+**line** | [**\EmonsiteApi\Models\BlockLineInterfaceJsonld**](BlockLineInterfaceJsonld.md) |  | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) | La version dans la langue demandé ou la langue par défault | [optional] 
+**versions** | [**\EmonsiteApi\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 

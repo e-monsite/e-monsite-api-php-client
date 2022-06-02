@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockEditableZonesBottomSiteCellVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,7 +64,7 @@ class BlockEditableZonesBottomSiteCellVJsonld implements ModelInterface, ArrayAc
 'active' => 'bool',
 'cached_content' => 'string',
 'cached_content_expiration_dt' => 'int',
-'item' => '\Emonsite\Models\VersionableInterfaceJsonld',
+'item' => '\EmonsiteApi\Models\VersionableInterfaceJsonld',
 'id' => 'string'    ];
 
     /**
@@ -445,7 +445,7 @@ class BlockEditableZonesBottomSiteCellVJsonld implements ModelInterface, ArrayAc
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\VersionableInterfaceJsonld
+     * @return \EmonsiteApi\Models\VersionableInterfaceJsonld
      */
     public function getItem()
     {
@@ -455,7 +455,7 @@ class BlockEditableZonesBottomSiteCellVJsonld implements ModelInterface, ArrayAc
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\VersionableInterfaceJsonld $item item
+     * @param \EmonsiteApi\Models\VersionableInterfaceJsonld $item item
      *
      * @return $this
      */

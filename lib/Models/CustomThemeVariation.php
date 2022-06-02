@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * CustomThemeVariation Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class CustomThemeVariation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'site' => '\Emonsite\Models\Site',
+        'site' => '\EmonsiteApi\Models\Site',
 'theme_id' => 'string',
 'variation_id' => 'string',
 'active' => 'bool',
@@ -307,7 +307,7 @@ class CustomThemeVariation implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -317,7 +317,7 @@ class CustomThemeVariation implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

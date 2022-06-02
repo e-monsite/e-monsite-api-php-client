@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * BrandMailtemplateApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class BrandMailtemplateApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2004
+     * @return \EmonsiteApi\Models\InlineResponse2004
      */
     public function getBrandMailtemplateCollection($page = '1', $items_per_page = '30')
     {
@@ -112,13 +112,13 @@ class BrandMailtemplateApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrandMailtemplateCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2004';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2004';
         $request = $this->getBrandMailtemplateCollectionRequest($page, $items_per_page);
 
         try {
@@ -170,7 +170,7 @@ class BrandMailtemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2004',
+                        '\EmonsiteApi\Models\InlineResponse2004',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class BrandMailtemplateApi
      */
     public function getBrandMailtemplateCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2004';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2004';
         $request = $this->getBrandMailtemplateCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -359,9 +359,9 @@ class BrandMailtemplateApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld
+     * @return \EmonsiteApi\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld
      */
     public function getBrandMailtemplateItem($id)
     {
@@ -376,13 +376,13 @@ class BrandMailtemplateApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrandMailtemplateItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld';
+        $returnType = '\EmonsiteApi\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld';
         $request = $this->getBrandMailtemplateItemRequest($id);
 
         try {
@@ -434,7 +434,7 @@ class BrandMailtemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld',
+                        '\EmonsiteApi\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -476,7 +476,7 @@ class BrandMailtemplateApi
      */
     public function getBrandMailtemplateItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld';
+        $returnType = '\EmonsiteApi\Models\BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld';
         $request = $this->getBrandMailtemplateItemRequest($id);
 
         return $this->client

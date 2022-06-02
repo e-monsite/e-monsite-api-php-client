@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * AbstractBlock Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,14 +56,14 @@ class AbstractBlock implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'lines' => '\Emonsite\Models\BlockLineInterface[]',
-'rows' => '\Emonsite\Models\BlockLineInterface[]',
-'line' => '\Emonsite\Models\BlockLineInterface[]',
-'row' => '\Emonsite\Models\BlockLineInterface[]',
+        'lines' => '\EmonsiteApi\Models\BlockLineInterface[]',
+'rows' => '\EmonsiteApi\Models\BlockLineInterface[]',
+'line' => '\EmonsiteApi\Models\BlockLineInterface[]',
+'row' => '\EmonsiteApi\Models\BlockLineInterface[]',
 'line_class' => 'string',
 'cell_class' => 'string',
 'id' => 'string',
-'site' => '\Emonsite\Models\Site'    ];
+'site' => '\EmonsiteApi\Models\Site'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -241,7 +241,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getLines()
     {
@@ -251,7 +251,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $lines Faire mapping dans classe parent
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $lines Faire mapping dans classe parent
      *
      * @return $this
      */
@@ -265,7 +265,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Gets rows
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getRows()
     {
@@ -275,7 +275,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Sets rows
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $rows rows
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $rows rows
      *
      * @return $this
      */
@@ -289,7 +289,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Gets line
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getLine()
     {
@@ -299,7 +299,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Sets line
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $line line
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $line line
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Gets row
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getRow()
     {
@@ -323,7 +323,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Sets row
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $row row
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $row row
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -419,7 +419,7 @@ class AbstractBlock implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

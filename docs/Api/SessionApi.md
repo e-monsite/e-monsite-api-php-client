@@ -1,4 +1,4 @@
-# Emonsite\SessionApi
+# EmonsiteApi\SessionApi
 
 All URIs are relative to */*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getSessionItem**](SessionApi.md#getsessionitem) | **GET** /sessions/{id} | Retrieves a SessionOutputDto resource.
 
 # **getSessionCollection**
-> \Emonsite\Models\InlineResponse20023 getSessionCollection($user_ip, $user, $user, $hit_before, $hit_strictly_before, $hit_after, $hit_strictly_after, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20023 getSessionCollection($user_ip, $user, $user, $hit_before, $hit_strictly_before, $hit_after, $hit_strictly_after, $page, $items_per_page)
 
 Retrieves the collection of SessionOutputDto resources.
 
@@ -17,11 +17,11 @@ Retrieves the collection of SessionOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SessionApi(
+$apiInstance = new EmonsiteApi\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20023**](../Model/InlineResponse20023.md)
+[**\EmonsiteApi\Models\InlineResponse20023**](../Model/InlineResponse20023.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSessionItem**
-> \Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld getSessionItem($id)
+> \EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld getSessionItem($id)
 
 Retrieves a SessionOutputDto resource.
 
@@ -85,11 +85,11 @@ Retrieves a SessionOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SessionApi(
+$apiInstance = new EmonsiteApi\Api\SessionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld**](../Model/Session1bc7a372e0caf630efd366b7299c4bd2Jsonld.md)
+[**\EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld**](../Model/Session1bc7a372e0caf630efd366b7299c4bd2Jsonld.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * BrandApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class BrandApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2005
+     * @return \EmonsiteApi\Models\InlineResponse2005
      */
     public function apiBrandsBrandDomainsGetSubresource($id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class BrandApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2005, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2005, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiBrandsBrandDomainsGetSubresourceWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2005';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2005';
         $request = $this->apiBrandsBrandDomainsGetSubresourceRequest($id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class BrandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2005',
+                        '\EmonsiteApi\Models\InlineResponse2005',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class BrandApi
      */
     public function apiBrandsBrandDomainsGetSubresourceAsyncWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2005';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2005';
         $request = $this->apiBrandsBrandDomainsGetSubresourceRequest($id, $page, $items_per_page);
 
         return $this->client
@@ -380,9 +380,9 @@ class BrandApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2006
+     * @return \EmonsiteApi\Models\InlineResponse2006
      */
     public function getBrandCollection($order_add_dt = null, $page = '1', $items_per_page = '30')
     {
@@ -399,13 +399,13 @@ class BrandApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2006, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrandCollectionWithHttpInfo($order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2006';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2006';
         $request = $this->getBrandCollectionRequest($order_add_dt, $page, $items_per_page);
 
         try {
@@ -457,7 +457,7 @@ class BrandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2006',
+                        '\EmonsiteApi\Models\InlineResponse2006',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -503,7 +503,7 @@ class BrandApi
      */
     public function getBrandCollectionAsyncWithHttpInfo($order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2006';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2006';
         $request = $this->getBrandCollectionRequest($order_add_dt, $page, $items_per_page);
 
         return $this->client
@@ -653,9 +653,9 @@ class BrandApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld
+     * @return \EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld
      */
     public function getBrandItem($id)
     {
@@ -670,13 +670,13 @@ class BrandApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrandItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
+        $returnType = '\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
         $request = $this->getBrandItemRequest($id);
 
         try {
@@ -728,7 +728,7 @@ class BrandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld',
+                        '\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -770,7 +770,7 @@ class BrandApi
      */
     public function getBrandItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
+        $returnType = '\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
         $request = $this->getBrandItemRequest($id);
 
         return $this->client
@@ -919,11 +919,11 @@ class BrandApi
      * Updates the Brand resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
+     * @param  \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld
+     * @return \EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld
      */
     public function patchBrandItem($id, $body = null)
     {
@@ -937,15 +937,15 @@ class BrandApi
      * Updates the Brand resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
+     * @param  \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchBrandItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
+        $returnType = '\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
         $request = $this->patchBrandItemRequest($id, $body);
 
         try {
@@ -997,7 +997,7 @@ class BrandApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld',
+                        '\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1013,7 +1013,7 @@ class BrandApi
      * Updates the Brand resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
+     * @param  \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1034,14 +1034,14 @@ class BrandApi
      * Updates the Brand resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
+     * @param  \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchBrandItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
+        $returnType = '\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld';
         $request = $this->patchBrandItemRequest($id, $body);
 
         return $this->client
@@ -1085,7 +1085,7 @@ class BrandApi
      * Create request for operation 'patchBrandItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
+     * @param  \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 $body The updated Brand resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

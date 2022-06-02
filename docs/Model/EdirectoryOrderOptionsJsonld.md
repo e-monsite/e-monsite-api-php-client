@@ -17,11 +17,11 @@ Name | Type | Description | Notes
 **upd_dt** | **int** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**versions** | [**\Emonsite\Models\EdirectoryOrderOptionsVJsonld[]**](EdirectoryOrderOptionsVJsonld.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\EdirectoryOrderOptionsVJsonld[]**](EdirectoryOrderOptionsVJsonld.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
-**site** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoLoyaltyPoints Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class EcoLoyaltyPoints implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-'site' => '\Emonsite\Models\Site',
+'site' => '\EmonsiteApi\Models\Site',
 'active' => 'bool',
 'active_topaid_order' => 'bool',
 'name' => 'string',
@@ -73,7 +73,7 @@ class EcoLoyaltyPoints implements ModelInterface, ArrayAccess
 'access_rights' => 'int',
 'categories_rights' => 'int',
 'categories' => 'string[]',
-'groups' => '\Emonsite\Models\Membergroup[]',
+'groups' => '\EmonsiteApi\Models\Membergroup[]',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
 'add_dt' => 'int',
@@ -361,7 +361,7 @@ class EcoLoyaltyPoints implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -371,7 +371,7 @@ class EcoLoyaltyPoints implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */
@@ -745,7 +745,7 @@ class EcoLoyaltyPoints implements ModelInterface, ArrayAccess
     /**
      * Gets groups
      *
-     * @return \Emonsite\Models\Membergroup[]
+     * @return \EmonsiteApi\Models\Membergroup[]
      */
     public function getGroups()
     {
@@ -755,7 +755,7 @@ class EcoLoyaltyPoints implements ModelInterface, ArrayAccess
     /**
      * Sets groups
      *
-     * @param \Emonsite\Models\Membergroup[] $groups groups
+     * @param \EmonsiteApi\Models\Membergroup[] $groups groups
      *
      * @return $this
      */

@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **title_in_blocks** | **bool** |  | [optional] 
 **titlemenu** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\PageJsonld**](PageJsonld.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\PageJsonld**](PageJsonld.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **seo_uri** | **string** |  | [optional] 
 **seo_title** | **string** |  | [optional] 

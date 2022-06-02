@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * DirectoryCategoryApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class DirectoryCategoryApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class DirectoryCategoryApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -326,9 +326,9 @@ class DirectoryCategoryApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20011
+     * @return \EmonsiteApi\Models\InlineResponse20011
      */
     public function getDirectoryCategoryCollection($parent = null, $parent = null, $page = '1', $items_per_page = '30')
     {
@@ -346,13 +346,13 @@ class DirectoryCategoryApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDirectoryCategoryCollectionWithHttpInfo($parent = null, $parent = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20011';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20011';
         $request = $this->getDirectoryCategoryCollectionRequest($parent, $parent, $page, $items_per_page);
 
         try {
@@ -404,7 +404,7 @@ class DirectoryCategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20011',
+                        '\EmonsiteApi\Models\InlineResponse20011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -452,7 +452,7 @@ class DirectoryCategoryApi
      */
     public function getDirectoryCategoryCollectionAsyncWithHttpInfo($parent = null, $parent = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20011';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20011';
         $request = $this->getDirectoryCategoryCollectionRequest($parent, $parent, $page, $items_per_page);
 
         return $this->client
@@ -610,9 +610,9 @@ class DirectoryCategoryApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+     * @return \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
      */
     public function getDirectoryCategoryItem($id)
     {
@@ -627,13 +627,13 @@ class DirectoryCategoryApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDirectoryCategoryItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->getDirectoryCategoryItemRequest($id);
 
         try {
@@ -685,7 +685,7 @@ class DirectoryCategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
+                        '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -727,7 +727,7 @@ class DirectoryCategoryApi
      */
     public function getDirectoryCategoryItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->getDirectoryCategoryItemRequest($id);
 
         return $this->client
@@ -876,11 +876,11 @@ class DirectoryCategoryApi
      * Updates the DirectoryCategory resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+     * @return \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
      */
     public function patchDirectoryCategoryItem($id, $body = null)
     {
@@ -894,15 +894,15 @@ class DirectoryCategoryApi
      * Updates the DirectoryCategory resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchDirectoryCategoryItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->patchDirectoryCategoryItemRequest($id, $body);
 
         try {
@@ -954,7 +954,7 @@ class DirectoryCategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
+                        '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -970,7 +970,7 @@ class DirectoryCategoryApi
      * Updates the DirectoryCategory resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -991,14 +991,14 @@ class DirectoryCategoryApi
      * Updates the DirectoryCategory resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchDirectoryCategoryItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->patchDirectoryCategoryItemRequest($id, $body);
 
         return $this->client
@@ -1042,7 +1042,7 @@ class DirectoryCategoryApi
      * Create request for operation 'patchDirectoryCategoryItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory866944aa50655fd7df7140606ff983e5 $body The updated DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1150,11 +1150,11 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+     * @return \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
      */
     public function postDirectoryCategoryCollection($body = null)
     {
@@ -1167,15 +1167,15 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postDirectoryCategoryCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->postDirectoryCategoryCollectionRequest($body);
 
         try {
@@ -1227,7 +1227,7 @@ class DirectoryCategoryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
+                        '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1242,7 +1242,7 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1262,14 +1262,14 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postDirectoryCategoryCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->postDirectoryCategoryCollectionRequest($body);
 
         return $this->client
@@ -1312,7 +1312,7 @@ class DirectoryCategoryApi
     /**
      * Create request for operation 'postDirectoryCategoryCollection'
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1406,11 +1406,11 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
+     * @return \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld
      */
     public function postDirectoryCategoryCollection($body = null)
     {
@@ -1423,15 +1423,15 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postDirectoryCategoryCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->postDirectoryCategoryCollectionRequest($body);
 
         try {
@@ -1483,7 +1483,7 @@ class DirectoryCategoryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
+                        '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1498,7 +1498,7 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1518,14 +1518,14 @@ class DirectoryCategoryApi
      *
      * Creates a DirectoryCategory resource.
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postDirectoryCategoryCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
+        $returnType = '\EmonsiteApi\Models\DirectoryCategory31fbbfdd88806b77396d71a17314e994Jsonld';
         $request = $this->postDirectoryCategoryCollectionRequest($body);
 
         return $this->client
@@ -1568,7 +1568,7 @@ class DirectoryCategoryApi
     /**
      * Create request for operation 'postDirectoryCategoryCollection'
      *
-     * @param  \Emonsite\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
+     * @param  \EmonsiteApi\Models\DirectoryCategory88821a0000ba036256fd388bd5e0b115Jsonld $body The new DirectoryCategory resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

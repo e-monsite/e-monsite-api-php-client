@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * StorageFolder Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class StorageFolder implements ModelInterface, ArrayAccess
         'dirtype' => 'string',
 'name' => 'string',
 'parent' => 'AnyOfStorageFolderParent',
-'children' => '\Emonsite\Models\StorageFolder[]',
+'children' => '\EmonsiteApi\Models\StorageFolder[]',
 'position' => 'int',
 'id' => 'string',
-'site' => '\Emonsite\Models\Site',
+'site' => '\EmonsiteApi\Models\Site',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
@@ -343,7 +343,7 @@ class StorageFolder implements ModelInterface, ArrayAccess
     /**
      * Gets children
      *
-     * @return \Emonsite\Models\StorageFolder[]
+     * @return \EmonsiteApi\Models\StorageFolder[]
      */
     public function getChildren()
     {
@@ -353,7 +353,7 @@ class StorageFolder implements ModelInterface, ArrayAccess
     /**
      * Sets children
      *
-     * @param \Emonsite\Models\StorageFolder[] $children children
+     * @param \EmonsiteApi\Models\StorageFolder[] $children children
      *
      * @return $this
      */
@@ -415,7 +415,7 @@ class StorageFolder implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -425,7 +425,7 @@ class StorageFolder implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# Emonsite\EcoDiscountApi
+# EmonsiteApi\EcoDiscountApi
 
 All URIs are relative to */*
 
@@ -20,11 +20,11 @@ Removes the EcoDiscount resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoDiscountApi(
+$apiInstance = new EmonsiteApi\Api\EcoDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEcoDiscountCollection**
-> \Emonsite\Models\InlineResponse20014 getEcoDiscountCollection($site_id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20014 getEcoDiscountCollection($site_id, $page, $items_per_page)
 
 Retrieves the collection of EcoDiscountOutputDto resources.
 
@@ -73,11 +73,11 @@ Retrieves the collection of EcoDiscountOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoDiscountApi(
+$apiInstance = new EmonsiteApi\Api\EcoDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20014**](../Model/InlineResponse20014.md)
+[**\EmonsiteApi\Models\InlineResponse20014**](../Model/InlineResponse20014.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEcoDiscountItem**
-> \Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld getEcoDiscountItem($id, $site_id)
+> \EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld getEcoDiscountItem($id, $site_id)
 
 Retrieves a EcoDiscountOutputDto resource.
 
@@ -129,11 +129,11 @@ Retrieves a EcoDiscountOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoDiscountApi(
+$apiInstance = new EmonsiteApi\Api\EcoDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
+[**\EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchEcoDiscountItem**
-> \Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld patchEcoDiscountItem($site_id, $id, $body)
+> \EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld patchEcoDiscountItem($site_id, $id, $body)
 
 Updates the EcoDiscount resource.
 
@@ -183,11 +183,11 @@ Updates the EcoDiscount resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoDiscountApi(
+$apiInstance = new EmonsiteApi\Api\EcoDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -195,7 +195,7 @@ $apiInstance = new Emonsite\Api\EcoDiscountApi(
 );
 $site_id = "site_id_example"; // string | 
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\EcoDiscountB3d1155ab8f4c317b0b03ea010998010(); // \Emonsite\Models\EcoDiscountB3d1155ab8f4c317b0b03ea010998010 | The updated EcoDiscount resource
+$body = new \EmonsiteApi\Models\EcoDiscountB3d1155ab8f4c317b0b03ea010998010(); // \EmonsiteApi\Models\EcoDiscountB3d1155ab8f4c317b0b03ea010998010 | The updated EcoDiscount resource
 
 try {
     $result = $apiInstance->patchEcoDiscountItem($site_id, $id, $body);
@@ -212,11 +212,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **site_id** | **string**|  |
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\EcoDiscountB3d1155ab8f4c317b0b03ea010998010**](../Model/EcoDiscountB3d1155ab8f4c317b0b03ea010998010.md)| The updated EcoDiscount resource | [optional]
+ **body** | [**\EmonsiteApi\Models\EcoDiscountB3d1155ab8f4c317b0b03ea010998010**](../Model/EcoDiscountB3d1155ab8f4c317b0b03ea010998010.md)| The updated EcoDiscount resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
+[**\EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postEcoDiscountCollection**
-> \Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld postEcoDiscountCollection($body)
+> \EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld postEcoDiscountCollection($body)
 
 Creates a EcoDiscount resource.
 
@@ -239,17 +239,17 @@ Creates a EcoDiscount resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoDiscountApi(
+$apiInstance = new EmonsiteApi\Api\EcoDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld(); // \Emonsite\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld | The new EcoDiscount resource
+$body = new \EmonsiteApi\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld(); // \EmonsiteApi\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld | The new EcoDiscount resource
 
 try {
     $result = $apiInstance->postEcoDiscountCollection($body);
@@ -264,11 +264,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld**](../Model/EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld.md)| The new EcoDiscount resource | [optional]
+ **body** | [**\EmonsiteApi\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld**](../Model/EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld.md)| The new EcoDiscount resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
+[**\EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postEcoDiscountCollection**
-> \Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld postEcoDiscountCollection($body)
+> \EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld postEcoDiscountCollection($body)
 
 Creates a EcoDiscount resource.
 
@@ -291,17 +291,17 @@ Creates a EcoDiscount resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoDiscountApi(
+$apiInstance = new EmonsiteApi\Api\EcoDiscountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld(); // \Emonsite\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld | The new EcoDiscount resource
+$body = new \EmonsiteApi\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld(); // \EmonsiteApi\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld | The new EcoDiscount resource
 
 try {
     $result = $apiInstance->postEcoDiscountCollection($body);
@@ -316,11 +316,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld**](../Model/EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld.md)| The new EcoDiscount resource | [optional]
+ **body** | [**\EmonsiteApi\Models\EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld**](../Model/EcoDiscountD3d9b67a56fd84ba8bd9bd07a15bcf49Jsonld.md)| The new EcoDiscount resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
+[**\EmonsiteApi\Models\EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld**](../Model/EcoDiscount9b4a1b3cb469f303a66926f3d9bc3ad0Jsonld.md)
 
 ### Authorization
 

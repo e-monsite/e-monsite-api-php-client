@@ -6,10 +6,10 @@ Name | Type | Description | Notes
 **favicon_url** | **string** |  | [optional] 
 **enabled** | **bool** |  | [optional] 
 **model** | **string** | TODO enum | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **id** | **string** |  | [optional] 
-**versions** | [**\Emonsite\Models\LegalCookieV[]**](LegalCookieV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\LegalCookieV[]**](LegalCookieV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 

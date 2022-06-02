@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoPacklinkHasZoneJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class EcoPacklinkHasZoneJsonld implements ModelInterface, ArrayAccess
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'carrier' => '\Emonsite\Models\EcoPacklinkJsonld',
-'zone' => '\Emonsite\Models\EcoZoneJsonld',
+'carrier' => '\EmonsiteApi\Models\EcoPacklinkJsonld',
+'zone' => '\EmonsiteApi\Models\EcoZoneJsonld',
 'id' => 'string'    ];
 
     /**
@@ -301,7 +301,7 @@ class EcoPacklinkHasZoneJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets carrier
      *
-     * @return \Emonsite\Models\EcoPacklinkJsonld
+     * @return \EmonsiteApi\Models\EcoPacklinkJsonld
      */
     public function getCarrier()
     {
@@ -311,7 +311,7 @@ class EcoPacklinkHasZoneJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets carrier
      *
-     * @param \Emonsite\Models\EcoPacklinkJsonld $carrier carrier
+     * @param \EmonsiteApi\Models\EcoPacklinkJsonld $carrier carrier
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class EcoPacklinkHasZoneJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets zone
      *
-     * @return \Emonsite\Models\EcoZoneJsonld
+     * @return \EmonsiteApi\Models\EcoZoneJsonld
      */
     public function getZone()
     {
@@ -335,7 +335,7 @@ class EcoPacklinkHasZoneJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets zone
      *
-     * @param \Emonsite\Models\EcoZoneJsonld $zone zone
+     * @param \EmonsiteApi\Models\EcoZoneJsonld $zone zone
      *
      * @return $this
      */

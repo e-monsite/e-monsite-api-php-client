@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockEditableZonesBottomSiteCell Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'line' => '\Emonsite\Models\BlockEditableZonesBottomSiteLine',
+        'line' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteLine',
 'width' => 'string',
 'content_type' => 'string',
 'widget_id' => 'string',
@@ -67,8 +67,8 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
 'position' => 'int',
 'design_options' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\BlockEditableZonesBottomSiteCellV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteCellV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -283,7 +283,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
     /**
      * Gets line
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteLine
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteLine
      */
     public function getLine()
     {
@@ -293,7 +293,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
     /**
      * Sets line
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteLine $line line
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteLine $line line
      *
      * @return $this
      */
@@ -547,7 +547,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteCellV[]
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteCellV[]
      */
     public function getVersions()
     {
@@ -557,7 +557,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteCellV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteCellV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -571,7 +571,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -581,7 +581,7 @@ class BlockEditableZonesBottomSiteCell implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */

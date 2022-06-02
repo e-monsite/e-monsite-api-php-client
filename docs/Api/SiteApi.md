@@ -1,4 +1,4 @@
-# Emonsite\SiteApi
+# EmonsiteApi\SiteApi
 
 All URIs are relative to */*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**postSiteCollection**](SiteApi.md#postsitecollection) | **POST** /sites | Creates a Site resource.
 
 # **apiSitesSiteUsersGetSubresource**
-> \Emonsite\Models\InlineResponse20025 apiSitesSiteUsersGetSubresource($id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20025 apiSitesSiteUsersGetSubresource($id, $page, $items_per_page)
 
 Retrieves the collection of Siteuser resources.
 
@@ -20,11 +20,11 @@ Retrieves the collection of Siteuser resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SiteApi(
+$apiInstance = new EmonsiteApi\Api\SiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20025**](../Model/InlineResponse20025.md)
+[**\EmonsiteApi\Models\InlineResponse20025**](../Model/InlineResponse20025.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSiteCollection**
-> \Emonsite\Models\InlineResponse20024 getSiteCollection($sitename, $id, $id, $host, $brand, $brand, $add_user_ip, $add_user_ip, $site_deleted, $order_add_dt, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20024 getSiteCollection($sitename, $id, $id, $host, $brand, $brand, $add_user_ip, $add_user_ip, $site_deleted, $order_add_dt, $page, $items_per_page)
 
 Retrieves the collection of SiteOutputDto resources.
 
@@ -76,11 +76,11 @@ Retrieves the collection of SiteOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SiteApi(
+$apiInstance = new EmonsiteApi\Api\SiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20024**](../Model/InlineResponse20024.md)
+[**\EmonsiteApi\Models\InlineResponse20024**](../Model/InlineResponse20024.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSiteItem**
-> \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld getSiteItem($id)
+> \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld getSiteItem($id)
 
 Retrieves a SiteOutputDto resource.
 
@@ -150,11 +150,11 @@ Retrieves a SiteOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SiteApi(
+$apiInstance = new EmonsiteApi\Api\SiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
+[**\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchSiteItem**
-> \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld patchSiteItem($id, $body)
+> \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld patchSiteItem($id, $body)
 
 Updates the Site resource.
 
@@ -202,18 +202,18 @@ Updates the Site resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SiteApi(
+$apiInstance = new EmonsiteApi\Api\SiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\Site7e8883c9b486869412701afd330abd48(); // \Emonsite\Models\Site7e8883c9b486869412701afd330abd48 | The updated Site resource
+$body = new \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48(); // \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48 | The updated Site resource
 
 try {
     $result = $apiInstance->patchSiteItem($id, $body);
@@ -229,11 +229,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\Site7e8883c9b486869412701afd330abd48**](../Model/Site7e8883c9b486869412701afd330abd48.md)| The updated Site resource | [optional]
+ **body** | [**\EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48**](../Model/Site7e8883c9b486869412701afd330abd48.md)| The updated Site resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
+[**\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postSiteCollection**
-> \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld postSiteCollection($body)
+> \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld postSiteCollection($body)
 
 Creates a Site resource.
 
@@ -256,17 +256,17 @@ Creates a Site resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SiteApi(
+$apiInstance = new EmonsiteApi\Api\SiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld(); // \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld | The new Site resource
+$body = new \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld(); // \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld | The new Site resource
 
 try {
     $result = $apiInstance->postSiteCollection($body);
@@ -281,11 +281,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld**](../Model/SiteF8f2933682cb2687a860a3e01f671ed0Jsonld.md)| The new Site resource | [optional]
+ **body** | [**\EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld**](../Model/SiteF8f2933682cb2687a860a3e01f671ed0Jsonld.md)| The new Site resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
+[**\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
 
 ### Authorization
 
@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postSiteCollection**
-> \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld postSiteCollection($body)
+> \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld postSiteCollection($body)
 
 Creates a Site resource.
 
@@ -308,17 +308,17 @@ Creates a Site resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\SiteApi(
+$apiInstance = new EmonsiteApi\Api\SiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld(); // \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld | The new Site resource
+$body = new \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld(); // \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld | The new Site resource
 
 try {
     $result = $apiInstance->postSiteCollection($body);
@@ -333,11 +333,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld**](../Model/SiteF8f2933682cb2687a860a3e01f671ed0Jsonld.md)| The new Site resource | [optional]
+ **body** | [**\EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld**](../Model/SiteF8f2933682cb2687a860a3e01f671ed0Jsonld.md)| The new Site resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
+[**\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld**](../Model/Site0097c999ec7d3611ad5fec647120ea72Jsonld.md)
 
 ### Authorization
 

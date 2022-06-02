@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**structure** | [**\Emonsite\Models\StructurePayment**](StructurePayment.md) |  | [optional] 
+**structure** | [**\EmonsiteApi\Models\StructurePayment**](StructurePayment.md) |  | [optional] 
 **payment_id** | **string** |  | [optional] 
 **params** | **string** |  | [optional] 
 **impact** | **string** |  | [optional] 
@@ -19,9 +19,9 @@ Name | Type | Description | Notes
 **upd_dt** | **int** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
-**versions** | [**\Emonsite\Models\AssocStructurePaymentV[]**](AssocStructurePaymentV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\AssocStructurePaymentV[]**](AssocStructurePaymentV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 

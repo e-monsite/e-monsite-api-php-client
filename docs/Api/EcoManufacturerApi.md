@@ -1,4 +1,4 @@
-# Emonsite\EcoManufacturerApi
+# EmonsiteApi\EcoManufacturerApi
 
 All URIs are relative to */*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getEcoManufacturerItem**](EcoManufacturerApi.md#getecomanufactureritem) | **GET** /eco_manufacturers/{id} | Retrieves a EcoManufacturerOutputDto resource.
 
 # **getEcoManufacturerCollection**
-> \Emonsite\Models\InlineResponse20015 getEcoManufacturerCollection($site_id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20015 getEcoManufacturerCollection($site_id, $page, $items_per_page)
 
 Retrieves the collection of EcoManufacturerOutputDto resources.
 
@@ -17,11 +17,11 @@ Retrieves the collection of EcoManufacturerOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoManufacturerApi(
+$apiInstance = new EmonsiteApi\Api\EcoManufacturerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20015**](../Model/InlineResponse20015.md)
+[**\EmonsiteApi\Models\InlineResponse20015**](../Model/InlineResponse20015.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEcoManufacturerItem**
-> \Emonsite\Models\EcoManufacturer3fefe29d8db145737169803b5fde4d82Jsonld getEcoManufacturerItem($id, $site_id)
+> \EmonsiteApi\Models\EcoManufacturer3fefe29d8db145737169803b5fde4d82Jsonld getEcoManufacturerItem($id, $site_id)
 
 Retrieves a EcoManufacturerOutputDto resource.
 
@@ -73,11 +73,11 @@ Retrieves a EcoManufacturerOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoManufacturerApi(
+$apiInstance = new EmonsiteApi\Api\EcoManufacturerApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\EcoManufacturer3fefe29d8db145737169803b5fde4d82Jsonld**](../Model/EcoManufacturer3fefe29d8db145737169803b5fde4d82Jsonld.md)
+[**\EmonsiteApi\Models\EcoManufacturer3fefe29d8db145737169803b5fde4d82Jsonld**](../Model/EcoManufacturer3fefe29d8db145737169803b5fde4d82Jsonld.md)
 
 ### Authorization
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **lang** | **string** |  | [optional] 
 **active** | **bool** | TODO no nullable et virer le cast dans le getter | [optional] 
 

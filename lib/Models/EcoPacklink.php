@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoPacklink Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class EcoPacklink implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'eco_config' => '\Emonsite\Models\EcoSite',
+        'eco_config' => '\EmonsiteApi\Models\EcoSite',
 'api_key' => 'string',
 'active_carriers' => 'string[]',
 'firstname' => 'string',
@@ -71,7 +71,7 @@ class EcoPacklink implements ModelInterface, ArrayAccess
 'packages' => 'string[]',
 'package_defined' => 'bool',
 'sender_defined' => 'bool',
-'zones' => '\Emonsite\Models\EcoPacklinkHasZone[]',
+'zones' => '\EmonsiteApi\Models\EcoPacklinkHasZone[]',
 'tax' => 'string',
 'id' => 'string'    ];
 
@@ -301,7 +301,7 @@ class EcoPacklink implements ModelInterface, ArrayAccess
     /**
      * Gets eco_config
      *
-     * @return \Emonsite\Models\EcoSite
+     * @return \EmonsiteApi\Models\EcoSite
      */
     public function getEcoConfig()
     {
@@ -311,7 +311,7 @@ class EcoPacklink implements ModelInterface, ArrayAccess
     /**
      * Sets eco_config
      *
-     * @param \Emonsite\Models\EcoSite $eco_config eco_config
+     * @param \EmonsiteApi\Models\EcoSite $eco_config eco_config
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class EcoPacklink implements ModelInterface, ArrayAccess
     /**
      * Gets zones
      *
-     * @return \Emonsite\Models\EcoPacklinkHasZone[]
+     * @return \EmonsiteApi\Models\EcoPacklinkHasZone[]
      */
     public function getZones()
     {
@@ -671,7 +671,7 @@ class EcoPacklink implements ModelInterface, ArrayAccess
     /**
      * Sets zones
      *
-     * @param \Emonsite\Models\EcoPacklinkHasZone[] $zones zones
+     * @param \EmonsiteApi\Models\EcoPacklinkHasZone[] $zones zones
      *
      * @return $this
      */

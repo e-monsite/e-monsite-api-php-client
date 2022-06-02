@@ -1,4 +1,4 @@
-# Emonsite\CategoryApi
+# EmonsiteApi\CategoryApi
 
 All URIs are relative to */*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**postCategoryCollection**](CategoryApi.md#postcategorycollection) | **POST** /categories | Creates a Category resource.
 
 # **getCategoryCollection**
-> \Emonsite\Models\InlineResponse2007 getCategoryCollection($site_id, $model_id, $model_id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2007 getCategoryCollection($site_id, $model_id, $model_id, $page, $items_per_page)
 
 Retrieves the collection of CategoryOutputDto resources.
 
@@ -18,11 +18,11 @@ Retrieves the collection of CategoryOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CategoryApi(
+$apiInstance = new EmonsiteApi\Api\CategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2007**](../Model/InlineResponse2007.md)
+[**\EmonsiteApi\Models\InlineResponse2007**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCategoryItem**
-> \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld getCategoryItem($id, $site_id)
+> \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld getCategoryItem($id, $site_id)
 
 Retrieves a CategoryOutputDto resource.
 
@@ -78,11 +78,11 @@ Retrieves a CategoryOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CategoryApi(
+$apiInstance = new EmonsiteApi\Api\CategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld**](../Model/Category1244f72848b2e9f4bc7039366e5cef3eJsonld.md)
+[**\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld**](../Model/Category1244f72848b2e9f4bc7039366e5cef3eJsonld.md)
 
 ### Authorization
 
@@ -123,7 +123,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCategoryCollection**
-> \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld postCategoryCollection($body)
+> \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld postCategoryCollection($body)
 
 Creates a Category resource.
 
@@ -132,17 +132,17 @@ Creates a Category resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CategoryApi(
+$apiInstance = new EmonsiteApi\Api\CategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld(); // \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld | The new Category resource
+$body = new \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld(); // \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld | The new Category resource
 
 try {
     $result = $apiInstance->postCategoryCollection($body);
@@ -157,11 +157,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld**](../Model/CategoryA72a7db8b7aeb918546eb332f4161205Jsonld.md)| The new Category resource | [optional]
+ **body** | [**\EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld**](../Model/CategoryA72a7db8b7aeb918546eb332f4161205Jsonld.md)| The new Category resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld**](../Model/Category1244f72848b2e9f4bc7039366e5cef3eJsonld.md)
+[**\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld**](../Model/Category1244f72848b2e9f4bc7039366e5cef3eJsonld.md)
 
 ### Authorization
 
@@ -175,7 +175,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postCategoryCollection**
-> \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld postCategoryCollection($body)
+> \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld postCategoryCollection($body)
 
 Creates a Category resource.
 
@@ -184,17 +184,17 @@ Creates a Category resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CategoryApi(
+$apiInstance = new EmonsiteApi\Api\CategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld(); // \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld | The new Category resource
+$body = new \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld(); // \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld | The new Category resource
 
 try {
     $result = $apiInstance->postCategoryCollection($body);
@@ -209,11 +209,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld**](../Model/CategoryA72a7db8b7aeb918546eb332f4161205Jsonld.md)| The new Category resource | [optional]
+ **body** | [**\EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld**](../Model/CategoryA72a7db8b7aeb918546eb332f4161205Jsonld.md)| The new Category resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld**](../Model/Category1244f72848b2e9f4bc7039366e5cef3eJsonld.md)
+[**\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld**](../Model/Category1244f72848b2e9f4bc7039366e5cef3eJsonld.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * PageVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class PageVJsonld implements ModelInterface, ArrayAccess
 'title_in_blocks' => 'bool',
 'titlemenu' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\PageJsonld',
+'item' => '\EmonsiteApi\Models\PageJsonld',
 'active' => 'bool',
 'seo_uri' => 'string',
 'seo_title' => 'string',
@@ -451,7 +451,7 @@ class PageVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\PageJsonld
+     * @return \EmonsiteApi\Models\PageJsonld
      */
     public function getItem()
     {
@@ -461,7 +461,7 @@ class PageVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\PageJsonld $item item
+     * @param \EmonsiteApi\Models\PageJsonld $item item
      *
      * @return $this
      */

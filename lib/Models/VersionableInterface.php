@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * VersionableInterface Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class VersionableInterface implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'version' => '\Emonsite\Models\VersionInterface[]',
-'versions' => '\Emonsite\Models\BrandMailtemplateV[]',
+        'version' => '\EmonsiteApi\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\BrandMailtemplateV[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]',
 'brand' => 'string',
@@ -277,7 +277,7 @@ class VersionableInterface implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -287,7 +287,7 @@ class VersionableInterface implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class VersionableInterface implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BrandMailtemplateV[]
+     * @return \EmonsiteApi\Models\BrandMailtemplateV[]
      */
     public function getVersions()
     {
@@ -311,7 +311,7 @@ class VersionableInterface implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BrandMailtemplateV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BrandMailtemplateV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */

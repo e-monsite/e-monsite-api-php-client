@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoPacklinkHasZone Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class EcoPacklinkHasZone implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'carrier' => '\Emonsite\Models\EcoPacklink',
-'zone' => '\Emonsite\Models\EcoZone',
+        'carrier' => '\EmonsiteApi\Models\EcoPacklink',
+'zone' => '\EmonsiteApi\Models\EcoZone',
 'id' => 'string'    ];
 
     /**
@@ -211,7 +211,7 @@ class EcoPacklinkHasZone implements ModelInterface, ArrayAccess
     /**
      * Gets carrier
      *
-     * @return \Emonsite\Models\EcoPacklink
+     * @return \EmonsiteApi\Models\EcoPacklink
      */
     public function getCarrier()
     {
@@ -221,7 +221,7 @@ class EcoPacklinkHasZone implements ModelInterface, ArrayAccess
     /**
      * Sets carrier
      *
-     * @param \Emonsite\Models\EcoPacklink $carrier carrier
+     * @param \EmonsiteApi\Models\EcoPacklink $carrier carrier
      *
      * @return $this
      */
@@ -235,7 +235,7 @@ class EcoPacklinkHasZone implements ModelInterface, ArrayAccess
     /**
      * Gets zone
      *
-     * @return \Emonsite\Models\EcoZone
+     * @return \EmonsiteApi\Models\EcoZone
      */
     public function getZone()
     {
@@ -245,7 +245,7 @@ class EcoPacklinkHasZone implements ModelInterface, ArrayAccess
     /**
      * Sets zone
      *
-     * @param \Emonsite\Models\EcoZone $zone zone
+     * @param \EmonsiteApi\Models\EcoZone $zone zone
      *
      * @return $this
      */

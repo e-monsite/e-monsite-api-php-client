@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **context** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **source** | **string** |  | [optional] 
 **google_config** | **string[]** |  | [optional] 

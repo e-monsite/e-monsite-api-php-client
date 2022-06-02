@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * LegalCookie Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,10 +59,10 @@ class LegalCookie implements ModelInterface, ArrayAccess
         'favicon_url' => 'string',
 'enabled' => 'bool',
 'model' => 'string',
-'site' => '\Emonsite\Models\Site',
+'site' => '\EmonsiteApi\Models\Site',
 'id' => 'string',
-'versions' => '\Emonsite\Models\LegalCookieV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\LegalCookieV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -319,7 +319,7 @@ class LegalCookie implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -329,7 +329,7 @@ class LegalCookie implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class LegalCookie implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\LegalCookieV[]
+     * @return \EmonsiteApi\Models\LegalCookieV[]
      */
     public function getVersions()
     {
@@ -377,7 +377,7 @@ class LegalCookie implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\LegalCookieV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\LegalCookieV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class LegalCookie implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -401,7 +401,7 @@ class LegalCookie implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */

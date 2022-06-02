@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * SiteuserApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class SiteuserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20025
+     * @return \EmonsiteApi\Models\InlineResponse20025
      */
     public function apiSitesSiteUsersGetSubresource($id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class SiteuserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiSitesSiteUsersGetSubresourceWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiSitesSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class SiteuserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20025',
+                        '\EmonsiteApi\Models\InlineResponse20025',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class SiteuserApi
      */
     public function apiSitesSiteUsersGetSubresourceAsyncWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiSitesSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         return $this->client
@@ -380,9 +380,9 @@ class SiteuserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20025
+     * @return \EmonsiteApi\Models\InlineResponse20025
      */
     public function apiUsersSiteUsersGetSubresource($id, $page = '1', $items_per_page = '30')
     {
@@ -399,13 +399,13 @@ class SiteuserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiUsersSiteUsersGetSubresourceWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiUsersSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         try {
@@ -457,7 +457,7 @@ class SiteuserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20025',
+                        '\EmonsiteApi\Models\InlineResponse20025',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -503,7 +503,7 @@ class SiteuserApi
      */
     public function apiUsersSiteUsersGetSubresourceAsyncWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiUsersSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         return $this->client
@@ -663,7 +663,7 @@ class SiteuserApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -679,7 +679,7 @@ class SiteuserApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -891,11 +891,11 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld
+     * @return \EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld
      */
     public function postSiteuserCollection($body = null)
     {
@@ -908,15 +908,15 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postSiteuserCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
+        $returnType = '\EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
         $request = $this->postSiteuserCollectionRequest($body);
 
         try {
@@ -968,7 +968,7 @@ class SiteuserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld',
+                        '\EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -983,7 +983,7 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1003,14 +1003,14 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postSiteuserCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
+        $returnType = '\EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
         $request = $this->postSiteuserCollectionRequest($body);
 
         return $this->client
@@ -1053,7 +1053,7 @@ class SiteuserApi
     /**
      * Create request for operation 'postSiteuserCollection'
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1147,11 +1147,11 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld
+     * @return \EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld
      */
     public function postSiteuserCollection($body = null)
     {
@@ -1164,15 +1164,15 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postSiteuserCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
+        $returnType = '\EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
         $request = $this->postSiteuserCollectionRequest($body);
 
         try {
@@ -1224,7 +1224,7 @@ class SiteuserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld',
+                        '\EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1239,7 +1239,7 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1259,14 +1259,14 @@ class SiteuserApi
      *
      * Creates a Siteuser resource.
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postSiteuserCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
+        $returnType = '\EmonsiteApi\Models\Siteuser7fc182df899df5888744e3f43c9c8f05Jsonld';
         $request = $this->postSiteuserCollectionRequest($body);
 
         return $this->client
@@ -1309,7 +1309,7 @@ class SiteuserApi
     /**
      * Create request for operation 'postSiteuserCollection'
      *
-     * @param  \Emonsite\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
+     * @param  \EmonsiteApi\Models\Siteuser57c801516c2b5b79ccf4541b195da432Jsonld $body The new Siteuser resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

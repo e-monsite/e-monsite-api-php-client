@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * VersionableInterfaceJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class VersionableInterfaceJsonld implements ModelInterface, ArrayAccess
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
-'versions' => '\Emonsite\Models\BrandMailtemplateVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\BrandMailtemplateVJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]',
 'brand' => 'string',
@@ -367,7 +367,7 @@ class VersionableInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -377,7 +377,7 @@ class VersionableInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */
@@ -391,7 +391,7 @@ class VersionableInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BrandMailtemplateVJsonld[]
+     * @return \EmonsiteApi\Models\BrandMailtemplateVJsonld[]
      */
     public function getVersions()
     {
@@ -401,7 +401,7 @@ class VersionableInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BrandMailtemplateVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BrandMailtemplateVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */

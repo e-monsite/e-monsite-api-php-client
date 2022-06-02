@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * StructurePaymentJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,10 +61,10 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
 'type' => 'string',
 'name' => 'string',
 'description' => 'string',
-'paymeans' => '\Emonsite\Models\AssocStructurePaymentJsonld[]',
-'modules' => '\Emonsite\Models\AssocStructureModuleJsonld[]',
+'paymeans' => '\EmonsiteApi\Models\AssocStructurePaymentJsonld[]',
+'modules' => '\EmonsiteApi\Models\AssocStructureModuleJsonld[]',
 'id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
@@ -403,7 +403,7 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets paymeans
      *
-     * @return \Emonsite\Models\AssocStructurePaymentJsonld[]
+     * @return \EmonsiteApi\Models\AssocStructurePaymentJsonld[]
      */
     public function getPaymeans()
     {
@@ -413,7 +413,7 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets paymeans
      *
-     * @param \Emonsite\Models\AssocStructurePaymentJsonld[] $paymeans paymeans
+     * @param \EmonsiteApi\Models\AssocStructurePaymentJsonld[] $paymeans paymeans
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets modules
      *
-     * @return \Emonsite\Models\AssocStructureModuleJsonld[]
+     * @return \EmonsiteApi\Models\AssocStructureModuleJsonld[]
      */
     public function getModules()
     {
@@ -437,7 +437,7 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets modules
      *
-     * @param \Emonsite\Models\AssocStructureModuleJsonld[] $modules modules
+     * @param \EmonsiteApi\Models\AssocStructureModuleJsonld[] $modules modules
      *
      * @return $this
      */
@@ -475,7 +475,7 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -485,7 +485,7 @@ class StructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

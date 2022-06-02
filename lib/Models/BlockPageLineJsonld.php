@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockPageLineJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,12 +67,12 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
 'position' => 'int',
 'pagination' => 'bool',
 'options' => 'string[]',
-'cells' => '\Emonsite\Models\BlockPageCellJsonld[]',
-'cell' => '\Emonsite\Models\BlockCellInterfaceJsonld[]',
+'cells' => '\EmonsiteApi\Models\BlockPageCellJsonld[]',
+'cell' => '\EmonsiteApi\Models\BlockCellInterfaceJsonld[]',
 'default_lang' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\BlockPageLineVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\BlockPageLineVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'version_by_lang' => 'string[]'    ];
 
     /**
@@ -565,7 +565,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cells
      *
-     * @return \Emonsite\Models\BlockPageCellJsonld[]
+     * @return \EmonsiteApi\Models\BlockPageCellJsonld[]
      */
     public function getCells()
     {
@@ -575,7 +575,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cells
      *
-     * @param \Emonsite\Models\BlockPageCellJsonld[] $cells FAIRE LE MAPPING DANS L'ENTITY
+     * @param \EmonsiteApi\Models\BlockPageCellJsonld[] $cells FAIRE LE MAPPING DANS L'ENTITY
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cell
      *
-     * @return \Emonsite\Models\BlockCellInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockCellInterfaceJsonld[]
      */
     public function getCell()
     {
@@ -599,7 +599,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cell
      *
-     * @param \Emonsite\Models\BlockCellInterfaceJsonld[] $cell cell
+     * @param \EmonsiteApi\Models\BlockCellInterfaceJsonld[] $cell cell
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BlockPageLineVJsonld[]
+     * @return \EmonsiteApi\Models\BlockPageLineVJsonld[]
      */
     public function getVersions()
     {
@@ -671,7 +671,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BlockPageLineVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BlockPageLineVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -685,7 +685,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -695,7 +695,7 @@ class BlockPageLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */

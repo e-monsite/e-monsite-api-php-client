@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * OfferApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class OfferApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20021
+     * @return \EmonsiteApi\Models\InlineResponse20021
      */
     public function getOfferCollection($page = '1', $items_per_page = '30')
     {
@@ -112,13 +112,13 @@ class OfferApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20021, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20021, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOfferCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20021';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20021';
         $request = $this->getOfferCollectionRequest($page, $items_per_page);
 
         try {
@@ -170,7 +170,7 @@ class OfferApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20021',
+                        '\EmonsiteApi\Models\InlineResponse20021',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class OfferApi
      */
     public function getOfferCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20021';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20021';
         $request = $this->getOfferCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -359,9 +359,9 @@ class OfferApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld
+     * @return \EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld
      */
     public function getOfferItem($id)
     {
@@ -376,13 +376,13 @@ class OfferApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOfferItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld';
+        $returnType = '\EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld';
         $request = $this->getOfferItemRequest($id);
 
         try {
@@ -434,7 +434,7 @@ class OfferApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld',
+                        '\EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -476,7 +476,7 @@ class OfferApi
      */
     public function getOfferItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld';
+        $returnType = '\EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld';
         $request = $this->getOfferItemRequest($id);
 
         return $this->client

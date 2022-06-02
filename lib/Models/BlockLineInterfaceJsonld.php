@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockLineInterfaceJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,11 +67,11 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
 'position' => 'int',
 'pagination' => 'bool',
 'options' => 'string[]',
-'block' => '\Emonsite\Models\AbstractBlockJsonld',
-'cells' => '\Emonsite\Models\BlockCellInterfaceJsonld[]',
-'cell' => '\Emonsite\Models\BlockCellInterfaceJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
-'versions' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'block' => '\EmonsiteApi\Models\AbstractBlockJsonld',
+'cells' => '\EmonsiteApi\Models\BlockCellInterfaceJsonld[]',
+'cell' => '\EmonsiteApi\Models\BlockCellInterfaceJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -565,7 +565,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets block
      *
-     * @return \Emonsite\Models\AbstractBlockJsonld
+     * @return \EmonsiteApi\Models\AbstractBlockJsonld
      */
     public function getBlock()
     {
@@ -575,7 +575,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets block
      *
-     * @param \Emonsite\Models\AbstractBlockJsonld $block block
+     * @param \EmonsiteApi\Models\AbstractBlockJsonld $block block
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cells
      *
-     * @return \Emonsite\Models\BlockCellInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockCellInterfaceJsonld[]
      */
     public function getCells()
     {
@@ -599,7 +599,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cells
      *
-     * @param \Emonsite\Models\BlockCellInterfaceJsonld[] $cells cells
+     * @param \EmonsiteApi\Models\BlockCellInterfaceJsonld[] $cells cells
      *
      * @return $this
      */
@@ -613,7 +613,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cell
      *
-     * @return \Emonsite\Models\BlockCellInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockCellInterfaceJsonld[]
      */
     public function getCell()
     {
@@ -623,7 +623,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cell
      *
-     * @param \Emonsite\Models\BlockCellInterfaceJsonld[] $cell cell
+     * @param \EmonsiteApi\Models\BlockCellInterfaceJsonld[] $cell cell
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -647,7 +647,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version La version dans la langue demandé ou la langue par défault
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version La version dans la langue demandé ou la langue par défault
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersions()
     {
@@ -671,7 +671,7 @@ class BlockLineInterfaceJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $versions versions
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $versions versions
      *
      * @return $this
      */

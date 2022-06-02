@@ -104,7 +104,7 @@ Name | Type | Description | Notes
 **google_content_api_token_expires_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **google_merchant_id** | **string** |  | [optional] 
 **google_content_api_token_expired** | **bool** |  | [optional] 
-**google_content_api_updates** | [**\Emonsite\Models\CollectionJsonld**](CollectionJsonld.md) |  | [optional] 
+**google_content_api_updates** | [**\EmonsiteApi\Models\CollectionJsonld**](CollectionJsonld.md) |  | [optional] 
 **facet_config** | [**AnyOfEcoSiteJsonldFacetConfig**](AnyOfEcoSiteJsonldFacetConfig.md) |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **upd_user_id** | **string** |  | [optional] 
@@ -112,11 +112,11 @@ Name | Type | Description | Notes
 **upd_dt** | **int** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**versions** | [**\Emonsite\Models\EcoSiteVJsonld[]**](EcoSiteVJsonld.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\EcoSiteVJsonld[]**](EcoSiteVJsonld.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
-**site** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

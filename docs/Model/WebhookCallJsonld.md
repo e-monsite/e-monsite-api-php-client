@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **context** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
-**webhook** | [**\Emonsite\Models\WebhookJsonld**](WebhookJsonld.md) |  | [optional] 
+**webhook** | [**\EmonsiteApi\Models\WebhookJsonld**](WebhookJsonld.md) |  | [optional] 
 **add_dt** | **int** |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **status** | **string** |  | [optional] 

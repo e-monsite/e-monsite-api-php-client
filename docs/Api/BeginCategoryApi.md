@@ -1,4 +1,4 @@
-# Emonsite\BeginCategoryApi
+# EmonsiteApi\BeginCategoryApi
 
 All URIs are relative to */*
 
@@ -20,11 +20,11 @@ Removes the BeginCategory resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BeginCategoryApi(
+$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBeginCategoryCollection**
-> \Emonsite\Models\InlineResponse2001 getBeginCategoryCollection($page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2001 getBeginCategoryCollection($page, $items_per_page)
 
 Retrieves the collection of BeginCategoryOutputDto resources.
 
@@ -71,11 +71,11 @@ Retrieves the collection of BeginCategoryOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BeginCategoryApi(
+$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\EmonsiteApi\Models\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBeginCategoryItem**
-> \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld getBeginCategoryItem($id)
+> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld getBeginCategoryItem($id)
 
 Retrieves a BeginCategoryOutputDto resource.
 
@@ -125,11 +125,11 @@ Retrieves a BeginCategoryOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BeginCategoryApi(
+$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
+[**\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchBeginCategoryItem**
-> \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld patchBeginCategoryItem($id, $body)
+> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld patchBeginCategoryItem($id, $body)
 
 Updates the BeginCategory resource.
 
@@ -177,18 +177,18 @@ Updates the BeginCategory resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BeginCategoryApi(
+$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3(); // \Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 | The updated BeginCategory resource
+$body = new \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3(); // \EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3 | The updated BeginCategory resource
 
 try {
     $result = $apiInstance->patchBeginCategoryItem($id, $body);
@@ -204,11 +204,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3**](../Model/BeginCategoryF0c108203dccba65ff19d7e99e810cf3.md)| The updated BeginCategory resource | [optional]
+ **body** | [**\EmonsiteApi\Models\BeginCategoryF0c108203dccba65ff19d7e99e810cf3**](../Model/BeginCategoryF0c108203dccba65ff19d7e99e810cf3.md)| The updated BeginCategory resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
+[**\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
 
 ### Authorization
 
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postBeginCategoryCollection**
-> \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld postBeginCategoryCollection($body)
+> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld postBeginCategoryCollection($body)
 
 Creates a BeginCategory resource.
 
@@ -231,17 +231,17 @@ Creates a BeginCategory resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BeginCategoryApi(
+$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
+$body = new \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
 
 try {
     $result = $apiInstance->postBeginCategoryCollection($body);
@@ -256,11 +256,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
+ **body** | [**\EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
+[**\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
 
 ### Authorization
 
@@ -274,7 +274,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postBeginCategoryCollection**
-> \Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld postBeginCategoryCollection($body)
+> \EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld postBeginCategoryCollection($body)
 
 Creates a BeginCategory resource.
 
@@ -283,17 +283,17 @@ Creates a BeginCategory resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BeginCategoryApi(
+$apiInstance = new EmonsiteApi\Api\BeginCategoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
+$body = new \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld(); // \EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld | The new BeginCategory resource
 
 try {
     $result = $apiInstance->postBeginCategoryCollection($body);
@@ -308,11 +308,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
+ **body** | [**\EmonsiteApi\Models\BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld**](../Model/BeginCategoryDc16a9bcc02b0a6b952ca856e741db30Jsonld.md)| The new BeginCategory resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
+[**\EmonsiteApi\Models\BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld**](../Model/BeginCategoryB425d7ae39b0fe04f80380a5489db196Jsonld.md)
 
 ### Authorization
 

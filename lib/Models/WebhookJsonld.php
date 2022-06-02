@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * WebhookJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,10 +63,10 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
 'active' => 'bool',
 'url' => 'string',
 'payload_content_type' => 'string',
-'webhook_has_events' => '\Emonsite\Models\WebhookHasEventJsonld[]',
-'calls' => '\Emonsite\Models\WebhookCallJsonld[]',
+'webhook_has_events' => '\EmonsiteApi\Models\WebhookHasEventJsonld[]',
+'calls' => '\EmonsiteApi\Models\WebhookCallJsonld[]',
 'id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
 'add_dt' => 'int',
@@ -463,7 +463,7 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets webhook_has_events
      *
-     * @return \Emonsite\Models\WebhookHasEventJsonld[]
+     * @return \EmonsiteApi\Models\WebhookHasEventJsonld[]
      */
     public function getWebhookHasEvents()
     {
@@ -473,7 +473,7 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets webhook_has_events
      *
-     * @param \Emonsite\Models\WebhookHasEventJsonld[] $webhook_has_events webhook_has_events
+     * @param \EmonsiteApi\Models\WebhookHasEventJsonld[] $webhook_has_events webhook_has_events
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets calls
      *
-     * @return \Emonsite\Models\WebhookCallJsonld[]
+     * @return \EmonsiteApi\Models\WebhookCallJsonld[]
      */
     public function getCalls()
     {
@@ -497,7 +497,7 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets calls
      *
-     * @param \Emonsite\Models\WebhookCallJsonld[] $calls calls
+     * @param \EmonsiteApi\Models\WebhookCallJsonld[] $calls calls
      *
      * @return $this
      */
@@ -535,7 +535,7 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -545,7 +545,7 @@ class WebhookJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

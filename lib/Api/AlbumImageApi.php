@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * AlbumImageApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class AlbumImageApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse200
+     * @return \EmonsiteApi\Models\InlineResponse200
      */
     public function getAlbumImageCollection($site_id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class AlbumImageApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse200, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlbumImageCollectionWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse200';
+        $returnType = '\EmonsiteApi\Models\InlineResponse200';
         $request = $this->getAlbumImageCollectionRequest($site_id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class AlbumImageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse200',
+                        '\EmonsiteApi\Models\InlineResponse200',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class AlbumImageApi
      */
     public function getAlbumImageCollectionAsyncWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse200';
+        $returnType = '\EmonsiteApi\Models\InlineResponse200';
         $request = $this->getAlbumImageCollectionRequest($site_id, $page, $items_per_page);
 
         return $this->client
@@ -375,9 +375,9 @@ class AlbumImageApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld
+     * @return \EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld
      */
     public function getAlbumImageItem($id, $site_id)
     {
@@ -393,13 +393,13 @@ class AlbumImageApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAlbumImageItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
+        $returnType = '\EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
         $request = $this->getAlbumImageItemRequest($id, $site_id);
 
         try {
@@ -451,7 +451,7 @@ class AlbumImageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld',
+                        '\EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -495,7 +495,7 @@ class AlbumImageApi
      */
     public function getAlbumImageItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
+        $returnType = '\EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
         $request = $this->getAlbumImageItemRequest($id, $site_id);
 
         return $this->client
@@ -657,9 +657,9 @@ class AlbumImageApi
      * @param  string $image_site_id image_site_id (optional)
      * @param  string $image_file image_file (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld
+     * @return \EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld
      */
     public function postAlbumImageCollection($image_site_id = null, $image_file = null)
     {
@@ -675,13 +675,13 @@ class AlbumImageApi
      * @param  string $image_site_id (optional)
      * @param  string $image_file (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postAlbumImageCollectionWithHttpInfo($image_site_id = null, $image_file = null)
     {
-        $returnType = '\Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
+        $returnType = '\EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
         $request = $this->postAlbumImageCollectionRequest($image_site_id, $image_file);
 
         try {
@@ -733,7 +733,7 @@ class AlbumImageApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld',
+                        '\EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -777,7 +777,7 @@ class AlbumImageApi
      */
     public function postAlbumImageCollectionAsyncWithHttpInfo($image_site_id = null, $image_file = null)
     {
-        $returnType = '\Emonsite\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
+        $returnType = '\EmonsiteApi\Models\AlbumImage4147e3b456efec88633ecd0377e3d39bJsonld';
         $request = $this->postAlbumImageCollectionRequest($image_site_id, $image_file);
 
         return $this->client

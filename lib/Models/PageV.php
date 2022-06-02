@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * PageV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PageV implements ModelInterface, ArrayAccess
         'title_in_blocks' => 'bool',
 'titlemenu' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\Page',
+'item' => '\EmonsiteApi\Models\Page',
 'active' => 'bool',
 'seo_uri' => 'string',
 'seo_title' => 'string',
@@ -361,7 +361,7 @@ class PageV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\Page
+     * @return \EmonsiteApi\Models\Page
      */
     public function getItem()
     {
@@ -371,7 +371,7 @@ class PageV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\Page $item item
+     * @param \EmonsiteApi\Models\Page $item item
      *
      * @return $this
      */

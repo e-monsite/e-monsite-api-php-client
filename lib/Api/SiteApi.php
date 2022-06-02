@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * SiteApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class SiteApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20025
+     * @return \EmonsiteApi\Models\InlineResponse20025
      */
     public function apiSitesSiteUsersGetSubresource($id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class SiteApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiSitesSiteUsersGetSubresourceWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiSitesSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class SiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20025',
+                        '\EmonsiteApi\Models\InlineResponse20025',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class SiteApi
      */
     public function apiSitesSiteUsersGetSubresourceAsyncWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiSitesSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         return $this->client
@@ -389,9 +389,9 @@ class SiteApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20024
+     * @return \EmonsiteApi\Models\InlineResponse20024
      */
     public function getSiteCollection($sitename = null, $id = null, $id = null, $host = null, $brand = null, $brand = null, $add_user_ip = null, $add_user_ip = null, $site_deleted = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
@@ -417,13 +417,13 @@ class SiteApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20024, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20024, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSiteCollectionWithHttpInfo($sitename = null, $id = null, $id = null, $host = null, $brand = null, $brand = null, $add_user_ip = null, $add_user_ip = null, $site_deleted = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20024';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20024';
         $request = $this->getSiteCollectionRequest($sitename, $id, $id, $host, $brand, $brand, $add_user_ip, $add_user_ip, $site_deleted, $order_add_dt, $page, $items_per_page);
 
         try {
@@ -475,7 +475,7 @@ class SiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20024',
+                        '\EmonsiteApi\Models\InlineResponse20024',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -539,7 +539,7 @@ class SiteApi
      */
     public function getSiteCollectionAsyncWithHttpInfo($sitename = null, $id = null, $id = null, $host = null, $brand = null, $brand = null, $add_user_ip = null, $add_user_ip = null, $site_deleted = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20024';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20024';
         $request = $this->getSiteCollectionRequest($sitename, $id, $id, $host, $brand, $brand, $add_user_ip, $add_user_ip, $site_deleted, $order_add_dt, $page, $items_per_page);
 
         return $this->client
@@ -743,9 +743,9 @@ class SiteApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
+     * @return \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
      */
     public function getSiteItem($id)
     {
@@ -760,13 +760,13 @@ class SiteApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSiteItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->getSiteItemRequest($id);
 
         try {
@@ -818,7 +818,7 @@ class SiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
+                        '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -860,7 +860,7 @@ class SiteApi
      */
     public function getSiteItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->getSiteItemRequest($id);
 
         return $this->client
@@ -1009,11 +1009,11 @@ class SiteApi
      * Updates the Site resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
+     * @param  \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
+     * @return \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
      */
     public function patchSiteItem($id, $body = null)
     {
@@ -1027,15 +1027,15 @@ class SiteApi
      * Updates the Site resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
+     * @param  \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchSiteItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->patchSiteItemRequest($id, $body);
 
         try {
@@ -1087,7 +1087,7 @@ class SiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
+                        '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1103,7 +1103,7 @@ class SiteApi
      * Updates the Site resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
+     * @param  \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1124,14 +1124,14 @@ class SiteApi
      * Updates the Site resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
+     * @param  \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchSiteItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->patchSiteItemRequest($id, $body);
 
         return $this->client
@@ -1175,7 +1175,7 @@ class SiteApi
      * Create request for operation 'patchSiteItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
+     * @param  \EmonsiteApi\Models\Site7e8883c9b486869412701afd330abd48 $body The updated Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1283,11 +1283,11 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
+     * @return \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
      */
     public function postSiteCollection($body = null)
     {
@@ -1300,15 +1300,15 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postSiteCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->postSiteCollectionRequest($body);
 
         try {
@@ -1360,7 +1360,7 @@ class SiteApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
+                        '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1375,7 +1375,7 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1395,14 +1395,14 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postSiteCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->postSiteCollectionRequest($body);
 
         return $this->client
@@ -1445,7 +1445,7 @@ class SiteApi
     /**
      * Create request for operation 'postSiteCollection'
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1539,11 +1539,11 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
+     * @return \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld
      */
     public function postSiteCollection($body = null)
     {
@@ -1556,15 +1556,15 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postSiteCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->postSiteCollectionRequest($body);
 
         try {
@@ -1616,7 +1616,7 @@ class SiteApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
+                        '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1631,7 +1631,7 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1651,14 +1651,14 @@ class SiteApi
      *
      * Creates a Site resource.
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postSiteCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
+        $returnType = '\EmonsiteApi\Models\Site0097c999ec7d3611ad5fec647120ea72Jsonld';
         $request = $this->postSiteCollectionRequest($body);
 
         return $this->client
@@ -1701,7 +1701,7 @@ class SiteApi
     /**
      * Create request for operation 'postSiteCollection'
      *
-     * @param  \Emonsite\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
+     * @param  \EmonsiteApi\Models\SiteF8f2933682cb2687a860a3e01f671ed0Jsonld $body The new Site resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

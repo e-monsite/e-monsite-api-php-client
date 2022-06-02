@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoPacklinkJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class EcoPacklinkJsonld implements ModelInterface, ArrayAccess
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'eco_config' => '\Emonsite\Models\EcoSiteJsonld',
+'eco_config' => '\EmonsiteApi\Models\EcoSiteJsonld',
 'api_key' => 'string',
 'active_carriers' => 'string[]',
 'firstname' => 'string',
@@ -74,7 +74,7 @@ class EcoPacklinkJsonld implements ModelInterface, ArrayAccess
 'packages' => 'string[]',
 'package_defined' => 'bool',
 'sender_defined' => 'bool',
-'zones' => '\Emonsite\Models\EcoPacklinkHasZoneJsonld[]',
+'zones' => '\EmonsiteApi\Models\EcoPacklinkHasZoneJsonld[]',
 'tax' => 'string',
 'id' => 'string'    ];
 
@@ -391,7 +391,7 @@ class EcoPacklinkJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets eco_config
      *
-     * @return \Emonsite\Models\EcoSiteJsonld
+     * @return \EmonsiteApi\Models\EcoSiteJsonld
      */
     public function getEcoConfig()
     {
@@ -401,7 +401,7 @@ class EcoPacklinkJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets eco_config
      *
-     * @param \Emonsite\Models\EcoSiteJsonld $eco_config eco_config
+     * @param \EmonsiteApi\Models\EcoSiteJsonld $eco_config eco_config
      *
      * @return $this
      */
@@ -751,7 +751,7 @@ class EcoPacklinkJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets zones
      *
-     * @return \Emonsite\Models\EcoPacklinkHasZoneJsonld[]
+     * @return \EmonsiteApi\Models\EcoPacklinkHasZoneJsonld[]
      */
     public function getZones()
     {
@@ -761,7 +761,7 @@ class EcoPacklinkJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets zones
      *
-     * @param \Emonsite\Models\EcoPacklinkHasZoneJsonld[] $zones zones
+     * @param \EmonsiteApi\Models\EcoPacklinkHasZoneJsonld[] $zones zones
      *
      * @return $this
      */

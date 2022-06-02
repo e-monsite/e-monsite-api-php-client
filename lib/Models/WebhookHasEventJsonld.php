@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * WebhookHasEventJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class WebhookHasEventJsonld implements ModelInterface, ArrayAccess
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'webhook' => '\Emonsite\Models\WebhookJsonld',
+'webhook' => '\EmonsiteApi\Models\WebhookJsonld',
 'event' => 'string'    ];
 
     /**
@@ -295,7 +295,7 @@ class WebhookHasEventJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets webhook
      *
-     * @return \Emonsite\Models\WebhookJsonld
+     * @return \EmonsiteApi\Models\WebhookJsonld
      */
     public function getWebhook()
     {
@@ -305,7 +305,7 @@ class WebhookHasEventJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets webhook
      *
-     * @param \Emonsite\Models\WebhookJsonld $webhook webhook
+     * @param \EmonsiteApi\Models\WebhookJsonld $webhook webhook
      *
      * @return $this
      */

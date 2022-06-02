@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * UserDomainMailbox Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class UserDomainMailbox implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'user_domain' => '\Emonsite\Models\UserDomain',
+        'user_domain' => '\EmonsiteApi\Models\UserDomain',
 'domain' => 'string',
 'username' => 'string',
 'passwd' => 'string',
@@ -271,7 +271,7 @@ class UserDomainMailbox implements ModelInterface, ArrayAccess
     /**
      * Gets user_domain
      *
-     * @return \Emonsite\Models\UserDomain
+     * @return \EmonsiteApi\Models\UserDomain
      */
     public function getUserDomain()
     {
@@ -281,7 +281,7 @@ class UserDomainMailbox implements ModelInterface, ArrayAccess
     /**
      * Sets user_domain
      *
-     * @param \Emonsite\Models\UserDomain $user_domain user_domain
+     * @param \EmonsiteApi\Models\UserDomain $user_domain user_domain
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **theme_id** | **string** |  | [optional] 
 **variation_id** | **string** |  | [optional] 
 **active** | **bool** |  | [optional] 

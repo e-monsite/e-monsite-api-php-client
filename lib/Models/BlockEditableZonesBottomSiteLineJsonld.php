@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockEditableZonesBottomSiteLineJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,12 +67,12 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
 'position' => 'int',
 'pagination' => 'bool',
 'options' => 'string[]',
-'cells' => '\Emonsite\Models\BlockEditableZonesBottomSiteCellJsonld[]',
-'cell' => '\Emonsite\Models\BlockCellInterfaceJsonld[]',
+'cells' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteCellJsonld[]',
+'cell' => '\EmonsiteApi\Models\BlockCellInterfaceJsonld[]',
 'default_lang' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\BlockEditableZonesBottomSiteLineVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteLineVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'version_by_lang' => 'string[]'    ];
 
     /**
@@ -565,7 +565,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets cells
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteCellJsonld[]
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteCellJsonld[]
      */
     public function getCells()
     {
@@ -575,7 +575,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets cells
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteCellJsonld[] $cells FAIRE LE MAPPING DANS L'ENTITY
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteCellJsonld[] $cells FAIRE LE MAPPING DANS L'ENTITY
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets cell
      *
-     * @return \Emonsite\Models\BlockCellInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockCellInterfaceJsonld[]
      */
     public function getCell()
     {
@@ -599,7 +599,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets cell
      *
-     * @param \Emonsite\Models\BlockCellInterfaceJsonld[] $cell cell
+     * @param \EmonsiteApi\Models\BlockCellInterfaceJsonld[] $cell cell
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteLineVJsonld[]
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteLineVJsonld[]
      */
     public function getVersions()
     {
@@ -671,7 +671,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteLineVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteLineVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -685,7 +685,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -695,7 +695,7 @@ class BlockEditableZonesBottomSiteLineJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoOrderApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -100,9 +100,9 @@ class EcoOrderApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20016
+     * @return \EmonsiteApi\Models\InlineResponse20016
      */
     public function getEcoOrderCollection($site_id, $order_add_dt = null, $add_dt_before = null, $add_dt_strictly_before = null, $add_dt_after = null, $add_dt_strictly_after = null, $page = '1', $items_per_page = '30')
     {
@@ -124,13 +124,13 @@ class EcoOrderApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20016, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoOrderCollectionWithHttpInfo($site_id, $order_add_dt = null, $add_dt_before = null, $add_dt_strictly_before = null, $add_dt_after = null, $add_dt_strictly_after = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20016';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20016';
         $request = $this->getEcoOrderCollectionRequest($site_id, $order_add_dt, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $page, $items_per_page);
 
         try {
@@ -182,7 +182,7 @@ class EcoOrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20016',
+                        '\EmonsiteApi\Models\InlineResponse20016',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class EcoOrderApi
      */
     public function getEcoOrderCollectionAsyncWithHttpInfo($site_id, $order_add_dt = null, $add_dt_before = null, $add_dt_strictly_before = null, $add_dt_after = null, $add_dt_strictly_after = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20016';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20016';
         $request = $this->getEcoOrderCollectionRequest($site_id, $order_add_dt, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $page, $items_per_page);
 
         return $this->client
@@ -420,9 +420,9 @@ class EcoOrderApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld
+     * @return \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld
      */
     public function getEcoOrderItem($id, $site_id)
     {
@@ -438,13 +438,13 @@ class EcoOrderApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoOrderItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
         $request = $this->getEcoOrderItemRequest($id, $site_id);
 
         try {
@@ -496,7 +496,7 @@ class EcoOrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld',
+                        '\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -540,7 +540,7 @@ class EcoOrderApi
      */
     public function getEcoOrderItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
         $request = $this->getEcoOrderItemRequest($id, $site_id);
 
         return $this->client
@@ -701,11 +701,11 @@ class EcoOrderApi
      *
      * @param  string $site_id site_id (required)
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
+     * @param  \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld
+     * @return \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld
      */
     public function patchEcoOrderItem($site_id, $id, $body = null)
     {
@@ -720,15 +720,15 @@ class EcoOrderApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
+     * @param  \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchEcoOrderItemWithHttpInfo($site_id, $id, $body = null)
     {
-        $returnType = '\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
         $request = $this->patchEcoOrderItemRequest($site_id, $id, $body);
 
         try {
@@ -780,7 +780,7 @@ class EcoOrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld',
+                        '\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -797,7 +797,7 @@ class EcoOrderApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
+     * @param  \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -819,14 +819,14 @@ class EcoOrderApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
+     * @param  \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchEcoOrderItemAsyncWithHttpInfo($site_id, $id, $body = null)
     {
-        $returnType = '\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld';
         $request = $this->patchEcoOrderItemRequest($site_id, $id, $body);
 
         return $this->client
@@ -871,7 +871,7 @@ class EcoOrderApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
+     * @param  \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 $body The updated EcoOrder resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

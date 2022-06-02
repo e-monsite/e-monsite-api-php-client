@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite\Models
+ * @package  EmonsiteApi\Models
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 /**
  * Interface abstracting model access.
  *
- * @package Emonsite\Models
+ * @package EmonsiteApi\Models
  * @author  Swagger Codegen team
  */
 interface ModelInterface

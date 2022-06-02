@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * AssocStructureModule Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AssocStructureModule implements ModelInterface, ArrayAccess
         'module' => 'string',
 'zone' => 'string',
 'tax' => 'string',
-'structure' => '\Emonsite\Models\StructurePayment',
+'structure' => '\EmonsiteApi\Models\StructurePayment',
 'only_storepickup' => 'bool',
 'id' => 'string',
 'add_user_id' => 'string',
@@ -68,7 +68,7 @@ class AssocStructureModule implements ModelInterface, ArrayAccess
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
-'site' => '\Emonsite\Models\Site'    ];
+'site' => '\EmonsiteApi\Models\Site'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -343,7 +343,7 @@ class AssocStructureModule implements ModelInterface, ArrayAccess
     /**
      * Gets structure
      *
-     * @return \Emonsite\Models\StructurePayment
+     * @return \EmonsiteApi\Models\StructurePayment
      */
     public function getStructure()
     {
@@ -353,7 +353,7 @@ class AssocStructureModule implements ModelInterface, ArrayAccess
     /**
      * Sets structure
      *
-     * @param \Emonsite\Models\StructurePayment $structure structure
+     * @param \EmonsiteApi\Models\StructurePayment $structure structure
      *
      * @return $this
      */
@@ -559,7 +559,7 @@ class AssocStructureModule implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -569,7 +569,7 @@ class AssocStructureModule implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

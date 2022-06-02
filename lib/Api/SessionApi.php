@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * SessionApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -101,9 +101,9 @@ class SessionApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20023
+     * @return \EmonsiteApi\Models\InlineResponse20023
      */
     public function getSessionCollection($user_ip = null, $user = null, $user = null, $hit_before = null, $hit_strictly_before = null, $hit_after = null, $hit_strictly_after = null, $page = '1', $items_per_page = '30')
     {
@@ -126,13 +126,13 @@ class SessionApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20023, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20023, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSessionCollectionWithHttpInfo($user_ip = null, $user = null, $user = null, $hit_before = null, $hit_strictly_before = null, $hit_after = null, $hit_strictly_after = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20023';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20023';
         $request = $this->getSessionCollectionRequest($user_ip, $user, $user, $hit_before, $hit_strictly_before, $hit_after, $hit_strictly_after, $page, $items_per_page);
 
         try {
@@ -184,7 +184,7 @@ class SessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20023',
+                        '\EmonsiteApi\Models\InlineResponse20023',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class SessionApi
      */
     public function getSessionCollectionAsyncWithHttpInfo($user_ip = null, $user = null, $user = null, $hit_before = null, $hit_strictly_before = null, $hit_after = null, $hit_strictly_after = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20023';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20023';
         $request = $this->getSessionCollectionRequest($user_ip, $user, $user, $hit_before, $hit_strictly_before, $hit_after, $hit_strictly_after, $page, $items_per_page);
 
         return $this->client
@@ -425,9 +425,9 @@ class SessionApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld
+     * @return \EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld
      */
     public function getSessionItem($id)
     {
@@ -442,13 +442,13 @@ class SessionApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSessionItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld';
+        $returnType = '\EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld';
         $request = $this->getSessionItemRequest($id);
 
         try {
@@ -500,7 +500,7 @@ class SessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld',
+                        '\EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -542,7 +542,7 @@ class SessionApi
      */
     public function getSessionItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld';
+        $returnType = '\EmonsiteApi\Models\Session1bc7a372e0caf630efd366b7299c4bd2Jsonld';
         $request = $this->getSessionItemRequest($id);
 
         return $this->client

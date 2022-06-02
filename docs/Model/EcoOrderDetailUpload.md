@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **customfield** | **string** | TODO entité eco_product_customfield | [optional] 
 **cartitemkey** | **string** |  | [optional] 
 **order** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **member** | **string** | TODO A supprimer ? Déjà dans EcoOrder | [optional] 
 **file** | **string** |  | [optional] 
 **file_name** | **string** |  | [optional] 

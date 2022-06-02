@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * Site Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -148,14 +148,14 @@ class Site implements ModelInterface, ArrayAccess
 'instagramtoken_expiration_dt' => 'int',
 'instagram_token_expired' => 'bool',
 'nb_days_before_instagram_token_expire' => 'int',
-'storage_folders' => '\Emonsite\Models\StorageFolder[]',
-'storage_folder' => '\Emonsite\Models\StorageFolder[]',
-'site_langs' => '\Emonsite\Models\SiteLang[]',
-'default_site_lang' => '\Emonsite\Models\SiteLang',
+'storage_folders' => '\EmonsiteApi\Models\StorageFolder[]',
+'storage_folder' => '\EmonsiteApi\Models\StorageFolder[]',
+'site_langs' => '\EmonsiteApi\Models\SiteLang[]',
+'default_site_lang' => '\EmonsiteApi\Models\SiteLang',
 'active_site_langs' => 'string[]',
 'lang' => 'string[]',
-'custom_theme_variations' => '\Emonsite\Models\CustomThemeVariation[]',
-'custom_theme_variation' => '\Emonsite\Models\CustomThemeVariation',
+'custom_theme_variations' => '\EmonsiteApi\Models\CustomThemeVariation[]',
+'custom_theme_variation' => '\EmonsiteApi\Models\CustomThemeVariation',
 'modules' => 'string[]',
 'module' => 'string[]',
 'wuro_enabled' => 'bool',
@@ -172,17 +172,17 @@ class Site implements ModelInterface, ArrayAccess
 'eco_orders' => 'string[]',
 'eco_collection_points' => 'string[]',
 'carriers' => 'string[]',
-'cel_soft_deletion' => '\Emonsite\Models\Site',
-'webhooks' => '\Emonsite\Models\Webhook[]',
+'cel_soft_deletion' => '\EmonsiteApi\Models\Site',
+'webhooks' => '\EmonsiteApi\Models\Webhook[]',
 'nb_days_since_creation' => 'int',
-'structures_payment' => '\Emonsite\Models\StructurePayment[]',
+'structures_payment' => '\EmonsiteApi\Models\StructurePayment[]',
 'editable_zones_bottom_site_block' => 'AnyOfSiteEditableZonesBottomSiteBlock',
 'member_options' => 'AnyOfSiteMemberOptions',
 'legal' => 'AnyOfSiteLegal',
 'in_store_pick_up_points' => '',
-'structure_widgets' => '\Emonsite\Models\StructureWidgets[]',
+'structure_widgets' => '\EmonsiteApi\Models\StructureWidgets[]',
 'default_menu_h_widget' => 'AnyOfSiteDefaultMenuHWidget',
-'structures' => '\Emonsite\Models\Structure[]',
+'structures' => '\EmonsiteApi\Models\Structure[]',
 'not_found_page_block' => 'AnyOfSiteNotFoundPageBlock',
 'browser_extension_enabled' => 'bool',
 'edirectory_order_options' => 'AnyOfSiteEdirectoryOrderOptions',
@@ -192,8 +192,8 @@ class Site implements ModelInterface, ArrayAccess
 'updated_at' => '\DateTime',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
-'versions' => '\Emonsite\Models\SiteV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\SiteV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'version_by_lang' => 'string[]'    ];
 
     /**
@@ -3235,7 +3235,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets storage_folders
      *
-     * @return \Emonsite\Models\StorageFolder[]
+     * @return \EmonsiteApi\Models\StorageFolder[]
      */
     public function getStorageFolders()
     {
@@ -3245,7 +3245,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets storage_folders
      *
-     * @param \Emonsite\Models\StorageFolder[] $storage_folders storage_folders
+     * @param \EmonsiteApi\Models\StorageFolder[] $storage_folders storage_folders
      *
      * @return $this
      */
@@ -3259,7 +3259,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets storage_folder
      *
-     * @return \Emonsite\Models\StorageFolder[]
+     * @return \EmonsiteApi\Models\StorageFolder[]
      */
     public function getStorageFolder()
     {
@@ -3269,7 +3269,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets storage_folder
      *
-     * @param \Emonsite\Models\StorageFolder[] $storage_folder storage_folder
+     * @param \EmonsiteApi\Models\StorageFolder[] $storage_folder storage_folder
      *
      * @return $this
      */
@@ -3283,7 +3283,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets site_langs
      *
-     * @return \Emonsite\Models\SiteLang[]
+     * @return \EmonsiteApi\Models\SiteLang[]
      */
     public function getSiteLangs()
     {
@@ -3293,7 +3293,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets site_langs
      *
-     * @param \Emonsite\Models\SiteLang[] $site_langs site_langs
+     * @param \EmonsiteApi\Models\SiteLang[] $site_langs site_langs
      *
      * @return $this
      */
@@ -3307,7 +3307,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets default_site_lang
      *
-     * @return \Emonsite\Models\SiteLang
+     * @return \EmonsiteApi\Models\SiteLang
      */
     public function getDefaultSiteLang()
     {
@@ -3317,7 +3317,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets default_site_lang
      *
-     * @param \Emonsite\Models\SiteLang $default_site_lang default_site_lang
+     * @param \EmonsiteApi\Models\SiteLang $default_site_lang default_site_lang
      *
      * @return $this
      */
@@ -3379,7 +3379,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets custom_theme_variations
      *
-     * @return \Emonsite\Models\CustomThemeVariation[]
+     * @return \EmonsiteApi\Models\CustomThemeVariation[]
      */
     public function getCustomThemeVariations()
     {
@@ -3389,7 +3389,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets custom_theme_variations
      *
-     * @param \Emonsite\Models\CustomThemeVariation[] $custom_theme_variations custom_theme_variations
+     * @param \EmonsiteApi\Models\CustomThemeVariation[] $custom_theme_variations custom_theme_variations
      *
      * @return $this
      */
@@ -3403,7 +3403,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets custom_theme_variation
      *
-     * @return \Emonsite\Models\CustomThemeVariation
+     * @return \EmonsiteApi\Models\CustomThemeVariation
      */
     public function getCustomThemeVariation()
     {
@@ -3413,7 +3413,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets custom_theme_variation
      *
-     * @param \Emonsite\Models\CustomThemeVariation $custom_theme_variation custom_theme_variation
+     * @param \EmonsiteApi\Models\CustomThemeVariation $custom_theme_variation custom_theme_variation
      *
      * @return $this
      */
@@ -3811,7 +3811,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets cel_soft_deletion
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getCelSoftDeletion()
     {
@@ -3821,7 +3821,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets cel_soft_deletion
      *
-     * @param \Emonsite\Models\Site $cel_soft_deletion cel_soft_deletion
+     * @param \EmonsiteApi\Models\Site $cel_soft_deletion cel_soft_deletion
      *
      * @return $this
      */
@@ -3835,7 +3835,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets webhooks
      *
-     * @return \Emonsite\Models\Webhook[]
+     * @return \EmonsiteApi\Models\Webhook[]
      */
     public function getWebhooks()
     {
@@ -3845,7 +3845,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets webhooks
      *
-     * @param \Emonsite\Models\Webhook[] $webhooks webhooks
+     * @param \EmonsiteApi\Models\Webhook[] $webhooks webhooks
      *
      * @return $this
      */
@@ -3883,7 +3883,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets structures_payment
      *
-     * @return \Emonsite\Models\StructurePayment[]
+     * @return \EmonsiteApi\Models\StructurePayment[]
      */
     public function getStructuresPayment()
     {
@@ -3893,7 +3893,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets structures_payment
      *
-     * @param \Emonsite\Models\StructurePayment[] $structures_payment structures_payment
+     * @param \EmonsiteApi\Models\StructurePayment[] $structures_payment structures_payment
      *
      * @return $this
      */
@@ -4003,7 +4003,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets structure_widgets
      *
-     * @return \Emonsite\Models\StructureWidgets[]
+     * @return \EmonsiteApi\Models\StructureWidgets[]
      */
     public function getStructureWidgets()
     {
@@ -4013,7 +4013,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets structure_widgets
      *
-     * @param \Emonsite\Models\StructureWidgets[] $structure_widgets structure_widgets
+     * @param \EmonsiteApi\Models\StructureWidgets[] $structure_widgets structure_widgets
      *
      * @return $this
      */
@@ -4051,7 +4051,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets structures
      *
-     * @return \Emonsite\Models\Structure[]
+     * @return \EmonsiteApi\Models\Structure[]
      */
     public function getStructures()
     {
@@ -4061,7 +4061,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets structures
      *
-     * @param \Emonsite\Models\Structure[] $structures structures
+     * @param \EmonsiteApi\Models\Structure[] $structures structures
      *
      * @return $this
      */
@@ -4291,7 +4291,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\SiteV[]
+     * @return \EmonsiteApi\Models\SiteV[]
      */
     public function getVersions()
     {
@@ -4301,7 +4301,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\SiteV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\SiteV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -4315,7 +4315,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -4325,7 +4325,7 @@ class Site implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */

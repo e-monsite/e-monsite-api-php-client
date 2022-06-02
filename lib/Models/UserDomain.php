@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * UserDomain Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -104,9 +104,9 @@ class UserDomain implements ModelInterface, ArrayAccess
 'nationalidentificationnumber' => 'string',
 'vat' => 'string',
 'check_auto_renew_after' => '\DateTime',
-'domain_errors' => '\Emonsite\Models\UserDomainError[]',
-'mail_aliases' => '\Emonsite\Models\UserDomainMailAlias[]',
-'mailboxes' => '\Emonsite\Models\UserDomainMailbox[]',
+'domain_errors' => '\EmonsiteApi\Models\UserDomainError[]',
+'mail_aliases' => '\EmonsiteApi\Models\UserDomainMailAlias[]',
+'mailboxes' => '\EmonsiteApi\Models\UserDomainMailbox[]',
 'id' => 'string',
 'add_dt' => 'int',
 'upd_dt' => 'int',
@@ -1693,7 +1693,7 @@ class UserDomain implements ModelInterface, ArrayAccess
     /**
      * Gets domain_errors
      *
-     * @return \Emonsite\Models\UserDomainError[]
+     * @return \EmonsiteApi\Models\UserDomainError[]
      */
     public function getDomainErrors()
     {
@@ -1703,7 +1703,7 @@ class UserDomain implements ModelInterface, ArrayAccess
     /**
      * Sets domain_errors
      *
-     * @param \Emonsite\Models\UserDomainError[] $domain_errors domain_errors
+     * @param \EmonsiteApi\Models\UserDomainError[] $domain_errors domain_errors
      *
      * @return $this
      */
@@ -1717,7 +1717,7 @@ class UserDomain implements ModelInterface, ArrayAccess
     /**
      * Gets mail_aliases
      *
-     * @return \Emonsite\Models\UserDomainMailAlias[]
+     * @return \EmonsiteApi\Models\UserDomainMailAlias[]
      */
     public function getMailAliases()
     {
@@ -1727,7 +1727,7 @@ class UserDomain implements ModelInterface, ArrayAccess
     /**
      * Sets mail_aliases
      *
-     * @param \Emonsite\Models\UserDomainMailAlias[] $mail_aliases mail_aliases
+     * @param \EmonsiteApi\Models\UserDomainMailAlias[] $mail_aliases mail_aliases
      *
      * @return $this
      */
@@ -1741,7 +1741,7 @@ class UserDomain implements ModelInterface, ArrayAccess
     /**
      * Gets mailboxes
      *
-     * @return \Emonsite\Models\UserDomainMailbox[]
+     * @return \EmonsiteApi\Models\UserDomainMailbox[]
      */
     public function getMailboxes()
     {
@@ -1751,7 +1751,7 @@ class UserDomain implements ModelInterface, ArrayAccess
     /**
      * Sets mailboxes
      *
-     * @param \Emonsite\Models\UserDomainMailbox[] $mailboxes mailboxes
+     * @param \EmonsiteApi\Models\UserDomainMailbox[] $mailboxes mailboxes
      *
      * @return $this
      */

@@ -8,12 +8,12 @@ Name | Type | Description | Notes
 **type** | **string** |  | [optional] 
 **line_class** | **string** |  | [optional] 
 **cell_class** | **string** |  | [optional] 
-**lines** | [**\Emonsite\Models\BlockPageLineJsonld[]**](BlockPageLineJsonld.md) |  | [optional] 
-**rows** | [**\Emonsite\Models\BlockLineInterfaceJsonld[]**](BlockLineInterfaceJsonld.md) |  | [optional] 
-**line** | [**\Emonsite\Models\BlockLineInterfaceJsonld[]**](BlockLineInterfaceJsonld.md) |  | [optional] 
-**row** | [**\Emonsite\Models\BlockLineInterfaceJsonld[]**](BlockLineInterfaceJsonld.md) |  | [optional] 
+**lines** | [**\EmonsiteApi\Models\BlockPageLineJsonld[]**](BlockPageLineJsonld.md) |  | [optional] 
+**rows** | [**\EmonsiteApi\Models\BlockLineInterfaceJsonld[]**](BlockLineInterfaceJsonld.md) |  | [optional] 
+**line** | [**\EmonsiteApi\Models\BlockLineInterfaceJsonld[]**](BlockLineInterfaceJsonld.md) |  | [optional] 
+**row** | [**\EmonsiteApi\Models\BlockLineInterfaceJsonld[]**](BlockLineInterfaceJsonld.md) |  | [optional] 
 **id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

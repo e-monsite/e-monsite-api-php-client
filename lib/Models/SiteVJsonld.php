@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * SiteVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -71,7 +71,7 @@ class SiteVJsonld implements ModelInterface, ArrayAccess
 'breadcrumb' => 'string',
 'sitemap' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\SiteJsonld',
+'item' => '\EmonsiteApi\Models\SiteJsonld',
 'active' => 'bool'    ];
 
     /**
@@ -655,7 +655,7 @@ class SiteVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getItem()
     {
@@ -665,7 +665,7 @@ class SiteVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\SiteJsonld $item item
+     * @param \EmonsiteApi\Models\SiteJsonld $item item
      *
      * @return $this
      */

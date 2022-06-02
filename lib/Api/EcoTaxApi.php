@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoTaxApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class EcoTaxApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20019
+     * @return \EmonsiteApi\Models\InlineResponse20019
      */
     public function getEcoTaxCollection($site_id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class EcoTaxApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20019, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20019, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoTaxCollectionWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20019';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20019';
         $request = $this->getEcoTaxCollectionRequest($site_id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class EcoTaxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20019',
+                        '\EmonsiteApi\Models\InlineResponse20019',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class EcoTaxApi
      */
     public function getEcoTaxCollectionAsyncWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20019';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20019';
         $request = $this->getEcoTaxCollectionRequest($site_id, $page, $items_per_page);
 
         return $this->client
@@ -375,9 +375,9 @@ class EcoTaxApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld
+     * @return \EmonsiteApi\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld
      */
     public function getEcoTaxItem($id, $site_id)
     {
@@ -393,13 +393,13 @@ class EcoTaxApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoTaxItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld';
         $request = $this->getEcoTaxItemRequest($id, $site_id);
 
         try {
@@ -451,7 +451,7 @@ class EcoTaxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld',
+                        '\EmonsiteApi\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -495,7 +495,7 @@ class EcoTaxApi
      */
     public function getEcoTaxItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoTax4aaa3cd99bce23b9546619d29652fde1Jsonld';
         $request = $this->getEcoTaxItemRequest($id, $site_id);
 
         return $this->client

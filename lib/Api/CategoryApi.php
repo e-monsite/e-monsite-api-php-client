@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * CategoryApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -97,9 +97,9 @@ class CategoryApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2007
+     * @return \EmonsiteApi\Models\InlineResponse2007
      */
     public function getCategoryCollection($site_id, $model_id = null, $model_id = null, $page = '1', $items_per_page = '30')
     {
@@ -118,13 +118,13 @@ class CategoryApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2007, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoryCollectionWithHttpInfo($site_id, $model_id = null, $model_id = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2007';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2007';
         $request = $this->getCategoryCollectionRequest($site_id, $model_id, $model_id, $page, $items_per_page);
 
         try {
@@ -176,7 +176,7 @@ class CategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2007',
+                        '\EmonsiteApi\Models\InlineResponse2007',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -226,7 +226,7 @@ class CategoryApi
      */
     public function getCategoryCollectionAsyncWithHttpInfo($site_id, $model_id = null, $model_id = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2007';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2007';
         $request = $this->getCategoryCollectionRequest($site_id, $model_id, $model_id, $page, $items_per_page);
 
         return $this->client
@@ -396,9 +396,9 @@ class CategoryApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld
+     * @return \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld
      */
     public function getCategoryItem($id, $site_id)
     {
@@ -414,13 +414,13 @@ class CategoryApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoryItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
+        $returnType = '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
         $request = $this->getCategoryItemRequest($id, $site_id);
 
         try {
@@ -472,7 +472,7 @@ class CategoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld',
+                        '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -516,7 +516,7 @@ class CategoryApi
      */
     public function getCategoryItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
+        $returnType = '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
         $request = $this->getCategoryItemRequest($id, $site_id);
 
         return $this->client
@@ -675,11 +675,11 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld
+     * @return \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld
      */
     public function postCategoryCollection($body = null)
     {
@@ -692,15 +692,15 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCategoryCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
+        $returnType = '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
         $request = $this->postCategoryCollectionRequest($body);
 
         try {
@@ -752,7 +752,7 @@ class CategoryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld',
+                        '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -767,7 +767,7 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -787,14 +787,14 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCategoryCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
+        $returnType = '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
         $request = $this->postCategoryCollectionRequest($body);
 
         return $this->client
@@ -837,7 +837,7 @@ class CategoryApi
     /**
      * Create request for operation 'postCategoryCollection'
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -931,11 +931,11 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld
+     * @return \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld
      */
     public function postCategoryCollection($body = null)
     {
@@ -948,15 +948,15 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCategoryCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
+        $returnType = '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
         $request = $this->postCategoryCollectionRequest($body);
 
         try {
@@ -1008,7 +1008,7 @@ class CategoryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld',
+                        '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1023,7 +1023,7 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1043,14 +1043,14 @@ class CategoryApi
      *
      * Creates a Category resource.
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCategoryCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
+        $returnType = '\EmonsiteApi\Models\Category1244f72848b2e9f4bc7039366e5cef3eJsonld';
         $request = $this->postCategoryCollectionRequest($body);
 
         return $this->client
@@ -1093,7 +1093,7 @@ class CategoryApi
     /**
      * Create request for operation 'postCategoryCollection'
      *
-     * @param  \Emonsite\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
+     * @param  \EmonsiteApi\Models\CategoryA72a7db8b7aeb918546eb332f4161205Jsonld $body The new Category resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

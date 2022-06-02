@@ -11,8 +11,8 @@ Name | Type | Description | Notes
 **cachedcontent** | **string** |  | [optional] 
 **cachedcontent_expiration_dt** | **int** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\StructureWidgets**](StructureWidgets.md) |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\StructureWidgets**](StructureWidgets.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

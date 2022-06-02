@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockLineJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,14 +67,14 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
 'position' => 'int',
 'pagination' => 'bool',
 'options' => 'string[]',
-'cells' => '\Emonsite\Models\BlockCellJsonld[]',
-'cell' => '\Emonsite\Models\BlockCellInterfaceJsonld[]',
+'cells' => '\EmonsiteApi\Models\BlockCellJsonld[]',
+'cell' => '\EmonsiteApi\Models\BlockCellInterfaceJsonld[]',
 'default_lang' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\BlockLineVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\BlockLineVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'version_by_lang' => 'string[]',
-'site' => '\Emonsite\Models\SiteJsonld'    ];
+'site' => '\EmonsiteApi\Models\SiteJsonld'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -571,7 +571,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cells
      *
-     * @return \Emonsite\Models\BlockCellJsonld[]
+     * @return \EmonsiteApi\Models\BlockCellJsonld[]
      */
     public function getCells()
     {
@@ -581,7 +581,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cells
      *
-     * @param \Emonsite\Models\BlockCellJsonld[] $cells FAIRE LE MAPPING DANS L'ENTITY
+     * @param \EmonsiteApi\Models\BlockCellJsonld[] $cells FAIRE LE MAPPING DANS L'ENTITY
      *
      * @return $this
      */
@@ -595,7 +595,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cell
      *
-     * @return \Emonsite\Models\BlockCellInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockCellInterfaceJsonld[]
      */
     public function getCell()
     {
@@ -605,7 +605,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cell
      *
-     * @param \Emonsite\Models\BlockCellInterfaceJsonld[] $cell cell
+     * @param \EmonsiteApi\Models\BlockCellInterfaceJsonld[] $cell cell
      *
      * @return $this
      */
@@ -667,7 +667,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BlockLineVJsonld[]
+     * @return \EmonsiteApi\Models\BlockLineVJsonld[]
      */
     public function getVersions()
     {
@@ -677,7 +677,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BlockLineVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BlockLineVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -691,7 +691,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -701,7 +701,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */
@@ -739,7 +739,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -749,7 +749,7 @@ class BlockLineJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

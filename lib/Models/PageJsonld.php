@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * PageJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -65,11 +65,11 @@ class PageJsonld implements ModelInterface, ArrayAccess
 'model_id' => 'string',
 'site_url' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\PageVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\PageVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]',
-'site' => '\Emonsite\Models\SiteJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
@@ -82,7 +82,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
 'published' => 'bool',
 'publish_from' => 'int',
 'category' => 'string',
-'aliases' => '\Emonsite\Models\PageAliasJsonld[]',
+'aliases' => '\EmonsiteApi\Models\PageAliasJsonld[]',
 'alias' => 'string[]',
 'block' => 'AnyOfPageJsonldBlock'    ];
 
@@ -583,7 +583,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\PageVJsonld[]
+     * @return \EmonsiteApi\Models\PageVJsonld[]
      */
     public function getVersions()
     {
@@ -593,7 +593,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\PageVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\PageVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -607,7 +607,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -617,7 +617,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */
@@ -679,7 +679,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -689,7 +689,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */
@@ -991,7 +991,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets aliases
      *
-     * @return \Emonsite\Models\PageAliasJsonld[]
+     * @return \EmonsiteApi\Models\PageAliasJsonld[]
      */
     public function getAliases()
     {
@@ -1001,7 +1001,7 @@ class PageJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets aliases
      *
-     * @param \Emonsite\Models\PageAliasJsonld[] $aliases Faire la mapping dans l'entity
+     * @param \EmonsiteApi\Models\PageAliasJsonld[] $aliases Faire la mapping dans l'entity
      *
      * @return $this
      */

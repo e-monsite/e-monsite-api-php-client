@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockPageLineV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class BlockPageLineV implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'title' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\VersionableInterface',
+'item' => '\EmonsiteApi\Models\VersionableInterface',
 'active' => 'bool',
 'id' => 'string'    ];
 
@@ -271,7 +271,7 @@ class BlockPageLineV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\VersionableInterface
+     * @return \EmonsiteApi\Models\VersionableInterface
      */
     public function getItem()
     {
@@ -281,7 +281,7 @@ class BlockPageLineV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\VersionableInterface $item item
+     * @param \EmonsiteApi\Models\VersionableInterface $item item
      *
      * @return $this
      */

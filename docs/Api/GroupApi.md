@@ -1,4 +1,4 @@
-# Emonsite\GroupApi
+# EmonsiteApi\GroupApi
 
 All URIs are relative to */*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**postGroupCollection**](GroupApi.md#postgroupcollection) | **POST** /groups | Creates a Group resource.
 
 # **getGroupCollection**
-> \Emonsite\Models\InlineResponse20020 getGroupCollection($page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20020 getGroupCollection($page, $items_per_page)
 
 Retrieves the collection of GroupOutputDto resources.
 
@@ -18,11 +18,11 @@ Retrieves the collection of GroupOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\GroupApi(
+$apiInstance = new EmonsiteApi\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20020**](../Model/InlineResponse20020.md)
+[**\EmonsiteApi\Models\InlineResponse20020**](../Model/InlineResponse20020.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getGroupItem**
-> \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld getGroupItem($id)
+> \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld getGroupItem($id)
 
 Retrieves a GroupOutputDto resource.
 
@@ -72,11 +72,11 @@ Retrieves a GroupOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\GroupApi(
+$apiInstance = new EmonsiteApi\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld**](../Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
+[**\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld**](../Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
 
 ### Authorization
 
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postGroupCollection**
-> \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld postGroupCollection($body)
+> \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld postGroupCollection($body)
 
 Creates a Group resource.
 
@@ -124,17 +124,17 @@ Creates a Group resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\GroupApi(
+$apiInstance = new EmonsiteApi\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld(); // \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld | The new Group resource
+$body = new \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld(); // \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld | The new Group resource
 
 try {
     $result = $apiInstance->postGroupCollection($body);
@@ -149,11 +149,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld**](../Model/GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld.md)| The new Group resource | [optional]
+ **body** | [**\EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld**](../Model/GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld.md)| The new Group resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld**](../Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
+[**\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld**](../Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
 
 ### Authorization
 
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postGroupCollection**
-> \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld postGroupCollection($body)
+> \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld postGroupCollection($body)
 
 Creates a Group resource.
 
@@ -176,17 +176,17 @@ Creates a Group resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\GroupApi(
+$apiInstance = new EmonsiteApi\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld(); // \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld | The new Group resource
+$body = new \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld(); // \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld | The new Group resource
 
 try {
     $result = $apiInstance->postGroupCollection($body);
@@ -201,11 +201,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld**](../Model/GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld.md)| The new Group resource | [optional]
+ **body** | [**\EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld**](../Model/GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld.md)| The new Group resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld**](../Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
+[**\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld**](../Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
 
 ### Authorization
 

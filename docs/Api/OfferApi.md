@@ -1,4 +1,4 @@
-# Emonsite\OfferApi
+# EmonsiteApi\OfferApi
 
 All URIs are relative to */*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getOfferItem**](OfferApi.md#getofferitem) | **GET** /offers/{id} | Retrieves a OfferOutputDto resource.
 
 # **getOfferCollection**
-> \Emonsite\Models\InlineResponse20021 getOfferCollection($page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20021 getOfferCollection($page, $items_per_page)
 
 Retrieves the collection of OfferOutputDto resources.
 
@@ -17,11 +17,11 @@ Retrieves the collection of OfferOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\OfferApi(
+$apiInstance = new EmonsiteApi\Api\OfferApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20021**](../Model/InlineResponse20021.md)
+[**\EmonsiteApi\Models\InlineResponse20021**](../Model/InlineResponse20021.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOfferItem**
-> \Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld getOfferItem($id)
+> \EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld getOfferItem($id)
 
 Retrieves a OfferOutputDto resource.
 
@@ -71,11 +71,11 @@ Retrieves a OfferOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\OfferApi(
+$apiInstance = new EmonsiteApi\Api\OfferApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -100,7 +100,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\Offer9e545314e83938dc6f60861a54586191Jsonld**](../Model/Offer9e545314e83938dc6f60861a54586191Jsonld.md)
+[**\EmonsiteApi\Models\Offer9e545314e83938dc6f60861a54586191Jsonld**](../Model/Offer9e545314e83938dc6f60861a54586191Jsonld.md)
 
 ### Authorization
 

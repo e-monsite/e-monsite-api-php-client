@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **upd_user_id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

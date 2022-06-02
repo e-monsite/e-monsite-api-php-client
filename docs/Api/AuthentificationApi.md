@@ -1,4 +1,4 @@
-# Emonsite\AuthentificationApi
+# EmonsiteApi\AuthentificationApi
 
 All URIs are relative to */*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**postCredentialsItem**](AuthentificationApi.md#postcredentialsitem) | **POST** /auth | Get a JWT token to login.
 
 # **postCredentialsItem**
-> \Emonsite\Models\Tokens postCredentialsItem($body)
+> \EmonsiteApi\Models\Tokens postCredentialsItem($body)
 
 Get a JWT token to login.
 
@@ -16,17 +16,17 @@ Get a JWT token to login.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\AuthentificationApi(
+$apiInstance = new EmonsiteApi\Api\AuthentificationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\Credentials(); // \Emonsite\Models\Credentials | Create new JWT Token
+$body = new \EmonsiteApi\Models\Credentials(); // \EmonsiteApi\Models\Credentials | Create new JWT Token
 
 try {
     $result = $apiInstance->postCredentialsItem($body);
@@ -41,11 +41,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\Credentials**](../Model/Credentials.md)| Create new JWT Token | [optional]
+ **body** | [**\EmonsiteApi\Models\Credentials**](../Model/Credentials.md)| Create new JWT Token | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Tokens**](../Model/Tokens.md)
+[**\EmonsiteApi\Models\Tokens**](../Model/Tokens.md)
 
 ### Authorization
 

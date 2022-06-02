@@ -1,4 +1,4 @@
-# Emonsite\EcoCombinationApi
+# EmonsiteApi\EcoCombinationApi
 
 All URIs are relative to */*
 
@@ -19,11 +19,11 @@ Removes the EcoCombination resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoCombinationApi(
+$apiInstance = new EmonsiteApi\Api\EcoCombinationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEcoCombinationCollection**
-> \Emonsite\Models\InlineResponse20013 getEcoCombinationCollection($site_id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20013 getEcoCombinationCollection($site_id, $page, $items_per_page)
 
 Retrieves the collection of EcoCombinationOutputDto resources.
 
@@ -72,11 +72,11 @@ Retrieves the collection of EcoCombinationOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoCombinationApi(
+$apiInstance = new EmonsiteApi\Api\EcoCombinationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20013**](../Model/InlineResponse20013.md)
+[**\EmonsiteApi\Models\InlineResponse20013**](../Model/InlineResponse20013.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEcoCombinationItem**
-> \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld getEcoCombinationItem($id, $site_id)
+> \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld getEcoCombinationItem($id, $site_id)
 
 Retrieves a EcoCombinationOutputDto resource.
 
@@ -128,11 +128,11 @@ Retrieves a EcoCombinationOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoCombinationApi(
+$apiInstance = new EmonsiteApi\Api\EcoCombinationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -159,7 +159,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld**](../Model/EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld.md)
+[**\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld**](../Model/EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postEcoCombinationCollection**
-> \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld postEcoCombinationCollection($body)
+> \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld postEcoCombinationCollection($body)
 
 Creates a EcoCombination resource.
 
@@ -182,17 +182,17 @@ Creates a EcoCombination resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoCombinationApi(
+$apiInstance = new EmonsiteApi\Api\EcoCombinationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld(); // \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld | The new EcoCombination resource
+$body = new \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld(); // \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld | The new EcoCombination resource
 
 try {
     $result = $apiInstance->postEcoCombinationCollection($body);
@@ -207,11 +207,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld**](../Model/EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld.md)| The new EcoCombination resource | [optional]
+ **body** | [**\EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld**](../Model/EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld.md)| The new EcoCombination resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld**](../Model/EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld.md)
+[**\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld**](../Model/EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld.md)
 
 ### Authorization
 
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postEcoCombinationCollection**
-> \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld postEcoCombinationCollection($body)
+> \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld postEcoCombinationCollection($body)
 
 Creates a EcoCombination resource.
 
@@ -234,17 +234,17 @@ Creates a EcoCombination resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoCombinationApi(
+$apiInstance = new EmonsiteApi\Api\EcoCombinationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld(); // \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld | The new EcoCombination resource
+$body = new \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld(); // \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld | The new EcoCombination resource
 
 try {
     $result = $apiInstance->postEcoCombinationCollection($body);
@@ -259,11 +259,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld**](../Model/EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld.md)| The new EcoCombination resource | [optional]
+ **body** | [**\EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld**](../Model/EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld.md)| The new EcoCombination resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld**](../Model/EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld.md)
+[**\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld**](../Model/EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoLoyaltyPointsJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class EcoLoyaltyPointsJsonld implements ModelInterface, ArrayAccess
 'id' => 'string',
 'type' => 'string',
 'id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
 'active' => 'bool',
 'active_topaid_order' => 'bool',
 'name' => 'string',
@@ -76,7 +76,7 @@ class EcoLoyaltyPointsJsonld implements ModelInterface, ArrayAccess
 'access_rights' => 'int',
 'categories_rights' => 'int',
 'categories' => 'string[]',
-'groups' => '\Emonsite\Models\MembergroupJsonld[]',
+'groups' => '\EmonsiteApi\Models\MembergroupJsonld[]',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
 'add_dt' => 'int',
@@ -451,7 +451,7 @@ class EcoLoyaltyPointsJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -461,7 +461,7 @@ class EcoLoyaltyPointsJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */
@@ -835,7 +835,7 @@ class EcoLoyaltyPointsJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets groups
      *
-     * @return \Emonsite\Models\MembergroupJsonld[]
+     * @return \EmonsiteApi\Models\MembergroupJsonld[]
      */
     public function getGroups()
     {
@@ -845,7 +845,7 @@ class EcoLoyaltyPointsJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets groups
      *
-     * @param \Emonsite\Models\MembergroupJsonld[] $groups groups
+     * @param \EmonsiteApi\Models\MembergroupJsonld[] $groups groups
      *
      * @return $this
      */

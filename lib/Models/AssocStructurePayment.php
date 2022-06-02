@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * AssocStructurePayment Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'structure' => '\Emonsite\Models\StructurePayment',
+        'structure' => '\EmonsiteApi\Models\StructurePayment',
 'payment_id' => 'string',
 'params' => 'string',
 'impact' => 'string',
@@ -72,9 +72,9 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
-'site' => '\Emonsite\Models\Site',
-'versions' => '\Emonsite\Models\AssocStructurePaymentV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'site' => '\EmonsiteApi\Models\Site',
+'versions' => '\EmonsiteApi\Models\AssocStructurePaymentV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -319,7 +319,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets structure
      *
-     * @return \Emonsite\Models\StructurePayment
+     * @return \EmonsiteApi\Models\StructurePayment
      */
     public function getStructure()
     {
@@ -329,7 +329,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets structure
      *
-     * @param \Emonsite\Models\StructurePayment $structure structure
+     * @param \EmonsiteApi\Models\StructurePayment $structure structure
      *
      * @return $this
      */
@@ -703,7 +703,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -713,7 +713,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */
@@ -727,7 +727,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\AssocStructurePaymentV[]
+     * @return \EmonsiteApi\Models\AssocStructurePaymentV[]
      */
     public function getVersions()
     {
@@ -737,7 +737,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\AssocStructurePaymentV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\AssocStructurePaymentV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -751,7 +751,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -761,7 +761,7 @@ class AssocStructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */

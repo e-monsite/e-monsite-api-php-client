@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * PageBlock Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class PageBlock implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'line_class' => 'string',
 'cell_class' => 'string',
-'lines' => '\Emonsite\Models\BlockPageLine[]',
-'rows' => '\Emonsite\Models\BlockLineInterface[]',
-'line' => '\Emonsite\Models\BlockLineInterface[]',
-'row' => '\Emonsite\Models\BlockLineInterface[]',
+'lines' => '\EmonsiteApi\Models\BlockPageLine[]',
+'rows' => '\EmonsiteApi\Models\BlockLineInterface[]',
+'line' => '\EmonsiteApi\Models\BlockLineInterface[]',
+'row' => '\EmonsiteApi\Models\BlockLineInterface[]',
 'id' => 'string',
-'site' => '\Emonsite\Models\Site'    ];
+'site' => '\EmonsiteApi\Models\Site'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -289,7 +289,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Emonsite\Models\BlockPageLine[]
+     * @return \EmonsiteApi\Models\BlockPageLine[]
      */
     public function getLines()
     {
@@ -299,7 +299,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Emonsite\Models\BlockPageLine[] $lines lines
+     * @param \EmonsiteApi\Models\BlockPageLine[] $lines lines
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Gets rows
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getRows()
     {
@@ -323,7 +323,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Sets rows
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $rows rows
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $rows rows
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Gets line
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getLine()
     {
@@ -347,7 +347,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Sets line
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $line line
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $line line
      *
      * @return $this
      */
@@ -361,7 +361,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Gets row
      *
-     * @return \Emonsite\Models\BlockLineInterface[]
+     * @return \EmonsiteApi\Models\BlockLineInterface[]
      */
     public function getRow()
     {
@@ -371,7 +371,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Sets row
      *
-     * @param \Emonsite\Models\BlockLineInterface[] $row row
+     * @param \EmonsiteApi\Models\BlockLineInterface[] $row row
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -419,7 +419,7 @@ class PageBlock implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

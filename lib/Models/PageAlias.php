@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * PageAlias Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class PageAlias implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'model_id' => 'string',
-'item' => '\Emonsite\Models\Page',
+'item' => '\EmonsiteApi\Models\Page',
 'category' => 'string',
 'ordering' => 'int',
 'id' => 'string',
@@ -67,7 +67,7 @@ class PageAlias implements ModelInterface, ArrayAccess
 'updated_at' => '\DateTime',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
-'site' => '\Emonsite\Models\Site'    ];
+'site' => '\EmonsiteApi\Models\Site'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -289,7 +289,7 @@ class PageAlias implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\Page
+     * @return \EmonsiteApi\Models\Page
      */
     public function getItem()
     {
@@ -299,7 +299,7 @@ class PageAlias implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\Page $item item
+     * @param \EmonsiteApi\Models\Page $item item
      *
      * @return $this
      */
@@ -529,7 +529,7 @@ class PageAlias implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -539,7 +539,7 @@ class PageAlias implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

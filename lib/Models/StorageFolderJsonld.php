@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * StorageFolderJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,10 +62,10 @@ class StorageFolderJsonld implements ModelInterface, ArrayAccess
 'dirtype' => 'string',
 'name' => 'string',
 'parent' => 'AnyOfStorageFolderJsonldParent',
-'children' => '\Emonsite\Models\StorageFolderJsonld[]',
+'children' => '\EmonsiteApi\Models\StorageFolderJsonld[]',
 'position' => 'int',
 'id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
@@ -433,7 +433,7 @@ class StorageFolderJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets children
      *
-     * @return \Emonsite\Models\StorageFolderJsonld[]
+     * @return \EmonsiteApi\Models\StorageFolderJsonld[]
      */
     public function getChildren()
     {
@@ -443,7 +443,7 @@ class StorageFolderJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets children
      *
-     * @param \Emonsite\Models\StorageFolderJsonld[] $children children
+     * @param \EmonsiteApi\Models\StorageFolderJsonld[] $children children
      *
      * @return $this
      */
@@ -505,7 +505,7 @@ class StorageFolderJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -515,7 +515,7 @@ class StorageFolderJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

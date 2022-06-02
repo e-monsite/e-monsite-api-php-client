@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **type** | **string** |  | [optional] 
 **title** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\VersionableInterfaceJsonld**](VersionableInterfaceJsonld.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\VersionableInterfaceJsonld**](VersionableInterfaceJsonld.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **id** | **string** |  | [optional] 
 

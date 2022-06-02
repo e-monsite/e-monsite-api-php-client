@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * CommandProductApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class CommandProductApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2008
+     * @return \EmonsiteApi\Models\InlineResponse2008
      */
     public function getCommandProductCollection($command_id = null, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class CommandProductApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2008, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2008, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommandProductCollectionWithHttpInfo($command_id = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2008';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2008';
         $request = $this->getCommandProductCollectionRequest($command_id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class CommandProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2008',
+                        '\EmonsiteApi\Models\InlineResponse2008',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class CommandProductApi
      */
     public function getCommandProductCollectionAsyncWithHttpInfo($command_id = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2008';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2008';
         $request = $this->getCommandProductCollectionRequest($command_id, $page, $items_per_page);
 
         return $this->client
@@ -368,9 +368,9 @@ class CommandProductApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld
+     * @return \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld
      */
     public function getCommandProductItem($id)
     {
@@ -385,13 +385,13 @@ class CommandProductApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommandProductItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
+        $returnType = '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
         $request = $this->getCommandProductItemRequest($id);
 
         try {
@@ -443,7 +443,7 @@ class CommandProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld',
+                        '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -485,7 +485,7 @@ class CommandProductApi
      */
     public function getCommandProductItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
+        $returnType = '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
         $request = $this->getCommandProductItemRequest($id);
 
         return $this->client
@@ -633,11 +633,11 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld
+     * @return \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld
      */
     public function postCommandProductCollection($body = null)
     {
@@ -650,15 +650,15 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCommandProductCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
+        $returnType = '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
         $request = $this->postCommandProductCollectionRequest($body);
 
         try {
@@ -710,7 +710,7 @@ class CommandProductApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld',
+                        '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -725,7 +725,7 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -745,14 +745,14 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCommandProductCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
+        $returnType = '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
         $request = $this->postCommandProductCollectionRequest($body);
 
         return $this->client
@@ -795,7 +795,7 @@ class CommandProductApi
     /**
      * Create request for operation 'postCommandProductCollection'
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -889,11 +889,11 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld
+     * @return \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld
      */
     public function postCommandProductCollection($body = null)
     {
@@ -906,15 +906,15 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCommandProductCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
+        $returnType = '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
         $request = $this->postCommandProductCollectionRequest($body);
 
         try {
@@ -966,7 +966,7 @@ class CommandProductApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld',
+                        '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -981,7 +981,7 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1001,14 +1001,14 @@ class CommandProductApi
      *
      * Creates a CommandProduct resource.
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCommandProductCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
+        $returnType = '\EmonsiteApi\Models\CommandProductE9771de728231a75b73008fe2e6c0e5fJsonld';
         $request = $this->postCommandProductCollectionRequest($body);
 
         return $this->client
@@ -1051,7 +1051,7 @@ class CommandProductApi
     /**
      * Create request for operation 'postCommandProductCollection'
      *
-     * @param  \Emonsite\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
+     * @param  \EmonsiteApi\Models\CommandProductE6648ceda3fb8628d90f7e34797db5f5Jsonld $body The new CommandProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

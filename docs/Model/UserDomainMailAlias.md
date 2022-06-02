@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_domain** | [**\Emonsite\Models\UserDomain**](UserDomain.md) |  | [optional] 
+**user_domain** | [**\EmonsiteApi\Models\UserDomain**](UserDomain.md) |  | [optional] 
 **domain** | **string** |  | [optional] 
 **username** | **string** |  | [optional] 
 **alias** | **string** |  | [optional] 

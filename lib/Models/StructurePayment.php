@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * StructurePayment Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,10 +58,10 @@ class StructurePayment implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
 'description' => 'string',
-'paymeans' => '\Emonsite\Models\AssocStructurePayment[]',
-'modules' => '\Emonsite\Models\AssocStructureModule[]',
+'paymeans' => '\EmonsiteApi\Models\AssocStructurePayment[]',
+'modules' => '\EmonsiteApi\Models\AssocStructureModule[]',
 'id' => 'string',
-'site' => '\Emonsite\Models\Site',
+'site' => '\EmonsiteApi\Models\Site',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
@@ -313,7 +313,7 @@ class StructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets paymeans
      *
-     * @return \Emonsite\Models\AssocStructurePayment[]
+     * @return \EmonsiteApi\Models\AssocStructurePayment[]
      */
     public function getPaymeans()
     {
@@ -323,7 +323,7 @@ class StructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets paymeans
      *
-     * @param \Emonsite\Models\AssocStructurePayment[] $paymeans paymeans
+     * @param \EmonsiteApi\Models\AssocStructurePayment[] $paymeans paymeans
      *
      * @return $this
      */
@@ -337,7 +337,7 @@ class StructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets modules
      *
-     * @return \Emonsite\Models\AssocStructureModule[]
+     * @return \EmonsiteApi\Models\AssocStructureModule[]
      */
     public function getModules()
     {
@@ -347,7 +347,7 @@ class StructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets modules
      *
-     * @param \Emonsite\Models\AssocStructureModule[] $modules modules
+     * @param \EmonsiteApi\Models\AssocStructureModule[] $modules modules
      *
      * @return $this
      */
@@ -385,7 +385,7 @@ class StructurePayment implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -395,7 +395,7 @@ class StructurePayment implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

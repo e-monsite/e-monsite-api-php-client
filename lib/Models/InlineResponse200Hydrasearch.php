@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * InlineResponse200Hydrasearch Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class InlineResponse200Hydrasearch implements ModelInterface, ArrayAccess
         'type' => 'string',
 'hydratemplate' => 'string',
 'hydravariable_representation' => 'string',
-'hydramapping' => '\Emonsite\Models\InlineResponse200HydrasearchHydramapping[]'    ];
+'hydramapping' => '\EmonsiteApi\Models\InlineResponse200HydrasearchHydramapping[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -289,7 +289,7 @@ class InlineResponse200Hydrasearch implements ModelInterface, ArrayAccess
     /**
      * Gets hydramapping
      *
-     * @return \Emonsite\Models\InlineResponse200HydrasearchHydramapping[]
+     * @return \EmonsiteApi\Models\InlineResponse200HydrasearchHydramapping[]
      */
     public function getHydramapping()
     {
@@ -299,7 +299,7 @@ class InlineResponse200Hydrasearch implements ModelInterface, ArrayAccess
     /**
      * Sets hydramapping
      *
-     * @param \Emonsite\Models\InlineResponse200HydrasearchHydramapping[] $hydramapping hydramapping
+     * @param \EmonsiteApi\Models\InlineResponse200HydrasearchHydramapping[] $hydramapping hydramapping
      *
      * @return $this
      */

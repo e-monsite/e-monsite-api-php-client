@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **context** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
-**eco_config** | [**\Emonsite\Models\EcoSiteJsonld**](EcoSiteJsonld.md) |  | [optional] 
+**eco_config** | [**\EmonsiteApi\Models\EcoSiteJsonld**](EcoSiteJsonld.md) |  | [optional] 
 **api_key** | **string** |  | [optional] 
 **active_carriers** | **string[]** |  | [optional] 
 **firstname** | **string** |  | [optional] 
@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **packages** | **string[]** |  | [optional] 
 **package_defined** | **bool** | Détermine si un colis type a été renseigné | [optional] 
 **sender_defined** | **bool** | Détermine si les coordonnées d&#x27;expéditeurs ont été renseignés | [optional] 
-**zones** | [**\Emonsite\Models\EcoPacklinkHasZoneJsonld[]**](EcoPacklinkHasZoneJsonld.md) |  | [optional] 
+**zones** | [**\EmonsiteApi\Models\EcoPacklinkHasZoneJsonld[]**](EcoPacklinkHasZoneJsonld.md) |  | [optional] 
 **tax** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 

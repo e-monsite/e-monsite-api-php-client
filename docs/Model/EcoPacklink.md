@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**eco_config** | [**\Emonsite\Models\EcoSite**](EcoSite.md) |  | [optional] 
+**eco_config** | [**\EmonsiteApi\Models\EcoSite**](EcoSite.md) |  | [optional] 
 **api_key** | **string** |  | [optional] 
 **active_carriers** | **string[]** |  | [optional] 
 **firstname** | **string** |  | [optional] 
@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **packages** | **string[]** |  | [optional] 
 **package_defined** | **bool** | Détermine si un colis type a été renseigné | [optional] 
 **sender_defined** | **bool** | Détermine si les coordonnées d&#x27;expéditeurs ont été renseignés | [optional] 
-**zones** | [**\Emonsite\Models\EcoPacklinkHasZone[]**](EcoPacklinkHasZone.md) |  | [optional] 
+**zones** | [**\EmonsiteApi\Models\EcoPacklinkHasZone[]**](EcoPacklinkHasZone.md) |  | [optional] 
 **tax** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 

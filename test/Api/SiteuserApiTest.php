@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,17 +25,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Emonsite;
+namespace EmonsiteApi;
 
-use Emonsite\Configuration;
-use Emonsite\ApiException;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * SiteuserApiTest Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

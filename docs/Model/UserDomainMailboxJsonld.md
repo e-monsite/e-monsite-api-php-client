@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **context** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
 **type** | **string** |  | [optional] 
-**user_domain** | [**\Emonsite\Models\UserDomainJsonld**](UserDomainJsonld.md) |  | [optional] 
+**user_domain** | [**\EmonsiteApi\Models\UserDomainJsonld**](UserDomainJsonld.md) |  | [optional] 
 **domain** | **string** |  | [optional] 
 **username** | **string** |  | [optional] 
 **passwd** | **string** |  | [optional] 

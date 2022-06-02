@@ -1,4 +1,4 @@
-# Emonsite\EcoOrderDetailUploadApi
+# EmonsiteApi\EcoOrderDetailUploadApi
 
 All URIs are relative to */*
 
@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**downloadEcoOrderDetailUploadItem**](EcoOrderDetailUploadApi.md#downloadecoorderdetailuploaditem) | **GET** /eco_order_detail_uploads/{id}/download | download the file
 
 # **downloadEcoOrderDetailUploadItem**
-> \Emonsite\Models\EcoOrderDetailUploadJsonld downloadEcoOrderDetailUploadItem($, $)
+> \EmonsiteApi\Models\EcoOrderDetailUploadJsonld downloadEcoOrderDetailUploadItem($, $)
 
 download the file
 
@@ -16,18 +16,18 @@ download the file
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoOrderDetailUploadApi(
+$apiInstance = new EmonsiteApi\Api\EcoOrderDetailUploadApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$ = new \Emonsite\Models\null(); //  | 
-$ = new \Emonsite\Models\null(); //  | 
+$ = new \EmonsiteApi\Models\null(); //  | 
+$ = new \EmonsiteApi\Models\null(); //  | 
 
 try {
     $result = $apiInstance->downloadEcoOrderDetailUploadItem($, $);
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\EcoOrderDetailUploadJsonld**](../Model/EcoOrderDetailUploadJsonld.md)
+[**\EmonsiteApi\Models\EcoOrderDetailUploadJsonld**](../Model/EcoOrderDetailUploadJsonld.md)
 
 ### Authorization
 

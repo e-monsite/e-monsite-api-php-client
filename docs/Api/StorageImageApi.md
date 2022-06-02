@@ -1,4 +1,4 @@
-# Emonsite\StorageImageApi
+# EmonsiteApi\StorageImageApi
 
 All URIs are relative to */*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**postStorageImageCollection**](StorageImageApi.md#poststorageimagecollection) | **POST** /storage_images | Creates a StorageImage resource.
 
 # **getStorageImageCollection**
-> \Emonsite\Models\InlineResponse20026 getStorageImageCollection($site_id, $order_add_dt, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20026 getStorageImageCollection($site_id, $order_add_dt, $page, $items_per_page)
 
 Retrieves the collection of StorageImageOutputDto resources.
 
@@ -19,11 +19,11 @@ Retrieves the collection of StorageImageOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\StorageImageApi(
+$apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20026**](../Model/InlineResponse20026.md)
+[**\EmonsiteApi\Models\InlineResponse20026**](../Model/InlineResponse20026.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getStorageImageItem**
-> \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld getStorageImageItem($id, $site_id)
+> \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld getStorageImageItem($id, $site_id)
 
 Retrieves a StorageImageOutputDto resource.
 
@@ -77,11 +77,11 @@ Retrieves a StorageImageOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\StorageImageApi(
+$apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld**](../Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
+[**\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld**](../Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchStorageImageItem**
-> \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld patchStorageImageItem($site_id, $id, $body)
+> \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld patchStorageImageItem($site_id, $id, $body)
 
 Updates the StorageImage resource.
 
@@ -131,11 +131,11 @@ Updates the StorageImage resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\StorageImageApi(
+$apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -143,7 +143,7 @@ $apiInstance = new Emonsite\Api\StorageImageApi(
 );
 $site_id = "site_id_example"; // string | 
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767(); // \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 | The updated StorageImage resource
+$body = new \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767(); // \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 | The updated StorageImage resource
 
 try {
     $result = $apiInstance->patchStorageImageItem($site_id, $id, $body);
@@ -160,11 +160,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **site_id** | **string**|  |
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767**](../Model/StorageImage292cb7fe7e2c3f669075bf385747b767.md)| The updated StorageImage resource | [optional]
+ **body** | [**\EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767**](../Model/StorageImage292cb7fe7e2c3f669075bf385747b767.md)| The updated StorageImage resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld**](../Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
+[**\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld**](../Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
 
 ### Authorization
 
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postStorageImageCollection**
-> \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld postStorageImageCollection($image_site_id, $image_file)
+> \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld postStorageImageCollection($image_site_id, $image_file)
 
 Creates a StorageImage resource.
 
@@ -187,11 +187,11 @@ Creates a StorageImage resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\StorageImageApi(
+$apiInstance = new EmonsiteApi\Api\StorageImageApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld**](../Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
+[**\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld**](../Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
 
 ### Authorization
 

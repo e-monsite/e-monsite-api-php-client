@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * AssocStructurePaymentV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AssocStructurePaymentV implements ModelInterface, ArrayAccess
         'name' => 'string',
 'description' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\AssocStructurePayment',
+'item' => '\EmonsiteApi\Models\AssocStructurePayment',
 'active' => 'bool'    ];
 
     /**
@@ -295,7 +295,7 @@ class AssocStructurePaymentV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\AssocStructurePayment
+     * @return \EmonsiteApi\Models\AssocStructurePayment
      */
     public function getItem()
     {
@@ -305,7 +305,7 @@ class AssocStructurePaymentV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\AssocStructurePayment $item item
+     * @param \EmonsiteApi\Models\AssocStructurePayment $item item
      *
      * @return $this
      */

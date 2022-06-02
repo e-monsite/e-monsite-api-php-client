@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **title** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\VersionableInterface**](VersionableInterface.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\VersionableInterface**](VersionableInterface.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **id** | **string** |  | [optional] 
 

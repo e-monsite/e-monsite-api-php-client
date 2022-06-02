@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * UserDomainMailAliasJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class UserDomainMailAliasJsonld implements ModelInterface, ArrayAccess
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'user_domain' => '\Emonsite\Models\UserDomainJsonld',
+'user_domain' => '\EmonsiteApi\Models\UserDomainJsonld',
 'domain' => 'string',
 'username' => 'string',
 'alias' => 'string',
@@ -349,7 +349,7 @@ class UserDomainMailAliasJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets user_domain
      *
-     * @return \Emonsite\Models\UserDomainJsonld
+     * @return \EmonsiteApi\Models\UserDomainJsonld
      */
     public function getUserDomain()
     {
@@ -359,7 +359,7 @@ class UserDomainMailAliasJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets user_domain
      *
-     * @param \Emonsite\Models\UserDomainJsonld $user_domain user_domain
+     * @param \EmonsiteApi\Models\UserDomainJsonld $user_domain user_domain
      *
      * @return $this
      */

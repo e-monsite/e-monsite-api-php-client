@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EditableZonesBottomSiteBlockJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,12 +61,12 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
 'type' => 'string',
 'line_class' => 'string',
 'cell_class' => 'string',
-'lines' => '\Emonsite\Models\BlockEditableZonesBottomSiteLineJsonld[]',
-'rows' => '\Emonsite\Models\BlockLineInterfaceJsonld[]',
-'line' => '\Emonsite\Models\BlockLineInterfaceJsonld[]',
-'row' => '\Emonsite\Models\BlockLineInterfaceJsonld[]',
+'lines' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteLineJsonld[]',
+'rows' => '\EmonsiteApi\Models\BlockLineInterfaceJsonld[]',
+'line' => '\EmonsiteApi\Models\BlockLineInterfaceJsonld[]',
+'row' => '\EmonsiteApi\Models\BlockLineInterfaceJsonld[]',
 'id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld'    ];
+'site' => '\EmonsiteApi\Models\SiteJsonld'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -379,7 +379,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteLineJsonld[]
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteLineJsonld[]
      */
     public function getLines()
     {
@@ -389,7 +389,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteLineJsonld[] $lines lines
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteLineJsonld[] $lines lines
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets rows
      *
-     * @return \Emonsite\Models\BlockLineInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockLineInterfaceJsonld[]
      */
     public function getRows()
     {
@@ -413,7 +413,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets rows
      *
-     * @param \Emonsite\Models\BlockLineInterfaceJsonld[] $rows rows
+     * @param \EmonsiteApi\Models\BlockLineInterfaceJsonld[] $rows rows
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets line
      *
-     * @return \Emonsite\Models\BlockLineInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockLineInterfaceJsonld[]
      */
     public function getLine()
     {
@@ -437,7 +437,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets line
      *
-     * @param \Emonsite\Models\BlockLineInterfaceJsonld[] $line line
+     * @param \EmonsiteApi\Models\BlockLineInterfaceJsonld[] $line line
      *
      * @return $this
      */
@@ -451,7 +451,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets row
      *
-     * @return \Emonsite\Models\BlockLineInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\BlockLineInterfaceJsonld[]
      */
     public function getRow()
     {
@@ -461,7 +461,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets row
      *
-     * @param \Emonsite\Models\BlockLineInterfaceJsonld[] $row row
+     * @param \EmonsiteApi\Models\BlockLineInterfaceJsonld[] $row row
      *
      * @return $this
      */
@@ -499,7 +499,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -509,7 +509,7 @@ class EditableZonesBottomSiteBlockJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

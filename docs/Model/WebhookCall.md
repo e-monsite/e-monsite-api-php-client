@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**webhook** | [**\Emonsite\Models\Webhook**](Webhook.md) |  | [optional] 
+**webhook** | [**\EmonsiteApi\Models\Webhook**](Webhook.md) |  | [optional] 
 **add_dt** | **int** |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **status** | **string** |  | [optional] 

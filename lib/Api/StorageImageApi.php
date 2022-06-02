@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * StorageImageApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -96,9 +96,9 @@ class StorageImageApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20026
+     * @return \EmonsiteApi\Models\InlineResponse20026
      */
     public function getStorageImageCollection($site_id, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
@@ -116,13 +116,13 @@ class StorageImageApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20026, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20026, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStorageImageCollectionWithHttpInfo($site_id, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20026';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20026';
         $request = $this->getStorageImageCollectionRequest($site_id, $order_add_dt, $page, $items_per_page);
 
         try {
@@ -174,7 +174,7 @@ class StorageImageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20026',
+                        '\EmonsiteApi\Models\InlineResponse20026',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -222,7 +222,7 @@ class StorageImageApi
      */
     public function getStorageImageCollectionAsyncWithHttpInfo($site_id, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20026';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20026';
         $request = $this->getStorageImageCollectionRequest($site_id, $order_add_dt, $page, $items_per_page);
 
         return $this->client
@@ -384,9 +384,9 @@ class StorageImageApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
+     * @return \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
      */
     public function getStorageImageItem($id, $site_id)
     {
@@ -402,13 +402,13 @@ class StorageImageApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getStorageImageItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
+        $returnType = '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
         $request = $this->getStorageImageItemRequest($id, $site_id);
 
         try {
@@ -460,7 +460,7 @@ class StorageImageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld',
+                        '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class StorageImageApi
      */
     public function getStorageImageItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
+        $returnType = '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
         $request = $this->getStorageImageItemRequest($id, $site_id);
 
         return $this->client
@@ -665,11 +665,11 @@ class StorageImageApi
      *
      * @param  string $site_id site_id (required)
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
+     * @param  \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
+     * @return \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
      */
     public function patchStorageImageItem($site_id, $id, $body = null)
     {
@@ -684,15 +684,15 @@ class StorageImageApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
+     * @param  \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchStorageImageItemWithHttpInfo($site_id, $id, $body = null)
     {
-        $returnType = '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
+        $returnType = '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
         $request = $this->patchStorageImageItemRequest($site_id, $id, $body);
 
         try {
@@ -744,7 +744,7 @@ class StorageImageApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld',
+                        '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -761,7 +761,7 @@ class StorageImageApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
+     * @param  \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -783,14 +783,14 @@ class StorageImageApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
+     * @param  \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchStorageImageItemAsyncWithHttpInfo($site_id, $id, $body = null)
     {
-        $returnType = '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
+        $returnType = '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
         $request = $this->patchStorageImageItemRequest($site_id, $id, $body);
 
         return $this->client
@@ -835,7 +835,7 @@ class StorageImageApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
+     * @param  \EmonsiteApi\Models\StorageImage292cb7fe7e2c3f669075bf385747b767 $body The updated StorageImage resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -956,9 +956,9 @@ class StorageImageApi
      * @param  string $image_site_id image_site_id (optional)
      * @param  string $image_file image_file (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
+     * @return \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld
      */
     public function postStorageImageCollection($image_site_id = null, $image_file = null)
     {
@@ -974,13 +974,13 @@ class StorageImageApi
      * @param  string $image_site_id (optional)
      * @param  string $image_file (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postStorageImageCollectionWithHttpInfo($image_site_id = null, $image_file = null)
     {
-        $returnType = '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
+        $returnType = '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
         $request = $this->postStorageImageCollectionRequest($image_site_id, $image_file);
 
         try {
@@ -1032,7 +1032,7 @@ class StorageImageApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld',
+                        '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1076,7 +1076,7 @@ class StorageImageApi
      */
     public function postStorageImageCollectionAsyncWithHttpInfo($image_site_id = null, $image_file = null)
     {
-        $returnType = '\Emonsite\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
+        $returnType = '\EmonsiteApi\Models\StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld';
         $request = $this->postStorageImageCollectionRequest($image_site_id, $image_file);
 
         return $this->client

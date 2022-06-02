@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **title_in_blocks** | **bool** |  | [optional] 
 **titlemenu** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\Page**](Page.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\Page**](Page.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **seo_uri** | **string** |  | [optional] 
 **seo_title** | **string** |  | [optional] 

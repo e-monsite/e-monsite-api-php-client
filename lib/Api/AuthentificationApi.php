@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * AuthentificationApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,11 +91,11 @@ class AuthentificationApi
      *
      * Get a JWT token to login.
      *
-     * @param  \Emonsite\Models\Credentials $body Create new JWT Token (optional)
+     * @param  \EmonsiteApi\Models\Credentials $body Create new JWT Token (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Tokens
+     * @return \EmonsiteApi\Models\Tokens
      */
     public function postCredentialsItem($body = null)
     {
@@ -108,15 +108,15 @@ class AuthentificationApi
      *
      * Get a JWT token to login.
      *
-     * @param  \Emonsite\Models\Credentials $body Create new JWT Token (optional)
+     * @param  \EmonsiteApi\Models\Credentials $body Create new JWT Token (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Tokens, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Tokens, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCredentialsItemWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Tokens';
+        $returnType = '\EmonsiteApi\Models\Tokens';
         $request = $this->postCredentialsItemRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class AuthentificationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Tokens',
+                        '\EmonsiteApi\Models\Tokens',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class AuthentificationApi
      *
      * Get a JWT token to login.
      *
-     * @param  \Emonsite\Models\Credentials $body Create new JWT Token (optional)
+     * @param  \EmonsiteApi\Models\Credentials $body Create new JWT Token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class AuthentificationApi
      *
      * Get a JWT token to login.
      *
-     * @param  \Emonsite\Models\Credentials $body Create new JWT Token (optional)
+     * @param  \EmonsiteApi\Models\Credentials $body Create new JWT Token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCredentialsItemAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Tokens';
+        $returnType = '\EmonsiteApi\Models\Tokens';
         $request = $this->postCredentialsItemRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class AuthentificationApi
     /**
      * Create request for operation 'postCredentialsItem'
      *
-     * @param  \Emonsite\Models\Credentials $body Create new JWT Token (optional)
+     * @param  \EmonsiteApi\Models\Credentials $body Create new JWT Token (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

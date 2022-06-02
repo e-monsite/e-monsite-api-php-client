@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * GroupApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class GroupApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20020
+     * @return \EmonsiteApi\Models\InlineResponse20020
      */
     public function getGroupCollection($page = '1', $items_per_page = '30')
     {
@@ -112,13 +112,13 @@ class GroupApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20020, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20020, HTTP status code, HTTP response headers (array of strings)
      */
     public function getGroupCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20020';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20020';
         $request = $this->getGroupCollectionRequest($page, $items_per_page);
 
         try {
@@ -170,7 +170,7 @@ class GroupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20020',
+                        '\EmonsiteApi\Models\InlineResponse20020',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class GroupApi
      */
     public function getGroupCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20020';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20020';
         $request = $this->getGroupCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -359,9 +359,9 @@ class GroupApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld
+     * @return \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld
      */
     public function getGroupItem($id)
     {
@@ -376,13 +376,13 @@ class GroupApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getGroupItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
+        $returnType = '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
         $request = $this->getGroupItemRequest($id);
 
         try {
@@ -434,7 +434,7 @@ class GroupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld',
+                        '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -476,7 +476,7 @@ class GroupApi
      */
     public function getGroupItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
+        $returnType = '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
         $request = $this->getGroupItemRequest($id);
 
         return $this->client
@@ -624,11 +624,11 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld
+     * @return \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld
      */
     public function postGroupCollection($body = null)
     {
@@ -641,15 +641,15 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postGroupCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
+        $returnType = '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
         $request = $this->postGroupCollectionRequest($body);
 
         try {
@@ -701,7 +701,7 @@ class GroupApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld',
+                        '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -716,7 +716,7 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -736,14 +736,14 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postGroupCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
+        $returnType = '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
         $request = $this->postGroupCollectionRequest($body);
 
         return $this->client
@@ -786,7 +786,7 @@ class GroupApi
     /**
      * Create request for operation 'postGroupCollection'
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -880,11 +880,11 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld
+     * @return \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld
      */
     public function postGroupCollection($body = null)
     {
@@ -897,15 +897,15 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postGroupCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
+        $returnType = '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
         $request = $this->postGroupCollectionRequest($body);
 
         try {
@@ -957,7 +957,7 @@ class GroupApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld',
+                        '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -972,7 +972,7 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -992,14 +992,14 @@ class GroupApi
      *
      * Creates a Group resource.
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postGroupCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
+        $returnType = '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld';
         $request = $this->postGroupCollectionRequest($body);
 
         return $this->client
@@ -1042,7 +1042,7 @@ class GroupApi
     /**
      * Create request for operation 'postGroupCollection'
      *
-     * @param  \Emonsite\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
+     * @param  \EmonsiteApi\Models\GroupDb47b4a609ad5ce5cda04f418c74eadeJsonld $body The new Group resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

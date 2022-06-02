@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockEditableZonesBottomSiteCellJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'line' => '\Emonsite\Models\BlockEditableZonesBottomSiteLineJsonld',
+'line' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteLineJsonld',
 'width' => 'string',
 'content_type' => 'string',
 'widget_id' => 'string',
@@ -70,8 +70,8 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
 'position' => 'int',
 'design_options' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\BlockEditableZonesBottomSiteCellVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\BlockEditableZonesBottomSiteCellVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -373,7 +373,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets line
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteLineJsonld
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteLineJsonld
      */
     public function getLine()
     {
@@ -383,7 +383,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets line
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteLineJsonld $line line
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteLineJsonld $line line
      *
      * @return $this
      */
@@ -637,7 +637,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\BlockEditableZonesBottomSiteCellVJsonld[]
+     * @return \EmonsiteApi\Models\BlockEditableZonesBottomSiteCellVJsonld[]
      */
     public function getVersions()
     {
@@ -647,7 +647,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\BlockEditableZonesBottomSiteCellVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\BlockEditableZonesBottomSiteCellVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -671,7 +671,7 @@ class BlockEditableZonesBottomSiteCellJsonld implements ModelInterface, ArrayAcc
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */

@@ -1,4 +1,4 @@
-# Emonsite\DirectorySiteApi
+# EmonsiteApi\DirectorySiteApi
 
 All URIs are relative to */*
 
@@ -20,11 +20,11 @@ Removes the DirectorySite resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\DirectorySiteApi(
+$apiInstance = new EmonsiteApi\Api\DirectorySiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -62,7 +62,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDirectorySiteCollection**
-> \Emonsite\Models\InlineResponse20012 getDirectorySiteCollection($category, $category, $site, $site, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20012 getDirectorySiteCollection($category, $category, $site, $site, $page, $items_per_page)
 
 Retrieves the collection of DirectorySiteOutputDto resources.
 
@@ -71,11 +71,11 @@ Retrieves the collection of DirectorySiteOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\DirectorySiteApi(
+$apiInstance = new EmonsiteApi\Api\DirectorySiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20012**](../Model/InlineResponse20012.md)
+[**\EmonsiteApi\Models\InlineResponse20012**](../Model/InlineResponse20012.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDirectorySiteItem**
-> \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld getDirectorySiteItem($id)
+> \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld getDirectorySiteItem($id)
 
 Retrieves a DirectorySiteOutputDto resource.
 
@@ -133,11 +133,11 @@ Retrieves a DirectorySiteOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\DirectorySiteApi(
+$apiInstance = new EmonsiteApi\Api\DirectorySiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
+[**\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
 
 ### Authorization
 
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchDirectorySiteItem**
-> \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld patchDirectorySiteItem($id, $body)
+> \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld patchDirectorySiteItem($id, $body)
 
 Updates the DirectorySite resource.
 
@@ -185,18 +185,18 @@ Updates the DirectorySite resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\DirectorySiteApi(
+$apiInstance = new EmonsiteApi\Api\DirectorySiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895(); // \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 | The updated DirectorySite resource
+$body = new \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895(); // \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 | The updated DirectorySite resource
 
 try {
     $result = $apiInstance->patchDirectorySiteItem($id, $body);
@@ -212,11 +212,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895**](../Model/DirectorySite966bbe081a8f082ba358af25f71a3895.md)| The updated DirectorySite resource | [optional]
+ **body** | [**\EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895**](../Model/DirectorySite966bbe081a8f082ba358af25f71a3895.md)| The updated DirectorySite resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
+[**\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postDirectorySiteCollection**
-> \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld postDirectorySiteCollection($body)
+> \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld postDirectorySiteCollection($body)
 
 Creates a DirectorySite resource.
 
@@ -239,17 +239,17 @@ Creates a DirectorySite resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\DirectorySiteApi(
+$apiInstance = new EmonsiteApi\Api\DirectorySiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld(); // \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld | The new DirectorySite resource
+$body = new \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld(); // \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld | The new DirectorySite resource
 
 try {
     $result = $apiInstance->postDirectorySiteCollection($body);
@@ -264,11 +264,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld**](../Model/DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld.md)| The new DirectorySite resource | [optional]
+ **body** | [**\EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld**](../Model/DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld.md)| The new DirectorySite resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
+[**\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postDirectorySiteCollection**
-> \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld postDirectorySiteCollection($body)
+> \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld postDirectorySiteCollection($body)
 
 Creates a DirectorySite resource.
 
@@ -291,17 +291,17 @@ Creates a DirectorySite resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\DirectorySiteApi(
+$apiInstance = new EmonsiteApi\Api\DirectorySiteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld(); // \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld | The new DirectorySite resource
+$body = new \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld(); // \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld | The new DirectorySite resource
 
 try {
     $result = $apiInstance->postDirectorySiteCollection($body);
@@ -316,11 +316,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld**](../Model/DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld.md)| The new DirectorySite resource | [optional]
+ **body** | [**\EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld**](../Model/DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld.md)| The new DirectorySite resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
+[**\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld**](../Model/DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld.md)
 
 ### Authorization
 

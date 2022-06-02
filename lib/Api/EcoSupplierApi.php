@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoSupplierApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class EcoSupplierApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20018
+     * @return \EmonsiteApi\Models\InlineResponse20018
      */
     public function getEcoSupplierCollection($site_id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class EcoSupplierApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20018, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20018, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoSupplierCollectionWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20018';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20018';
         $request = $this->getEcoSupplierCollectionRequest($site_id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class EcoSupplierApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20018',
+                        '\EmonsiteApi\Models\InlineResponse20018',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class EcoSupplierApi
      */
     public function getEcoSupplierCollectionAsyncWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20018';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20018';
         $request = $this->getEcoSupplierCollectionRequest($site_id, $page, $items_per_page);
 
         return $this->client
@@ -375,9 +375,9 @@ class EcoSupplierApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld
+     * @return \EmonsiteApi\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld
      */
     public function getEcoSupplierItem($id, $site_id)
     {
@@ -393,13 +393,13 @@ class EcoSupplierApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoSupplierItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld';
         $request = $this->getEcoSupplierItemRequest($id, $site_id);
 
         try {
@@ -451,7 +451,7 @@ class EcoSupplierApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld',
+                        '\EmonsiteApi\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -495,7 +495,7 @@ class EcoSupplierApi
      */
     public function getEcoSupplierItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoSupplier48593f7d78d0bb92230e457adf84f3f9Jsonld';
         $request = $this->getEcoSupplierItemRequest($id, $site_id);
 
         return $this->client

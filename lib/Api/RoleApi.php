@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * RoleApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class RoleApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class RoleApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -324,9 +324,9 @@ class RoleApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20022
+     * @return \EmonsiteApi\Models\InlineResponse20022
      */
     public function getRoleCollection($page = '1', $items_per_page = '30')
     {
@@ -342,13 +342,13 @@ class RoleApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20022, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20022, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRoleCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20022';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20022';
         $request = $this->getRoleCollectionRequest($page, $items_per_page);
 
         try {
@@ -400,7 +400,7 @@ class RoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20022',
+                        '\EmonsiteApi\Models\InlineResponse20022',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class RoleApi
      */
     public function getRoleCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20022';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20022';
         $request = $this->getRoleCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -589,9 +589,9 @@ class RoleApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+     * @return \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
      */
     public function getRoleItem($id)
     {
@@ -606,13 +606,13 @@ class RoleApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getRoleItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->getRoleItemRequest($id);
 
         try {
@@ -664,7 +664,7 @@ class RoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
+                        '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class RoleApi
      */
     public function getRoleItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->getRoleItemRequest($id);
 
         return $this->client
@@ -855,11 +855,11 @@ class RoleApi
      * Updates the Role resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+     * @return \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
      */
     public function patchRoleItem($id, $body = null)
     {
@@ -873,15 +873,15 @@ class RoleApi
      * Updates the Role resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchRoleItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->patchRoleItemRequest($id, $body);
 
         try {
@@ -933,7 +933,7 @@ class RoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
+                        '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,7 +949,7 @@ class RoleApi
      * Updates the Role resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -970,14 +970,14 @@ class RoleApi
      * Updates the Role resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchRoleItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->patchRoleItemRequest($id, $body);
 
         return $this->client
@@ -1021,7 +1021,7 @@ class RoleApi
      * Create request for operation 'patchRoleItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role8335fa6e7449daa5d9298e9ce37ab462 $body The updated Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1129,11 +1129,11 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+     * @return \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
      */
     public function postRoleCollection($body = null)
     {
@@ -1146,15 +1146,15 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postRoleCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->postRoleCollectionRequest($body);
 
         try {
@@ -1206,7 +1206,7 @@ class RoleApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
+                        '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1221,7 +1221,7 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1241,14 +1241,14 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postRoleCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->postRoleCollectionRequest($body);
 
         return $this->client
@@ -1291,7 +1291,7 @@ class RoleApi
     /**
      * Create request for operation 'postRoleCollection'
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1385,11 +1385,11 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+     * @return \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
      */
     public function postRoleCollection($body = null)
     {
@@ -1402,15 +1402,15 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postRoleCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->postRoleCollectionRequest($body);
 
         try {
@@ -1462,7 +1462,7 @@ class RoleApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
+                        '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1477,7 +1477,7 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1497,14 +1497,14 @@ class RoleApi
      *
      * Creates a Role resource.
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postRoleCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->postRoleCollectionRequest($body);
 
         return $this->client
@@ -1547,7 +1547,7 @@ class RoleApi
     /**
      * Create request for operation 'postRoleCollection'
      *
-     * @param  \Emonsite\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
+     * @param  \EmonsiteApi\Models\Role398f80f76f54ad7f04b1f3d6647c661aJsonld $body The new Role resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1642,9 +1642,9 @@ class RoleApi
      * Get all role resources
      *
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld
+     * @return \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld
      */
     public function resourcesRoleItem()
     {
@@ -1658,13 +1658,13 @@ class RoleApi
      * Get all role resources
      *
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function resourcesRoleItemWithHttpInfo()
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->resourcesRoleItemRequest();
 
         try {
@@ -1716,7 +1716,7 @@ class RoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
+                        '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1756,7 +1756,7 @@ class RoleApi
      */
     public function resourcesRoleItemAsyncWithHttpInfo()
     {
-        $returnType = '\Emonsite\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
+        $returnType = '\EmonsiteApi\Models\Role41c793592002936a9986d67e92f37a9bJsonld';
         $request = $this->resourcesRoleItemRequest();
 
         return $this->client

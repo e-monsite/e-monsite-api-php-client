@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * CouponApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class CouponApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class CouponApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -326,9 +326,9 @@ class CouponApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20010
+     * @return \EmonsiteApi\Models\InlineResponse20010
      */
     public function getCouponCollection($code = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
@@ -346,13 +346,13 @@ class CouponApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCouponCollectionWithHttpInfo($code = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20010';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20010';
         $request = $this->getCouponCollectionRequest($code, $order_add_dt, $page, $items_per_page);
 
         try {
@@ -404,7 +404,7 @@ class CouponApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20010',
+                        '\EmonsiteApi\Models\InlineResponse20010',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -452,7 +452,7 @@ class CouponApi
      */
     public function getCouponCollectionAsyncWithHttpInfo($code = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20010';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20010';
         $request = $this->getCouponCollectionRequest($code, $order_add_dt, $page, $items_per_page);
 
         return $this->client
@@ -607,9 +607,9 @@ class CouponApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
+     * @return \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
      */
     public function getCouponItem($id)
     {
@@ -624,13 +624,13 @@ class CouponApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCouponItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->getCouponItemRequest($id);
 
         try {
@@ -682,7 +682,7 @@ class CouponApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
+                        '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -724,7 +724,7 @@ class CouponApi
      */
     public function getCouponItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->getCouponItemRequest($id);
 
         return $this->client
@@ -872,11 +872,11 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
+     * @return \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
      */
     public function postCouponCollection($body = null)
     {
@@ -889,15 +889,15 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCouponCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->postCouponCollectionRequest($body);
 
         try {
@@ -949,7 +949,7 @@ class CouponApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
+                        '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -964,7 +964,7 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -984,14 +984,14 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCouponCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->postCouponCollectionRequest($body);
 
         return $this->client
@@ -1034,7 +1034,7 @@ class CouponApi
     /**
      * Create request for operation 'postCouponCollection'
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1128,11 +1128,11 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
+     * @return \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
      */
     public function postCouponCollection($body = null)
     {
@@ -1145,15 +1145,15 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postCouponCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->postCouponCollectionRequest($body);
 
         try {
@@ -1205,7 +1205,7 @@ class CouponApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
+                        '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1220,7 +1220,7 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1240,14 +1240,14 @@ class CouponApi
      *
      * Creates a Coupon resource.
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postCouponCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->postCouponCollectionRequest($body);
 
         return $this->client
@@ -1290,7 +1290,7 @@ class CouponApi
     /**
      * Create request for operation 'postCouponCollection'
      *
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The new Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1385,11 +1385,11 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
+     * @return \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
      */
     public function putCouponItem($id, $body = null)
     {
@@ -1403,15 +1403,15 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function putCouponItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->putCouponItemRequest($id, $body);
 
         try {
@@ -1463,7 +1463,7 @@ class CouponApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
+                        '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1479,7 +1479,7 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1500,14 +1500,14 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putCouponItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->putCouponItemRequest($id, $body);
 
         return $this->client
@@ -1551,7 +1551,7 @@ class CouponApi
      * Create request for operation 'putCouponItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1660,11 +1660,11 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
+     * @return \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld
      */
     public function putCouponItem($id, $body = null)
     {
@@ -1678,15 +1678,15 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function putCouponItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->putCouponItemRequest($id, $body);
 
         try {
@@ -1738,7 +1738,7 @@ class CouponApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
+                        '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1754,7 +1754,7 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1775,14 +1775,14 @@ class CouponApi
      * Replaces the Coupon resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putCouponItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
+        $returnType = '\EmonsiteApi\Models\Coupon56c6e2889ced52899ea604222e3c8c36Jsonld';
         $request = $this->putCouponItemRequest($id, $body);
 
         return $this->client
@@ -1826,7 +1826,7 @@ class CouponApi
      * Create request for operation 'putCouponItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
+     * @param  \EmonsiteApi\Models\Coupon118a7fb412c704381e027860fe8a9169Jsonld $body The updated Coupon resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

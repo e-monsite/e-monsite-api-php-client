@@ -1,4 +1,4 @@
-# Emonsite\EcoOrderApi
+# EmonsiteApi\EcoOrderApi
 
 All URIs are relative to */*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**patchEcoOrderItem**](EcoOrderApi.md#patchecoorderitem) | **PATCH** /eco_orders/{id} | Updates the EcoOrder resource.
 
 # **getEcoOrderCollection**
-> \Emonsite\Models\InlineResponse20016 getEcoOrderCollection($site_id, $order_add_dt, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse20016 getEcoOrderCollection($site_id, $order_add_dt, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $page, $items_per_page)
 
 Retrieves the collection of EcoOrderOutputDto resources.
 
@@ -18,11 +18,11 @@ Retrieves the collection of EcoOrderOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoOrderApi(
+$apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -61,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse20016**](../Model/InlineResponse20016.md)
+[**\EmonsiteApi\Models\InlineResponse20016**](../Model/InlineResponse20016.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEcoOrderItem**
-> \Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld getEcoOrderItem($id, $site_id)
+> \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld getEcoOrderItem($id, $site_id)
 
 Retrieves a EcoOrderOutputDto resource.
 
@@ -84,11 +84,11 @@ Retrieves a EcoOrderOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoOrderApi(
+$apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld**](../Model/EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld.md)
+[**\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld**](../Model/EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchEcoOrderItem**
-> \Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld patchEcoOrderItem($site_id, $id, $body)
+> \EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld patchEcoOrderItem($site_id, $id, $body)
 
 Updates the EcoOrder resource.
 
@@ -138,11 +138,11 @@ Updates the EcoOrder resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\EcoOrderApi(
+$apiInstance = new EmonsiteApi\Api\EcoOrderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -150,7 +150,7 @@ $apiInstance = new Emonsite\Api\EcoOrderApi(
 );
 $site_id = "site_id_example"; // string | 
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117(); // \Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 | The updated EcoOrder resource
+$body = new \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117(); // \EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117 | The updated EcoOrder resource
 
 try {
     $result = $apiInstance->patchEcoOrderItem($site_id, $id, $body);
@@ -167,11 +167,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **site_id** | **string**|  |
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117**](../Model/EcoOrder93bd0f9e3377e379cb5585eb311ed117.md)| The updated EcoOrder resource | [optional]
+ **body** | [**\EmonsiteApi\Models\EcoOrder93bd0f9e3377e379cb5585eb311ed117**](../Model/EcoOrder93bd0f9e3377e379cb5585eb311ed117.md)| The updated EcoOrder resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld**](../Model/EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld.md)
+[**\EmonsiteApi\Models\EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld**](../Model/EcoOrder06eb27d89b43dc4782ed8913cc65bcf1Jsonld.md)
 
 ### Authorization
 

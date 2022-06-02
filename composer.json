@@ -28,9 +28,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Emonsite\\" : "lib/" }
+        "psr-4": { "EmonsiteApi\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Emonsite\\" : "test/" }
+        "psr-4": { "EmonsiteApi\\" : "test/" }
     }
 }

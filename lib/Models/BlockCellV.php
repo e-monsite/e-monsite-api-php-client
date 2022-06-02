@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockCellV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,9 +61,9 @@ class BlockCellV implements ModelInterface, ArrayAccess
 'active' => 'bool',
 'cached_content' => 'string',
 'cached_content_expiration_dt' => 'int',
-'item' => '\Emonsite\Models\VersionableInterface',
+'item' => '\EmonsiteApi\Models\VersionableInterface',
 'id' => 'string',
-'site' => '\Emonsite\Models\Site'    ];
+'site' => '\EmonsiteApi\Models\Site'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -361,7 +361,7 @@ class BlockCellV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\VersionableInterface
+     * @return \EmonsiteApi\Models\VersionableInterface
      */
     public function getItem()
     {
@@ -371,7 +371,7 @@ class BlockCellV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\VersionableInterface $item item
+     * @param \EmonsiteApi\Models\VersionableInterface $item item
      *
      * @return $this
      */
@@ -409,7 +409,7 @@ class BlockCellV implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -419,7 +419,7 @@ class BlockCellV implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */

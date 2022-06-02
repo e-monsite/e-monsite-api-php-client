@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **text_discounts** | **string** |  | [optional] 
 **special_annotations** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\EcoSite**](EcoSite.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\EcoSite**](EcoSite.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

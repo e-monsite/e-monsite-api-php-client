@@ -9,10 +9,10 @@ Name | Type | Description | Notes
 **favicon_url** | **string** |  | [optional] 
 **enabled** | **bool** |  | [optional] 
 **model** | **string** | TODO enum | [optional] 
-**site** | [**\Emonsite\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\SiteJsonld**](SiteJsonld.md) |  | [optional] 
 **id** | **string** |  | [optional] 
-**versions** | [**\Emonsite\Models\LegalCookieVJsonld[]**](LegalCookieVJsonld.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\LegalCookieVJsonld[]**](LegalCookieVJsonld.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterfaceJsonld[]**](VersionInterfaceJsonld.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 

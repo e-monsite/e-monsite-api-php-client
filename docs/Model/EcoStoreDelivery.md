@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**id** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **active_in_store_pickup** | **bool** |  | [optional] 
 **in_store_user_credit_sms** | **string** |  | [optional] 
 **in_store_sms_alert** | **bool** |  | [optional] 

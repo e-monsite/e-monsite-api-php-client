@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * AssocStructurePaymentJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
         'context' => 'string',
 'id' => 'string',
 'type' => 'string',
-'structure' => '\Emonsite\Models\StructurePaymentJsonld',
+'structure' => '\EmonsiteApi\Models\StructurePaymentJsonld',
 'payment_id' => 'string',
 'params' => 'string',
 'impact' => 'string',
@@ -75,9 +75,9 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
-'site' => '\Emonsite\Models\SiteJsonld',
-'versions' => '\Emonsite\Models\AssocStructurePaymentVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
+'versions' => '\EmonsiteApi\Models\AssocStructurePaymentVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -409,7 +409,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets structure
      *
-     * @return \Emonsite\Models\StructurePaymentJsonld
+     * @return \EmonsiteApi\Models\StructurePaymentJsonld
      */
     public function getStructure()
     {
@@ -419,7 +419,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets structure
      *
-     * @param \Emonsite\Models\StructurePaymentJsonld $structure structure
+     * @param \EmonsiteApi\Models\StructurePaymentJsonld $structure structure
      *
      * @return $this
      */
@@ -793,7 +793,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -803,7 +803,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */
@@ -817,7 +817,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\AssocStructurePaymentVJsonld[]
+     * @return \EmonsiteApi\Models\AssocStructurePaymentVJsonld[]
      */
     public function getVersions()
     {
@@ -827,7 +827,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\AssocStructurePaymentVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\AssocStructurePaymentVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -841,7 +841,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -851,7 +851,7 @@ class AssocStructurePaymentJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */

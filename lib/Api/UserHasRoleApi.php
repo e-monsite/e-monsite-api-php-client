@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * UserHasRoleApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class UserHasRoleApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class UserHasRoleApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -324,9 +324,9 @@ class UserHasRoleApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20027
+     * @return \EmonsiteApi\Models\InlineResponse20027
      */
     public function getUserHasRoleCollection($page = '1', $items_per_page = '30')
     {
@@ -342,13 +342,13 @@ class UserHasRoleApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20027, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserHasRoleCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20027';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20027';
         $request = $this->getUserHasRoleCollectionRequest($page, $items_per_page);
 
         try {
@@ -400,7 +400,7 @@ class UserHasRoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20027',
+                        '\EmonsiteApi\Models\InlineResponse20027',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class UserHasRoleApi
      */
     public function getUserHasRoleCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20027';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20027';
         $request = $this->getUserHasRoleCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -589,9 +589,9 @@ class UserHasRoleApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
+     * @return \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
      */
     public function getUserHasRoleItem($id)
     {
@@ -606,13 +606,13 @@ class UserHasRoleApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserHasRoleItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->getUserHasRoleItemRequest($id);
 
         try {
@@ -664,7 +664,7 @@ class UserHasRoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
+                        '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class UserHasRoleApi
      */
     public function getUserHasRoleItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->getUserHasRoleItemRequest($id);
 
         return $this->client
@@ -855,11 +855,11 @@ class UserHasRoleApi
      * Updates the UserHasRole resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
+     * @return \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
      */
     public function patchUserHasRoleItem($id, $body = null)
     {
@@ -873,15 +873,15 @@ class UserHasRoleApi
      * Updates the UserHasRole resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchUserHasRoleItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->patchUserHasRoleItemRequest($id, $body);
 
         try {
@@ -933,7 +933,7 @@ class UserHasRoleApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
+                        '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,7 +949,7 @@ class UserHasRoleApi
      * Updates the UserHasRole resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -970,14 +970,14 @@ class UserHasRoleApi
      * Updates the UserHasRole resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchUserHasRoleItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->patchUserHasRoleItemRequest($id, $body);
 
         return $this->client
@@ -1021,7 +1021,7 @@ class UserHasRoleApi
      * Create request for operation 'patchUserHasRoleItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRoleD91fd0c69421e5afa9bf303992483883 $body The updated UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1129,11 +1129,11 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
+     * @return \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
      */
     public function postUserHasRoleCollection($body = null)
     {
@@ -1146,15 +1146,15 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postUserHasRoleCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->postUserHasRoleCollectionRequest($body);
 
         try {
@@ -1206,7 +1206,7 @@ class UserHasRoleApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
+                        '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1221,7 +1221,7 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1241,14 +1241,14 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postUserHasRoleCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->postUserHasRoleCollectionRequest($body);
 
         return $this->client
@@ -1291,7 +1291,7 @@ class UserHasRoleApi
     /**
      * Create request for operation 'postUserHasRoleCollection'
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1385,11 +1385,11 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
+     * @return \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld
      */
     public function postUserHasRoleCollection($body = null)
     {
@@ -1402,15 +1402,15 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postUserHasRoleCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->postUserHasRoleCollectionRequest($body);
 
         try {
@@ -1462,7 +1462,7 @@ class UserHasRoleApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
+                        '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1477,7 +1477,7 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1497,14 +1497,14 @@ class UserHasRoleApi
      *
      * Creates a UserHasRole resource.
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postUserHasRoleCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
+        $returnType = '\EmonsiteApi\Models\UserHasRoleE0ac26c03ac9034d16aff17dd49124c2Jsonld';
         $request = $this->postUserHasRoleCollectionRequest($body);
 
         return $this->client
@@ -1547,7 +1547,7 @@ class UserHasRoleApi
     /**
      * Create request for operation 'postUserHasRoleCollection'
      *
-     * @param  \Emonsite\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
+     * @param  \EmonsiteApi\Models\UserHasRole589632707daa9dd4818942897415b76bJsonld $body The new UserHasRole resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

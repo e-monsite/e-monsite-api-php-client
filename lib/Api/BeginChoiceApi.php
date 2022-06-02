@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * BeginChoiceApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class BeginChoiceApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class BeginChoiceApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -324,9 +324,9 @@ class BeginChoiceApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse2002
+     * @return \EmonsiteApi\Models\InlineResponse2002
      */
     public function getBeginChoiceCollection($page = '1', $items_per_page = '30')
     {
@@ -342,13 +342,13 @@ class BeginChoiceApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBeginChoiceCollectionWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2002';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2002';
         $request = $this->getBeginChoiceCollectionRequest($page, $items_per_page);
 
         try {
@@ -400,7 +400,7 @@ class BeginChoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse2002',
+                        '\EmonsiteApi\Models\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class BeginChoiceApi
      */
     public function getBeginChoiceCollectionAsyncWithHttpInfo($page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse2002';
+        $returnType = '\EmonsiteApi\Models\InlineResponse2002';
         $request = $this->getBeginChoiceCollectionRequest($page, $items_per_page);
 
         return $this->client
@@ -589,9 +589,9 @@ class BeginChoiceApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
+     * @return \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
      */
     public function getBeginChoiceItem($id)
     {
@@ -606,13 +606,13 @@ class BeginChoiceApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBeginChoiceItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->getBeginChoiceItemRequest($id);
 
         try {
@@ -664,7 +664,7 @@ class BeginChoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
+                        '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class BeginChoiceApi
      */
     public function getBeginChoiceItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->getBeginChoiceItemRequest($id);
 
         return $this->client
@@ -855,11 +855,11 @@ class BeginChoiceApi
      * Updates the BeginChoice resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
+     * @return \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
      */
     public function patchBeginChoiceItem($id, $body = null)
     {
@@ -873,15 +873,15 @@ class BeginChoiceApi
      * Updates the BeginChoice resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchBeginChoiceItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->patchBeginChoiceItemRequest($id, $body);
 
         try {
@@ -933,7 +933,7 @@ class BeginChoiceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
+                        '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -949,7 +949,7 @@ class BeginChoiceApi
      * Updates the BeginChoice resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -970,14 +970,14 @@ class BeginChoiceApi
      * Updates the BeginChoice resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchBeginChoiceItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->patchBeginChoiceItemRequest($id, $body);
 
         return $this->client
@@ -1021,7 +1021,7 @@ class BeginChoiceApi
      * Create request for operation 'patchBeginChoiceItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoiceBb182fb4fb9ff316bd0e48934d37505d $body The updated BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1129,11 +1129,11 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
+     * @return \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
      */
     public function postBeginChoiceCollection($body = null)
     {
@@ -1146,15 +1146,15 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBeginChoiceCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->postBeginChoiceCollectionRequest($body);
 
         try {
@@ -1206,7 +1206,7 @@ class BeginChoiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
+                        '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1221,7 +1221,7 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1241,14 +1241,14 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postBeginChoiceCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->postBeginChoiceCollectionRequest($body);
 
         return $this->client
@@ -1291,7 +1291,7 @@ class BeginChoiceApi
     /**
      * Create request for operation 'postBeginChoiceCollection'
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1385,11 +1385,11 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
+     * @return \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld
      */
     public function postBeginChoiceCollection($body = null)
     {
@@ -1402,15 +1402,15 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postBeginChoiceCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->postBeginChoiceCollectionRequest($body);
 
         try {
@@ -1462,7 +1462,7 @@ class BeginChoiceApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
+                        '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1477,7 +1477,7 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1497,14 +1497,14 @@ class BeginChoiceApi
      *
      * Creates a BeginChoice resource.
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postBeginChoiceCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
+        $returnType = '\EmonsiteApi\Models\BeginChoiceE3028f4ebfb2c48645a56fd863368df3Jsonld';
         $request = $this->postBeginChoiceCollectionRequest($body);
 
         return $this->client
@@ -1547,7 +1547,7 @@ class BeginChoiceApi
     /**
      * Create request for operation 'postBeginChoiceCollection'
      *
-     * @param  \Emonsite\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
+     * @param  \EmonsiteApi\Models\BeginChoice6e2a40ac5a3e62cfe436bfdd79474c58Jsonld $body The new BeginChoice resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

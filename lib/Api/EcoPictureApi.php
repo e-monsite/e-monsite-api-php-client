@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoPictureApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class EcoPictureApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
+     * @return \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
      */
     public function getEcoPictureItem($id)
     {
@@ -110,13 +110,13 @@ class EcoPictureApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoPictureItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
         $request = $this->getEcoPictureItemRequest($id);
 
         try {
@@ -168,7 +168,7 @@ class EcoPictureApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld',
+                        '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class EcoPictureApi
      */
     public function getEcoPictureItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
         $request = $this->getEcoPictureItemRequest($id);
 
         return $this->client
@@ -358,11 +358,11 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
+     * @return \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
      */
     public function postEcoPictureCollection($body = null)
     {
@@ -375,15 +375,15 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEcoPictureCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
         $request = $this->postEcoPictureCollectionRequest($body);
 
         try {
@@ -435,7 +435,7 @@ class EcoPictureApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld',
+                        '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -450,7 +450,7 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -470,14 +470,14 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEcoPictureCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
         $request = $this->postEcoPictureCollectionRequest($body);
 
         return $this->client
@@ -520,7 +520,7 @@ class EcoPictureApi
     /**
      * Create request for operation 'postEcoPictureCollection'
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -614,11 +614,11 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
+     * @return \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld
      */
     public function postEcoPictureCollection($body = null)
     {
@@ -631,15 +631,15 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEcoPictureCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
         $request = $this->postEcoPictureCollectionRequest($body);
 
         try {
@@ -691,7 +691,7 @@ class EcoPictureApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld',
+                        '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -726,14 +726,14 @@ class EcoPictureApi
      *
      * Creates a EcoPicture resource.
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEcoPictureCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoPictureDb02d0aaad5f8444eaf8f3e058d9affeJsonld';
         $request = $this->postEcoPictureCollectionRequest($body);
 
         return $this->client
@@ -776,7 +776,7 @@ class EcoPictureApi
     /**
      * Create request for operation 'postEcoPictureCollection'
      *
-     * @param  \Emonsite\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
+     * @param  \EmonsiteApi\Models\EcoPicture79ef563d06537e846c283ccecbecc002Jsonld $body The new EcoPicture resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

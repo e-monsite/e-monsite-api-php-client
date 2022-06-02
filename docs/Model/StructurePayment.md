@@ -5,10 +5,10 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional] 
 **description** | **string** |  | [optional] 
-**paymeans** | [**\Emonsite\Models\AssocStructurePayment[]**](AssocStructurePayment.md) |  | [optional] 
-**modules** | [**\Emonsite\Models\AssocStructureModule[]**](AssocStructureModule.md) |  | [optional] 
+**paymeans** | [**\EmonsiteApi\Models\AssocStructurePayment[]**](AssocStructurePayment.md) |  | [optional] 
+**modules** | [**\EmonsiteApi\Models\AssocStructureModule[]**](AssocStructureModule.md) |  | [optional] 
 **id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **add_dt** | **int** |  | [optional] 
 **upd_dt** | **int** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 

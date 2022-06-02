@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * StructureWidgetsVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -67,8 +67,8 @@ class StructureWidgetsVJsonld implements ModelInterface, ArrayAccess
 'cachedcontent' => 'string',
 'cachedcontent_expiration_dt' => 'int',
 'lang' => 'string',
-'item' => '\Emonsite\Models\StructureWidgetsJsonld',
-'site' => '\Emonsite\Models\SiteJsonld'    ];
+'item' => '\EmonsiteApi\Models\StructureWidgetsJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -535,7 +535,7 @@ class StructureWidgetsVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\StructureWidgetsJsonld
+     * @return \EmonsiteApi\Models\StructureWidgetsJsonld
      */
     public function getItem()
     {
@@ -545,7 +545,7 @@ class StructureWidgetsVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\StructureWidgetsJsonld $item item
+     * @param \EmonsiteApi\Models\StructureWidgetsJsonld $item item
      *
      * @return $this
      */
@@ -559,7 +559,7 @@ class StructureWidgetsVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -569,7 +569,7 @@ class StructureWidgetsVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

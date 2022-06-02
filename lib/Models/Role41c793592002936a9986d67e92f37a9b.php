@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * Role41c793592002936a9986d67e92f37a9b Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class Role41c793592002936a9986d67e92f37a9b implements ModelInterface, ArrayAcces
         'id' => 'string',
 'name' => 'string',
 'resources' => 'string[]',
-'users' => '\Emonsite\Models\ArrayCollection'    ];
+'users' => '\EmonsiteApi\Models\ArrayCollection'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -289,7 +289,7 @@ class Role41c793592002936a9986d67e92f37a9b implements ModelInterface, ArrayAcces
     /**
      * Gets users
      *
-     * @return \Emonsite\Models\ArrayCollection
+     * @return \EmonsiteApi\Models\ArrayCollection
      */
     public function getUsers()
     {
@@ -299,7 +299,7 @@ class Role41c793592002936a9986d67e92f37a9b implements ModelInterface, ArrayAcces
     /**
      * Sets users
      *
-     * @param \Emonsite\Models\ArrayCollection $users users
+     * @param \EmonsiteApi\Models\ArrayCollection $users users
      *
      * @return $this
      */

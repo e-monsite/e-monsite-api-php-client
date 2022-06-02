@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * StructureJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class StructureJsonld implements ModelInterface, ArrayAccess
 'type' => 'string',
 'name' => 'string',
 'usewidgetcontentcache' => 'bool',
-'widgets' => '\Emonsite\Models\StructureWidgetsJsonld[]',
+'widgets' => '\EmonsiteApi\Models\StructureWidgetsJsonld[]',
 'id' => 'string',
 'add_dt' => 'int',
 'upd_dt' => 'int',
@@ -69,7 +69,7 @@ class StructureJsonld implements ModelInterface, ArrayAccess
 'updated_at' => '\DateTime',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld'    ];
+'site' => '\EmonsiteApi\Models\SiteJsonld'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -397,7 +397,7 @@ class StructureJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets widgets
      *
-     * @return \Emonsite\Models\StructureWidgetsJsonld[]
+     * @return \EmonsiteApi\Models\StructureWidgetsJsonld[]
      */
     public function getWidgets()
     {
@@ -407,7 +407,7 @@ class StructureJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets widgets
      *
-     * @param \Emonsite\Models\StructureWidgetsJsonld[] $widgets widgets
+     * @param \EmonsiteApi\Models\StructureWidgetsJsonld[] $widgets widgets
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class StructureJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -599,7 +599,7 @@ class StructureJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */

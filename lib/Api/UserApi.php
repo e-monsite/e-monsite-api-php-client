@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * UserApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -95,9 +95,9 @@ class UserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20025
+     * @return \EmonsiteApi\Models\InlineResponse20025
      */
     public function apiUsersSiteUsersGetSubresource($id, $page = '1', $items_per_page = '30')
     {
@@ -114,13 +114,13 @@ class UserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20025, HTTP status code, HTTP response headers (array of strings)
      */
     public function apiUsersSiteUsersGetSubresourceWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiUsersSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         try {
@@ -172,7 +172,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20025',
+                        '\EmonsiteApi\Models\InlineResponse20025',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class UserApi
      */
     public function apiUsersSiteUsersGetSubresourceAsyncWithHttpInfo($id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20025';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20025';
         $request = $this->apiUsersSiteUsersGetSubresourceRequest($id, $page, $items_per_page);
 
         return $this->client
@@ -377,9 +377,9 @@ class UserApi
      * Retrieve the logged user
      *
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function getMeUserItem()
     {
@@ -393,13 +393,13 @@ class UserApi
      * Retrieve the logged user
      *
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getMeUserItemWithHttpInfo()
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->getMeUserItemRequest();
 
         try {
@@ -451,7 +451,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -491,7 +491,7 @@ class UserApi
      */
     public function getMeUserItemAsyncWithHttpInfo()
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->getMeUserItemRequest();
 
         return $this->client
@@ -639,9 +639,9 @@ class UserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20028
+     * @return \EmonsiteApi\Models\InlineResponse20028
      */
     public function getUserCollection($id = null, $id = null, $username = null, $email = null, $name = null, $group = null, $group = null, $brand = null, $brand = null, $add_user_ip = null, $add_user_ip = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
@@ -669,13 +669,13 @@ class UserApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20028, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserCollectionWithHttpInfo($id = null, $id = null, $username = null, $email = null, $name = null, $group = null, $group = null, $brand = null, $brand = null, $add_user_ip = null, $add_user_ip = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20028';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20028';
         $request = $this->getUserCollectionRequest($id, $id, $username, $email, $name, $group, $group, $brand, $brand, $add_user_ip, $add_user_ip, $order_add_dt, $page, $items_per_page);
 
         try {
@@ -727,7 +727,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20028',
+                        '\EmonsiteApi\Models\InlineResponse20028',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -795,7 +795,7 @@ class UserApi
      */
     public function getUserCollectionAsyncWithHttpInfo($id = null, $id = null, $username = null, $email = null, $name = null, $group = null, $group = null, $brand = null, $brand = null, $add_user_ip = null, $add_user_ip = null, $order_add_dt = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20028';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20028';
         $request = $this->getUserCollectionRequest($id, $id, $username, $email, $name, $group, $group, $brand, $brand, $add_user_ip, $add_user_ip, $order_add_dt, $page, $items_per_page);
 
         return $this->client
@@ -1012,9 +1012,9 @@ class UserApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function getUserItem($id)
     {
@@ -1029,13 +1029,13 @@ class UserApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->getUserItemRequest($id);
 
         try {
@@ -1087,7 +1087,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1129,7 +1129,7 @@ class UserApi
      */
     public function getUserItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->getUserItemRequest($id);
 
         return $this->client
@@ -1278,9 +1278,9 @@ class UserApi
      * Send the e-mail validation e-mail
      *
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function getValidationMailUserItem()
     {
@@ -1294,13 +1294,13 @@ class UserApi
      * Send the e-mail validation e-mail
      *
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getValidationMailUserItemWithHttpInfo()
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->getValidationMailUserItemRequest();
 
         try {
@@ -1352,7 +1352,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1392,7 +1392,7 @@ class UserApi
      */
     public function getValidationMailUserItemAsyncWithHttpInfo()
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->getValidationMailUserItemRequest();
 
         return $this->client
@@ -1526,11 +1526,11 @@ class UserApi
      * Updates the User resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
+     * @param  \EmonsiteApi\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function patchUserItem($id, $body = null)
     {
@@ -1544,15 +1544,15 @@ class UserApi
      * Updates the User resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
+     * @param  \EmonsiteApi\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchUserItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->patchUserItemRequest($id, $body);
 
         try {
@@ -1604,7 +1604,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1620,7 +1620,7 @@ class UserApi
      * Updates the User resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
+     * @param  \EmonsiteApi\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1641,14 +1641,14 @@ class UserApi
      * Updates the User resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
+     * @param  \EmonsiteApi\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchUserItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->patchUserItemRequest($id, $body);
 
         return $this->client
@@ -1692,7 +1692,7 @@ class UserApi
      * Create request for operation 'patchUserItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
+     * @param  \EmonsiteApi\Models\User5b998e983cd83cb3333677d49ed1f14c $body The updated User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1800,11 +1800,11 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function postUserCollection($body = null)
     {
@@ -1817,15 +1817,15 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postUserCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->postUserCollectionRequest($body);
 
         try {
@@ -1877,7 +1877,7 @@ class UserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1892,7 +1892,7 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1912,14 +1912,14 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postUserCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->postUserCollectionRequest($body);
 
         return $this->client
@@ -1962,7 +1962,7 @@ class UserApi
     /**
      * Create request for operation 'postUserCollection'
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2056,11 +2056,11 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function postUserCollection($body = null)
     {
@@ -2073,15 +2073,15 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postUserCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->postUserCollectionRequest($body);
 
         try {
@@ -2133,7 +2133,7 @@ class UserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2148,7 +2148,7 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2168,14 +2168,14 @@ class UserApi
      *
      * Creates a User resource.
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postUserCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->postUserCollectionRequest($body);
 
         return $this->client
@@ -2218,7 +2218,7 @@ class UserApi
     /**
      * Create request for operation 'postUserCollection'
      *
-     * @param  \Emonsite\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\User4efa5659e91aca04a3152aef9f91ffc1Jsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2312,11 +2312,11 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function pushNotifUserItem($body = null)
     {
@@ -2329,15 +2329,15 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushNotifUserItemWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->pushNotifUserItemRequest($body);
 
         try {
@@ -2389,7 +2389,7 @@ class UserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2404,7 +2404,7 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2424,14 +2424,14 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function pushNotifUserItemAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->pushNotifUserItemRequest($body);
 
         return $this->client
@@ -2474,7 +2474,7 @@ class UserApi
     /**
      * Create request for operation 'pushNotifUserItem'
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2568,11 +2568,11 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld
+     * @return \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld
      */
     public function pushNotifUserItem($body = null)
     {
@@ -2585,15 +2585,15 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function pushNotifUserItemWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->pushNotifUserItemRequest($body);
 
         try {
@@ -2645,7 +2645,7 @@ class UserApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
+                        '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2660,7 +2660,7 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2680,14 +2680,14 @@ class UserApi
      *
      * Push a test notification on the user device
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function pushNotifUserItemAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
+        $returnType = '\EmonsiteApi\Models\User940d105763f3d1a848f991a4d326f00eJsonld';
         $request = $this->pushNotifUserItemRequest($body);
 
         return $this->client
@@ -2730,7 +2730,7 @@ class UserApi
     /**
      * Create request for operation 'pushNotifUserItem'
      *
-     * @param  \Emonsite\Models\UserJsonld $body The new User resource (optional)
+     * @param  \EmonsiteApi\Models\UserJsonld $body The new User resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

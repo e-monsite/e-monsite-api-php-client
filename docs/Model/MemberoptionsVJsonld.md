@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **type** | **string** |  | [optional] 
 **registration_rgpd_text** | **string** |  | [optional] 
 **lang** | **string** |  | [optional] 
-**item** | [**\Emonsite\Models\MemberoptionsJsonld**](MemberoptionsJsonld.md) |  | [optional] 
+**item** | [**\EmonsiteApi\Models\MemberoptionsJsonld**](MemberoptionsJsonld.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# Emonsite\CommandApi
+# EmonsiteApi\CommandApi
 
 All URIs are relative to */*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**patchCommandItem**](CommandApi.md#patchcommanditem) | **PATCH** /commands/{id} | Updates the Command resource.
 
 # **activateCommandItem**
-> \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld activateCommandItem($id)
+> \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld activateCommandItem($id)
 
 Activate a command (payment received)
 
@@ -19,11 +19,11 @@ Activate a command (payment received)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandApi(
+$apiInstance = new EmonsiteApi\Api\CommandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld**](../Model/CommandEe5f35022d477654f1cddfdb02f77421Jsonld.md)
+[**\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld**](../Model/CommandEe5f35022d477654f1cddfdb02f77421Jsonld.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCommandCollection**
-> \Emonsite\Models\InlineResponse2009 getCommandCollection($reference, $reference, $brand, $brand, $products_offer_id, $user_username, $email, $products_site_id, $products_site_id, $paymean, $paymean, $status, $status, $total, $total, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $payment_dt_before, $payment_dt_strictly_before, $payment_dt_after, $payment_dt_strictly_after, $order_add_dt, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2009 getCommandCollection($reference, $reference, $brand, $brand, $products_offer_id, $user_username, $email, $products_site_id, $products_site_id, $paymean, $paymean, $status, $status, $total, $total, $add_dt_before, $add_dt_strictly_before, $add_dt_after, $add_dt_strictly_after, $payment_dt_before, $payment_dt_strictly_before, $payment_dt_after, $payment_dt_strictly_after, $order_add_dt, $page, $items_per_page)
 
 Retrieves the collection of CommandOutputDto resources.
 
@@ -71,11 +71,11 @@ Retrieves the collection of CommandOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandApi(
+$apiInstance = new EmonsiteApi\Api\CommandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2009**](../Model/InlineResponse2009.md)
+[**\EmonsiteApi\Models\InlineResponse2009**](../Model/InlineResponse2009.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCommandItem**
-> \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld getCommandItem($id)
+> \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld getCommandItem($id)
 
 Retrieves a CommandOutputDto resource.
 
@@ -173,11 +173,11 @@ Retrieves a CommandOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandApi(
+$apiInstance = new EmonsiteApi\Api\CommandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld**](../Model/CommandEe5f35022d477654f1cddfdb02f77421Jsonld.md)
+[**\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld**](../Model/CommandEe5f35022d477654f1cddfdb02f77421Jsonld.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchCommandItem**
-> \Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld patchCommandItem($id, $body)
+> \EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld patchCommandItem($id, $body)
 
 Updates the Command resource.
 
@@ -225,18 +225,18 @@ Updates the Command resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\CommandApi(
+$apiInstance = new EmonsiteApi\Api\CommandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0(); // \Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0 | The updated Command resource
+$body = new \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0(); // \EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0 | The updated Command resource
 
 try {
     $result = $apiInstance->patchCommandItem($id, $body);
@@ -252,11 +252,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\Command13659cedec6eacf2649cf892ab7577d0**](../Model/Command13659cedec6eacf2649cf892ab7577d0.md)| The updated Command resource | [optional]
+ **body** | [**\EmonsiteApi\Models\Command13659cedec6eacf2649cf892ab7577d0**](../Model/Command13659cedec6eacf2649cf892ab7577d0.md)| The updated Command resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld**](../Model/CommandEe5f35022d477654f1cddfdb02f77421Jsonld.md)
+[**\EmonsiteApi\Models\CommandEe5f35022d477654f1cddfdb02f77421Jsonld**](../Model/CommandEe5f35022d477654f1cddfdb02f77421Jsonld.md)
 
 ### Authorization
 

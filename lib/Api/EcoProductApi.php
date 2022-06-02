@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoProductApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class EcoProductApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -111,7 +111,7 @@ class EcoProductApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -347,9 +347,9 @@ class EcoProductApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20017
+     * @return \EmonsiteApi\Models\InlineResponse20017
      */
     public function getEcoProductCollection($site_id, $ean13 = null, $ean13 = null, $order_upd_dt = null, $upd_dt_before = null, $upd_dt_strictly_before = null, $upd_dt_after = null, $upd_dt_strictly_after = null, $page = '1', $items_per_page = '30')
     {
@@ -373,13 +373,13 @@ class EcoProductApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20017, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20017, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoProductCollectionWithHttpInfo($site_id, $ean13 = null, $ean13 = null, $order_upd_dt = null, $upd_dt_before = null, $upd_dt_strictly_before = null, $upd_dt_after = null, $upd_dt_strictly_after = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20017';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20017';
         $request = $this->getEcoProductCollectionRequest($site_id, $ean13, $ean13, $order_upd_dt, $upd_dt_before, $upd_dt_strictly_before, $upd_dt_after, $upd_dt_strictly_after, $page, $items_per_page);
 
         try {
@@ -431,7 +431,7 @@ class EcoProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20017',
+                        '\EmonsiteApi\Models\InlineResponse20017',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -491,7 +491,7 @@ class EcoProductApi
      */
     public function getEcoProductCollectionAsyncWithHttpInfo($site_id, $ean13 = null, $ean13 = null, $order_upd_dt = null, $upd_dt_before = null, $upd_dt_strictly_before = null, $upd_dt_after = null, $upd_dt_strictly_after = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20017';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20017';
         $request = $this->getEcoProductCollectionRequest($site_id, $ean13, $ean13, $order_upd_dt, $upd_dt_before, $upd_dt_strictly_before, $upd_dt_after, $upd_dt_strictly_after, $page, $items_per_page);
 
         return $this->client
@@ -686,9 +686,9 @@ class EcoProductApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
+     * @return \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
      */
     public function getEcoProductItem($id, $site_id)
     {
@@ -704,13 +704,13 @@ class EcoProductApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoProductItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->getEcoProductItemRequest($id, $site_id);
 
         try {
@@ -762,7 +762,7 @@ class EcoProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
+                        '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -806,7 +806,7 @@ class EcoProductApi
      */
     public function getEcoProductItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->getEcoProductItemRequest($id, $site_id);
 
         return $this->client
@@ -967,11 +967,11 @@ class EcoProductApi
      *
      * @param  string $site_id site_id (required)
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
+     * @return \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
      */
     public function patchEcoProductItem($site_id, $id, $body = null)
     {
@@ -986,15 +986,15 @@ class EcoProductApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchEcoProductItemWithHttpInfo($site_id, $id, $body = null)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->patchEcoProductItemRequest($site_id, $id, $body);
 
         try {
@@ -1046,7 +1046,7 @@ class EcoProductApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
+                        '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1063,7 +1063,7 @@ class EcoProductApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1085,14 +1085,14 @@ class EcoProductApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchEcoProductItemAsyncWithHttpInfo($site_id, $id, $body = null)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->patchEcoProductItemRequest($site_id, $id, $body);
 
         return $this->client
@@ -1137,7 +1137,7 @@ class EcoProductApi
      *
      * @param  string $site_id (required)
      * @param  string $id (required)
-     * @param  \Emonsite\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProduct91429ff1a736cfe91b412a9d5d2f8bd1 $body The updated EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1255,11 +1255,11 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
+     * @return \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
      */
     public function postEcoProductCollection($body = null)
     {
@@ -1272,15 +1272,15 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEcoProductCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->postEcoProductCollectionRequest($body);
 
         try {
@@ -1332,7 +1332,7 @@ class EcoProductApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
+                        '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1347,7 +1347,7 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1367,14 +1367,14 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEcoProductCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->postEcoProductCollectionRequest($body);
 
         return $this->client
@@ -1417,7 +1417,7 @@ class EcoProductApi
     /**
      * Create request for operation 'postEcoProductCollection'
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1511,11 +1511,11 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
+     * @return \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld
      */
     public function postEcoProductCollection($body = null)
     {
@@ -1528,15 +1528,15 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEcoProductCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->postEcoProductCollectionRequest($body);
 
         try {
@@ -1588,7 +1588,7 @@ class EcoProductApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
+                        '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1603,7 +1603,7 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1623,14 +1623,14 @@ class EcoProductApi
      *
      * Creates a EcoProduct resource.
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEcoProductCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
+        $returnType = '\EmonsiteApi\Models\EcoProduct598f8229d42c1ae36352f3a2f993e71aJsonld';
         $request = $this->postEcoProductCollectionRequest($body);
 
         return $this->client
@@ -1673,7 +1673,7 @@ class EcoProductApi
     /**
      * Create request for operation 'postEcoProductCollection'
      *
-     * @param  \Emonsite\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
+     * @param  \EmonsiteApi\Models\EcoProductD02cf7d16e689640fac55c85a0d3ce3fJsonld $body The new EcoProduct resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

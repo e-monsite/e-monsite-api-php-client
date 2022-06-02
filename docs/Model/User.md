@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 **nb_reminder_validation_mail_sent** | **int** |  | [optional] 
 **chatbot_active** | **bool** |  | [optional] 
 **site_users** | **string[]** |  | [optional] 
-**domains** | [**\Emonsite\Models\UserDomain[]**](UserDomain.md) |  | [optional] 
+**domains** | [**\EmonsiteApi\Models\UserDomain[]**](UserDomain.md) |  | [optional] 
 **recent_updated_sites_users** | **string[]** | Les sites users ordered par last_log_dt | [optional] 
 **recent_created_site_user** | **string[]** | Le dernier Siteuser créé | [optional] 
 **agency_customer** | **bool** |  | [optional] 
@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 **site_user_marketing_send** | **string** | Retourne le Siteuser dont le flag marketing_email_send | [optional] 
 **author_name** | **string** |  | [optional] 
 **sessions** | **string[]** |  | [optional] 
-**sso_accounts** | [**\Emonsite\Models\UserSsoAccount[]**](UserSsoAccount.md) |  | [optional] 
+**sso_accounts** | [**\EmonsiteApi\Models\UserSsoAccount[]**](UserSsoAccount.md) |  | [optional] 
 **user_has_role** | **string** |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)

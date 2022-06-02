@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * EdirectoryOrderOptionsV Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class EdirectoryOrderOptionsV implements ModelInterface, ArrayAccess
         'order_intro' => 'string',
 'submit_intro' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\EdirectoryOrderOptions',
+'item' => '\EmonsiteApi\Models\EdirectoryOrderOptions',
 'active' => 'bool'    ];
 
     /**
@@ -295,7 +295,7 @@ class EdirectoryOrderOptionsV implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\EdirectoryOrderOptions
+     * @return \EmonsiteApi\Models\EdirectoryOrderOptions
      */
     public function getItem()
     {
@@ -305,7 +305,7 @@ class EdirectoryOrderOptionsV implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\EdirectoryOrderOptions $item item
+     * @param \EmonsiteApi\Models\EdirectoryOrderOptions $item item
      *
      * @return $this
      */

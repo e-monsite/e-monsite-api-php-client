@@ -1,4 +1,4 @@
-# Emonsite\BlogPostApi
+# EmonsiteApi\BlogPostApi
 
 All URIs are relative to */*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getBlogPostItem**](BlogPostApi.md#getblogpostitem) | **GET** /blog_posts/{id} | Retrieves a BlogPostOutputDto resource.
 
 # **getBlogPostCollection**
-> \Emonsite\Models\InlineResponse2003 getBlogPostCollection($site_id, $published, $order_publish_from, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2003 getBlogPostCollection($site_id, $published, $order_publish_from, $page, $items_per_page)
 
 Retrieves the collection of BlogPostOutputDto resources.
 
@@ -17,11 +17,11 @@ Retrieves the collection of BlogPostOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BlogPostApi(
+$apiInstance = new EmonsiteApi\Api\BlogPostApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\EmonsiteApi\Models\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBlogPostItem**
-> \Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld getBlogPostItem($id, $site_id)
+> \EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld getBlogPostItem($id, $site_id)
 
 Retrieves a BlogPostOutputDto resource.
 
@@ -77,11 +77,11 @@ Retrieves a BlogPostOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BlogPostApi(
+$apiInstance = new EmonsiteApi\Api\BlogPostApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld**](../Model/BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld.md)
+[**\EmonsiteApi\Models\BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld**](../Model/BlogPostCfba0aa09261d831c83f1f9969814d18Jsonld.md)
 
 ### Authorization
 

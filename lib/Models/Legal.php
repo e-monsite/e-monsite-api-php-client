@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * Legal Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -72,21 +72,21 @@ class Legal implements ModelInterface, ArrayAccess
 'retraction_active' => 'bool',
 'cookie_active' => 'bool',
 'privacy_policy_active' => 'bool',
-'cookies' => '\Emonsite\Models\LegalCookie[]',
-'custom_cookies' => '\Emonsite\Models\LegalCookie[]',
-'cookie' => '\Emonsite\Models\LegalCookie[]',
+'cookies' => '\EmonsiteApi\Models\LegalCookie[]',
+'custom_cookies' => '\EmonsiteApi\Models\LegalCookie[]',
+'cookie' => '\EmonsiteApi\Models\LegalCookie[]',
 'cgu_page' => 'AnyOfLegalCguPage',
 'cgv_page' => 'AnyOfLegalCgvPage',
 'id' => 'string',
-'site' => '\Emonsite\Models\Site',
+'site' => '\EmonsiteApi\Models\Site',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
-'versions' => '\Emonsite\Models\LegalV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\LegalV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -775,7 +775,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Gets cookies
      *
-     * @return \Emonsite\Models\LegalCookie[]
+     * @return \EmonsiteApi\Models\LegalCookie[]
      */
     public function getCookies()
     {
@@ -785,7 +785,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Sets cookies
      *
-     * @param \Emonsite\Models\LegalCookie[] $cookies cookies
+     * @param \EmonsiteApi\Models\LegalCookie[] $cookies cookies
      *
      * @return $this
      */
@@ -799,7 +799,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Gets custom_cookies
      *
-     * @return \Emonsite\Models\LegalCookie[]
+     * @return \EmonsiteApi\Models\LegalCookie[]
      */
     public function getCustomCookies()
     {
@@ -809,7 +809,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Sets custom_cookies
      *
-     * @param \Emonsite\Models\LegalCookie[] $custom_cookies custom_cookies
+     * @param \EmonsiteApi\Models\LegalCookie[] $custom_cookies custom_cookies
      *
      * @return $this
      */
@@ -823,7 +823,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Gets cookie
      *
-     * @return \Emonsite\Models\LegalCookie[]
+     * @return \EmonsiteApi\Models\LegalCookie[]
      */
     public function getCookie()
     {
@@ -833,7 +833,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Sets cookie
      *
-     * @param \Emonsite\Models\LegalCookie[] $cookie cookie
+     * @param \EmonsiteApi\Models\LegalCookie[] $cookie cookie
      *
      * @return $this
      */
@@ -919,7 +919,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -929,7 +929,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */
@@ -1087,7 +1087,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\LegalV[]
+     * @return \EmonsiteApi\Models\LegalV[]
      */
     public function getVersions()
     {
@@ -1097,7 +1097,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\LegalV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\LegalV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -1111,7 +1111,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -1121,7 +1121,7 @@ class Legal implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */

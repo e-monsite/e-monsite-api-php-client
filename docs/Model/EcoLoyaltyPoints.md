@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 **active** | **bool** |  | [optional] 
 **active_topaid_order** | **bool** |  | [optional] 
 **name** | **string** |  | [optional] 
@@ -20,7 +20,7 @@ Name | Type | Description | Notes
 **access_rights** | **int** |  | [optional] 
 **categories_rights** | **int** |  | [optional] 
 **categories** | **string[]** |  | [optional] 
-**groups** | [**\Emonsite\Models\Membergroup[]**](Membergroup.md) |  | [optional] 
+**groups** | [**\EmonsiteApi\Models\Membergroup[]**](Membergroup.md) |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **upd_user_id** | **string** |  | [optional] 
 **add_dt** | **int** |  | [optional] 

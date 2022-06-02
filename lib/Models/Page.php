@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * Page Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,11 +62,11 @@ class Page implements ModelInterface, ArrayAccess
 'model_id' => 'string',
 'site_url' => 'string',
 'id' => 'string',
-'versions' => '\Emonsite\Models\PageV[]',
-'version' => '\Emonsite\Models\VersionInterface[]',
+'versions' => '\EmonsiteApi\Models\PageV[]',
+'version' => '\EmonsiteApi\Models\VersionInterface[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]',
-'site' => '\Emonsite\Models\Site',
+'site' => '\EmonsiteApi\Models\Site',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
@@ -79,7 +79,7 @@ class Page implements ModelInterface, ArrayAccess
 'published' => 'bool',
 'publish_from' => 'int',
 'category' => 'string',
-'aliases' => '\Emonsite\Models\PageAlias[]',
+'aliases' => '\EmonsiteApi\Models\PageAlias[]',
 'alias' => 'string[]',
 'block' => 'AnyOfPageBlock'    ];
 
@@ -493,7 +493,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\PageV[]
+     * @return \EmonsiteApi\Models\PageV[]
      */
     public function getVersions()
     {
@@ -503,7 +503,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\PageV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\PageV[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterface[]
+     * @return \EmonsiteApi\Models\VersionInterface[]
      */
     public function getVersion()
     {
@@ -527,7 +527,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterface[] $version version
+     * @param \EmonsiteApi\Models\VersionInterface[] $version version
      *
      * @return $this
      */
@@ -589,7 +589,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\Site
+     * @return \EmonsiteApi\Models\Site
      */
     public function getSite()
     {
@@ -599,7 +599,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\Site $site site
+     * @param \EmonsiteApi\Models\Site $site site
      *
      * @return $this
      */
@@ -901,7 +901,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Gets aliases
      *
-     * @return \Emonsite\Models\PageAlias[]
+     * @return \EmonsiteApi\Models\PageAlias[]
      */
     public function getAliases()
     {
@@ -911,7 +911,7 @@ class Page implements ModelInterface, ArrayAccess
     /**
      * Sets aliases
      *
-     * @param \Emonsite\Models\PageAlias[] $aliases Faire la mapping dans l'entity
+     * @param \EmonsiteApi\Models\PageAlias[] $aliases Faire la mapping dans l'entity
      *
      * @return $this
      */

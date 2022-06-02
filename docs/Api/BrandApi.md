@@ -1,4 +1,4 @@
-# Emonsite\BrandApi
+# EmonsiteApi\BrandApi
 
 All URIs are relative to */*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**patchBrandItem**](BrandApi.md#patchbranditem) | **PATCH** /brands/{id} | Updates the Brand resource.
 
 # **apiBrandsBrandDomainsGetSubresource**
-> \Emonsite\Models\InlineResponse2005 apiBrandsBrandDomainsGetSubresource($id, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2005 apiBrandsBrandDomainsGetSubresource($id, $page, $items_per_page)
 
 Retrieves the collection of Branddomain resources.
 
@@ -19,11 +19,11 @@ Retrieves the collection of Branddomain resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BrandApi(
+$apiInstance = new EmonsiteApi\Api\BrandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\EmonsiteApi\Models\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBrandCollection**
-> \Emonsite\Models\InlineResponse2006 getBrandCollection($order_add_dt, $page, $items_per_page)
+> \EmonsiteApi\Models\InlineResponse2006 getBrandCollection($order_add_dt, $page, $items_per_page)
 
 Retrieves the collection of BrandOutputDto resources.
 
@@ -75,11 +75,11 @@ Retrieves the collection of BrandOutputDto resources.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BrandApi(
+$apiInstance = new EmonsiteApi\Api\BrandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\EmonsiteApi\Models\InlineResponse2006**](../Model/InlineResponse2006.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getBrandItem**
-> \Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld getBrandItem($id)
+> \EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld getBrandItem($id)
 
 Retrieves a BrandOutputDto resource.
 
@@ -131,11 +131,11 @@ Retrieves a BrandOutputDto resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BrandApi(
+$apiInstance = new EmonsiteApi\Api\BrandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld**](../Model/Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld.md)
+[**\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld**](../Model/Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld.md)
 
 ### Authorization
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **patchBrandItem**
-> \Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld patchBrandItem($id, $body)
+> \EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld patchBrandItem($id, $body)
 
 Updates the Brand resource.
 
@@ -183,18 +183,18 @@ Updates the Brand resource.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: apiKey
-$config = Emonsite\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Emonsite\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = EmonsiteApi\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
-$apiInstance = new Emonsite\Api\BrandApi(
+$apiInstance = new EmonsiteApi\Api\BrandApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = "id_example"; // string | 
-$body = new \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7(); // \Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 | The updated Brand resource
+$body = new \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7(); // \EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7 | The updated Brand resource
 
 try {
     $result = $apiInstance->patchBrandItem($id, $body);
@@ -210,11 +210,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\Emonsite\Models\Brand962c5489a05f3ff6192cd4c630d8abd7**](../Model/Brand962c5489a05f3ff6192cd4c630d8abd7.md)| The updated Brand resource | [optional]
+ **body** | [**\EmonsiteApi\Models\Brand962c5489a05f3ff6192cd4c630d8abd7**](../Model/Brand962c5489a05f3ff6192cd4c630d8abd7.md)| The updated Brand resource | [optional]
 
 ### Return type
 
-[**\Emonsite\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld**](../Model/Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld.md)
+[**\EmonsiteApi\Models\Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld**](../Model/Brand2fb1a13c6cb9d850d673a6831c427f00Jsonld.md)
 
 ### Authorization
 

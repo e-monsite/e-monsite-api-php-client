@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * EcoCombinationApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,7 +94,7 @@ class EcoCombinationApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -111,7 +111,7 @@ class EcoCombinationApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -340,9 +340,9 @@ class EcoCombinationApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20013
+     * @return \EmonsiteApi\Models\InlineResponse20013
      */
     public function getEcoCombinationCollection($site_id, $page = '1', $items_per_page = '30')
     {
@@ -359,13 +359,13 @@ class EcoCombinationApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20013, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoCombinationCollectionWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20013';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20013';
         $request = $this->getEcoCombinationCollectionRequest($site_id, $page, $items_per_page);
 
         try {
@@ -417,7 +417,7 @@ class EcoCombinationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20013',
+                        '\EmonsiteApi\Models\InlineResponse20013',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -463,7 +463,7 @@ class EcoCombinationApi
      */
     public function getEcoCombinationCollectionAsyncWithHttpInfo($site_id, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20013';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20013';
         $request = $this->getEcoCombinationCollectionRequest($site_id, $page, $items_per_page);
 
         return $this->client
@@ -620,9 +620,9 @@ class EcoCombinationApi
      * @param  string $id id (required)
      * @param  string $site_id site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld
+     * @return \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld
      */
     public function getEcoCombinationItem($id, $site_id)
     {
@@ -638,13 +638,13 @@ class EcoCombinationApi
      * @param  string $id (required)
      * @param  string $site_id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEcoCombinationItemWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
         $request = $this->getEcoCombinationItemRequest($id, $site_id);
 
         try {
@@ -696,7 +696,7 @@ class EcoCombinationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld',
+                        '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -740,7 +740,7 @@ class EcoCombinationApi
      */
     public function getEcoCombinationItemAsyncWithHttpInfo($id, $site_id)
     {
-        $returnType = '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
         $request = $this->getEcoCombinationItemRequest($id, $site_id);
 
         return $this->client
@@ -899,11 +899,11 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld
+     * @return \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld
      */
     public function postEcoCombinationCollection($body = null)
     {
@@ -916,15 +916,15 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEcoCombinationCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
         $request = $this->postEcoCombinationCollectionRequest($body);
 
         try {
@@ -976,7 +976,7 @@ class EcoCombinationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld',
+                        '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -991,7 +991,7 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1011,14 +1011,14 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEcoCombinationCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
         $request = $this->postEcoCombinationCollectionRequest($body);
 
         return $this->client
@@ -1061,7 +1061,7 @@ class EcoCombinationApi
     /**
      * Create request for operation 'postEcoCombinationCollection'
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1155,11 +1155,11 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld
+     * @return \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld
      */
     public function postEcoCombinationCollection($body = null)
     {
@@ -1172,15 +1172,15 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEcoCombinationCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
         $request = $this->postEcoCombinationCollectionRequest($body);
 
         try {
@@ -1232,7 +1232,7 @@ class EcoCombinationApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld',
+                        '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1247,7 +1247,7 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1267,14 +1267,14 @@ class EcoCombinationApi
      *
      * Creates a EcoCombination resource.
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEcoCombinationCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
+        $returnType = '\EmonsiteApi\Models\EcoCombination3bb0d34c5ea0c72f2026a57c27faba00Jsonld';
         $request = $this->postEcoCombinationCollectionRequest($body);
 
         return $this->client
@@ -1317,7 +1317,7 @@ class EcoCombinationApi
     /**
      * Create request for operation 'postEcoCombinationCollection'
      *
-     * @param  \Emonsite\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
+     * @param  \EmonsiteApi\Models\EcoCombinationA3c1a277fc6663e5ff2c6f85617980feJsonld $body The new EcoCombination resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

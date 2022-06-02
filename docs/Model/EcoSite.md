@@ -101,7 +101,7 @@ Name | Type | Description | Notes
 **google_content_api_token_expires_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **google_merchant_id** | **string** |  | [optional] 
 **google_content_api_token_expired** | **bool** |  | [optional] 
-**google_content_api_updates** | [**\Emonsite\Models\Collection**](Collection.md) |  | [optional] 
+**google_content_api_updates** | [**\EmonsiteApi\Models\Collection**](Collection.md) |  | [optional] 
 **facet_config** | [**AnyOfEcoSiteFacetConfig**](AnyOfEcoSiteFacetConfig.md) |  | [optional] 
 **add_user_id** | **string** |  | [optional] 
 **upd_user_id** | **string** |  | [optional] 
@@ -109,11 +109,11 @@ Name | Type | Description | Notes
 **upd_dt** | **int** |  | [optional] 
 **created_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
 **updated_at** | [**\DateTime**](\DateTime.md) |  | [optional] 
-**versions** | [**\Emonsite\Models\EcoSiteV[]**](EcoSiteV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\EcoSiteV[]**](EcoSiteV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

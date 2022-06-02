@@ -10,7 +10,7 @@ curl -X POST \
     "options": {
       "packageName": "EmonsiteApiPhpClient",
       "apiPackage": "Api",
-      "invokerPackage": "Emonsite",
+      "invokerPackage": "EmonsiteApi",
       "composerVendorName": "e-monsite",
       "composerProjectName": "e-monsite-api-php-client",
       "modelPackage": "Models",

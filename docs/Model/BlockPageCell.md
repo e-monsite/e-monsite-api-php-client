@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**line** | [**\Emonsite\Models\BlockPageLine**](BlockPageLine.md) |  | [optional] 
+**line** | [**\EmonsiteApi\Models\BlockPageLine**](BlockPageLine.md) |  | [optional] 
 **width** | **string** |  | [optional] 
 **content_type** | **string** |  | [optional] 
 **widget_id** | **string** |  | [optional] 
@@ -14,8 +14,8 @@ Name | Type | Description | Notes
 **position** | **int** |  | [optional] 
 **design_options** | **string** | TODO type json pour avoir un array direct | [optional] 
 **id** | **string** |  | [optional] 
-**versions** | [**\Emonsite\Models\BlockPageCellV[]**](BlockPageCellV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\BlockPageCellV[]**](BlockPageCellV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 

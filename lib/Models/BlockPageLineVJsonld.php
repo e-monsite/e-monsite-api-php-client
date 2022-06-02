@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * BlockPageLineVJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,7 +61,7 @@ class BlockPageLineVJsonld implements ModelInterface, ArrayAccess
 'type' => 'string',
 'title' => 'string',
 'lang' => 'string',
-'item' => '\Emonsite\Models\VersionableInterfaceJsonld',
+'item' => '\EmonsiteApi\Models\VersionableInterfaceJsonld',
 'active' => 'bool',
 'id' => 'string'    ];
 
@@ -361,7 +361,7 @@ class BlockPageLineVJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets item
      *
-     * @return \Emonsite\Models\VersionableInterfaceJsonld
+     * @return \EmonsiteApi\Models\VersionableInterfaceJsonld
      */
     public function getItem()
     {
@@ -371,7 +371,7 @@ class BlockPageLineVJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets item
      *
-     * @param \Emonsite\Models\VersionableInterfaceJsonld $item item
+     * @param \EmonsiteApi\Models\VersionableInterfaceJsonld $item item
      *
      * @return $this
      */

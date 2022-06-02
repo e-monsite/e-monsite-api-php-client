@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * LegalJsonld Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -75,21 +75,21 @@ class LegalJsonld implements ModelInterface, ArrayAccess
 'retraction_active' => 'bool',
 'cookie_active' => 'bool',
 'privacy_policy_active' => 'bool',
-'cookies' => '\Emonsite\Models\LegalCookieJsonld[]',
-'custom_cookies' => '\Emonsite\Models\LegalCookieJsonld[]',
-'cookie' => '\Emonsite\Models\LegalCookieJsonld[]',
+'cookies' => '\EmonsiteApi\Models\LegalCookieJsonld[]',
+'custom_cookies' => '\EmonsiteApi\Models\LegalCookieJsonld[]',
+'cookie' => '\EmonsiteApi\Models\LegalCookieJsonld[]',
 'cgu_page' => 'AnyOfLegalJsonldCguPage',
 'cgv_page' => 'AnyOfLegalJsonldCgvPage',
 'id' => 'string',
-'site' => '\Emonsite\Models\SiteJsonld',
+'site' => '\EmonsiteApi\Models\SiteJsonld',
 'add_dt' => 'int',
 'upd_dt' => 'int',
 'created_at' => '\DateTime',
 'updated_at' => '\DateTime',
 'add_user_id' => 'string',
 'upd_user_id' => 'string',
-'versions' => '\Emonsite\Models\LegalVJsonld[]',
-'version' => '\Emonsite\Models\VersionInterfaceJsonld[]',
+'versions' => '\EmonsiteApi\Models\LegalVJsonld[]',
+'version' => '\EmonsiteApi\Models\VersionInterfaceJsonld[]',
 'default_lang' => 'string',
 'version_by_lang' => 'string[]'    ];
 
@@ -865,7 +865,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cookies
      *
-     * @return \Emonsite\Models\LegalCookieJsonld[]
+     * @return \EmonsiteApi\Models\LegalCookieJsonld[]
      */
     public function getCookies()
     {
@@ -875,7 +875,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cookies
      *
-     * @param \Emonsite\Models\LegalCookieJsonld[] $cookies cookies
+     * @param \EmonsiteApi\Models\LegalCookieJsonld[] $cookies cookies
      *
      * @return $this
      */
@@ -889,7 +889,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets custom_cookies
      *
-     * @return \Emonsite\Models\LegalCookieJsonld[]
+     * @return \EmonsiteApi\Models\LegalCookieJsonld[]
      */
     public function getCustomCookies()
     {
@@ -899,7 +899,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets custom_cookies
      *
-     * @param \Emonsite\Models\LegalCookieJsonld[] $custom_cookies custom_cookies
+     * @param \EmonsiteApi\Models\LegalCookieJsonld[] $custom_cookies custom_cookies
      *
      * @return $this
      */
@@ -913,7 +913,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets cookie
      *
-     * @return \Emonsite\Models\LegalCookieJsonld[]
+     * @return \EmonsiteApi\Models\LegalCookieJsonld[]
      */
     public function getCookie()
     {
@@ -923,7 +923,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets cookie
      *
-     * @param \Emonsite\Models\LegalCookieJsonld[] $cookie cookie
+     * @param \EmonsiteApi\Models\LegalCookieJsonld[] $cookie cookie
      *
      * @return $this
      */
@@ -1009,7 +1009,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets site
      *
-     * @return \Emonsite\Models\SiteJsonld
+     * @return \EmonsiteApi\Models\SiteJsonld
      */
     public function getSite()
     {
@@ -1019,7 +1019,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets site
      *
-     * @param \Emonsite\Models\SiteJsonld $site site
+     * @param \EmonsiteApi\Models\SiteJsonld $site site
      *
      * @return $this
      */
@@ -1177,7 +1177,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return \Emonsite\Models\LegalVJsonld[]
+     * @return \EmonsiteApi\Models\LegalVJsonld[]
      */
     public function getVersions()
     {
@@ -1187,7 +1187,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param \Emonsite\Models\LegalVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\LegalVJsonld[] $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return $this
      */
@@ -1201,7 +1201,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Gets version
      *
-     * @return \Emonsite\Models\VersionInterfaceJsonld[]
+     * @return \EmonsiteApi\Models\VersionInterfaceJsonld[]
      */
     public function getVersion()
     {
@@ -1211,7 +1211,7 @@ class LegalJsonld implements ModelInterface, ArrayAccess
     /**
      * Sets version
      *
-     * @param \Emonsite\Models\VersionInterfaceJsonld[] $version version
+     * @param \EmonsiteApi\Models\VersionInterfaceJsonld[] $version version
      *
      * @return $this
      */

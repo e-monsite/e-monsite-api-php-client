@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * WebhookCall Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class WebhookCall implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'webhook' => '\Emonsite\Models\Webhook',
+        'webhook' => '\EmonsiteApi\Models\Webhook',
 'add_dt' => 'int',
 'add_user_id' => 'string',
 'status' => 'string',
@@ -283,7 +283,7 @@ class WebhookCall implements ModelInterface, ArrayAccess
     /**
      * Gets webhook
      *
-     * @return \Emonsite\Models\Webhook
+     * @return \EmonsiteApi\Models\Webhook
      */
     public function getWebhook()
     {
@@ -293,7 +293,7 @@ class WebhookCall implements ModelInterface, ArrayAccess
     /**
      * Sets webhook
      *
-     * @param \Emonsite\Models\Webhook $webhook webhook
+     * @param \EmonsiteApi\Models\Webhook $webhook webhook
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Api;
+namespace EmonsiteApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emonsite\ApiException;
-use Emonsite\Configuration;
-use Emonsite\HeaderSelector;
-use Emonsite\ObjectSerializer;
+use EmonsiteApi\ApiException;
+use EmonsiteApi\Configuration;
+use EmonsiteApi\HeaderSelector;
+use EmonsiteApi\ObjectSerializer;
 
 /**
  * DirectorySiteApi Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,7 +93,7 @@ class DirectorySiteApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class DirectorySiteApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -328,9 +328,9 @@ class DirectorySiteApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\InlineResponse20012
+     * @return \EmonsiteApi\Models\InlineResponse20012
      */
     public function getDirectorySiteCollection($category = null, $category = null, $site = null, $site = null, $page = '1', $items_per_page = '30')
     {
@@ -350,13 +350,13 @@ class DirectorySiteApi
      * @param  int $page The collection page number (optional, default to 1)
      * @param  int $items_per_page The number of items per page (optional, default to 30)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\InlineResponse20012, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\InlineResponse20012, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDirectorySiteCollectionWithHttpInfo($category = null, $category = null, $site = null, $site = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20012';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20012';
         $request = $this->getDirectorySiteCollectionRequest($category, $category, $site, $site, $page, $items_per_page);
 
         try {
@@ -408,7 +408,7 @@ class DirectorySiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\InlineResponse20012',
+                        '\EmonsiteApi\Models\InlineResponse20012',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -460,7 +460,7 @@ class DirectorySiteApi
      */
     public function getDirectorySiteCollectionAsyncWithHttpInfo($category = null, $category = null, $site = null, $site = null, $page = '1', $items_per_page = '30')
     {
-        $returnType = '\Emonsite\Models\InlineResponse20012';
+        $returnType = '\EmonsiteApi\Models\InlineResponse20012';
         $request = $this->getDirectorySiteCollectionRequest($category, $category, $site, $site, $page, $items_per_page);
 
         return $this->client
@@ -631,9 +631,9 @@ class DirectorySiteApi
      *
      * @param  string $id id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
+     * @return \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
      */
     public function getDirectorySiteItem($id)
     {
@@ -648,13 +648,13 @@ class DirectorySiteApi
      *
      * @param  string $id (required)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDirectorySiteItemWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->getDirectorySiteItemRequest($id);
 
         try {
@@ -706,7 +706,7 @@ class DirectorySiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
+                        '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -748,7 +748,7 @@ class DirectorySiteApi
      */
     public function getDirectorySiteItemAsyncWithHttpInfo($id)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->getDirectorySiteItemRequest($id);
 
         return $this->client
@@ -897,11 +897,11 @@ class DirectorySiteApi
      * Updates the DirectorySite resource.
      *
      * @param  string $id id (required)
-     * @param  \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
+     * @return \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
      */
     public function patchDirectorySiteItem($id, $body = null)
     {
@@ -915,15 +915,15 @@ class DirectorySiteApi
      * Updates the DirectorySite resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function patchDirectorySiteItemWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->patchDirectorySiteItemRequest($id, $body);
 
         try {
@@ -975,7 +975,7 @@ class DirectorySiteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
+                        '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -991,7 +991,7 @@ class DirectorySiteApi
      * Updates the DirectorySite resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1012,14 +1012,14 @@ class DirectorySiteApi
      * Updates the DirectorySite resource.
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function patchDirectorySiteItemAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->patchDirectorySiteItemRequest($id, $body);
 
         return $this->client
@@ -1063,7 +1063,7 @@ class DirectorySiteApi
      * Create request for operation 'patchDirectorySiteItem'
      *
      * @param  string $id (required)
-     * @param  \Emonsite\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite966bbe081a8f082ba358af25f71a3895 $body The updated DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1171,11 +1171,11 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
+     * @return \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
      */
     public function postDirectorySiteCollection($body = null)
     {
@@ -1188,15 +1188,15 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postDirectorySiteCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->postDirectorySiteCollectionRequest($body);
 
         try {
@@ -1248,7 +1248,7 @@ class DirectorySiteApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
+                        '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1263,7 +1263,7 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1283,14 +1283,14 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postDirectorySiteCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->postDirectorySiteCollectionRequest($body);
 
         return $this->client
@@ -1333,7 +1333,7 @@ class DirectorySiteApi
     /**
      * Create request for operation 'postDirectorySiteCollection'
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1427,11 +1427,11 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
+     * @return \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld
      */
     public function postDirectorySiteCollection($body = null)
     {
@@ -1444,15 +1444,15 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
-     * @throws \Emonsite\ApiException on non-2xx response
+     * @throws \EmonsiteApi\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld, HTTP status code, HTTP response headers (array of strings)
      */
     public function postDirectorySiteCollectionWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->postDirectorySiteCollectionRequest($body);
 
         try {
@@ -1504,7 +1504,7 @@ class DirectorySiteApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
+                        '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1519,7 +1519,7 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1539,14 +1539,14 @@ class DirectorySiteApi
      *
      * Creates a DirectorySite resource.
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postDirectorySiteCollectionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\Emonsite\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
+        $returnType = '\EmonsiteApi\Models\DirectorySiteC4b6d694621fb452df0348553f6c643bJsonld';
         $request = $this->postDirectorySiteCollectionRequest($body);
 
         return $this->client
@@ -1589,7 +1589,7 @@ class DirectorySiteApi
     /**
      * Create request for operation 'postDirectorySiteCollection'
      *
-     * @param  \Emonsite\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
+     * @param  \EmonsiteApi\Models\DirectorySite9cb6adf6305292849b553106f66e2a8eJsonld $body The new DirectorySite resource (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

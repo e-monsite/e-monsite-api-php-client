@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emonsite\Models;
+namespace EmonsiteApi\Models;
 
 use \ArrayAccess;
-use \Emonsite\ObjectSerializer;
+use \EmonsiteApi\ObjectSerializer;
 
 /**
  * InlineResponse20020 Class Doc Comment
  *
  * @category Class
- * @package  Emonsite
+ * @package  EmonsiteApi
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'hydramember' => '\Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld[]',
+        'hydramember' => '\EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld[]',
 'hydratotal_items' => 'int',
-'hydraview' => '\Emonsite\Models\InlineResponse200Hydraview',
-'hydrasearch' => '\Emonsite\Models\InlineResponse200Hydrasearch'    ];
+'hydraview' => '\EmonsiteApi\Models\InlineResponse200Hydraview',
+'hydrasearch' => '\EmonsiteApi\Models\InlineResponse200Hydrasearch'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -220,7 +220,7 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
     /**
      * Gets hydramember
      *
-     * @return \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld[]
+     * @return \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld[]
      */
     public function getHydramember()
     {
@@ -230,7 +230,7 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
     /**
      * Sets hydramember
      *
-     * @param \Emonsite\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld[] $hydramember hydramember
+     * @param \EmonsiteApi\Models\Group799b1bea2ff8730b1a1a5b188922b633Jsonld[] $hydramember hydramember
      *
      * @return $this
      */
@@ -268,7 +268,7 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
     /**
      * Gets hydraview
      *
-     * @return \Emonsite\Models\InlineResponse200Hydraview
+     * @return \EmonsiteApi\Models\InlineResponse200Hydraview
      */
     public function getHydraview()
     {
@@ -278,7 +278,7 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
     /**
      * Sets hydraview
      *
-     * @param \Emonsite\Models\InlineResponse200Hydraview $hydraview hydraview
+     * @param \EmonsiteApi\Models\InlineResponse200Hydraview $hydraview hydraview
      *
      * @return $this
      */
@@ -292,7 +292,7 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
     /**
      * Gets hydrasearch
      *
-     * @return \Emonsite\Models\InlineResponse200Hydrasearch
+     * @return \EmonsiteApi\Models\InlineResponse200Hydrasearch
      */
     public function getHydrasearch()
     {
@@ -302,7 +302,7 @@ class InlineResponse20020 implements ModelInterface, ArrayAccess
     /**
      * Sets hydrasearch
      *
-     * @param \Emonsite\Models\InlineResponse200Hydrasearch $hydrasearch hydrasearch
+     * @param \EmonsiteApi\Models\InlineResponse200Hydrasearch $hydrasearch hydrasearch
      *
      * @return $this
      */

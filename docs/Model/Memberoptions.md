@@ -25,9 +25,9 @@ Name | Type | Description | Notes
 **redirect_category_id** | **string** | relation ? | [optional] 
 **redirect_item_id** | **string** |  | [optional] 
 **id** | **string** |  | [optional] 
-**site** | [**\Emonsite\Models\Site**](Site.md) |  | [optional] 
-**versions** | [**\Emonsite\Models\MemberoptionsV[]**](MemberoptionsV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
-**version** | [**\Emonsite\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
+**site** | [**\EmonsiteApi\Models\Site**](Site.md) |  | [optional] 
+**versions** | [**\EmonsiteApi\Models\MemberoptionsV[]**](MemberoptionsV.md) | IMPLEMENTEZ le mapping dans l&#x27;entity TODO trouver comment le faire dynamiquement avec un listener doctrine | [optional] 
+**version** | [**\EmonsiteApi\Models\VersionInterface[]**](VersionInterface.md) |  | [optional] 
 **default_lang** | **string** |  | [optional] 
 **version_by_lang** | **string[]** |  | [optional] 
 
