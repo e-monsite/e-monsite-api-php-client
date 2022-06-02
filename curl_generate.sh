@@ -1,6 +1,6 @@
 # Pre-clean
-sudo rm -Rf generated
-sudo rm generated.zip
+rm -Rf generated
+rm generated.zip
 
 curl -X POST \
   https://generator3.swagger.io/api/generate \
@@ -26,22 +26,22 @@ curl -X POST \
     "specURL": "https://raw.githubusercontent.com/e-monsite/e-monsite-api-php-client/main/e-monsite-oas3.json"
 }' > generated.zip
 
-sudo unzip generated.zip -d generated/
+unzip generated.zip -d generated/
 
 # Remove old files
-sudo rm composer.json
-sudo rm phpunit.xml.dist
-sudo rm README.md
-sudo rm -Rf docs
-sudo rm -Rf lib
-sudo rm -Rf test
+rm composer.json
+rm phpunit.xml.dist
+rm README.md
+rm -Rf docs
+rm -Rf lib
+rm -Rf test
 
 # Move file in root directory
-sudo cp -Rf generated/SwaggerClient-php/* .
+cp -Rf generated/SwaggerClient-php/* .
 
 # Post-clean
-sudo rm -Rf generated
-sudo rm generated.zip
+rm -Rf generated
+rm generated.zip
 
 # No use of git_push script, clean it
-sudo rm git_push.sh
+rm git_push.sh
