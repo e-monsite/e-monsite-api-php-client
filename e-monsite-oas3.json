@@ -8303,6 +8303,311 @@
                 }
             }
         },
+        "/user_domain_mailboxes": {
+            "get": {
+                "tags": [
+                    "UserDomainMailbox"
+                ],
+                "operationId": "getUserDomainMailboxCollection",
+                "summary": "Retrieves the collection of UserDomainMailboxOutputDto resources.",
+                "responses": {
+                    "200": {
+                        "description": "UserDomainMailboxOutputDto collection response",
+                        "content": {
+                            "application/ld+json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "hydra:member": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9:jsonld"
+                                            }
+                                        },
+                                        "hydra:totalItems": {
+                                            "type": "integer",
+                                            "minimum": 0
+                                        },
+                                        "hydra:view": {
+                                            "type": "object",
+                                            "properties": {
+                                                "@id": {
+                                                    "type": "string",
+                                                    "format": "iri-reference"
+                                                },
+                                                "@type": {
+                                                    "type": "string"
+                                                },
+                                                "hydra:first": {
+                                                    "type": "string",
+                                                    "format": "iri-reference"
+                                                },
+                                                "hydra:last": {
+                                                    "type": "string",
+                                                    "format": "iri-reference"
+                                                },
+                                                "hydra:next": {
+                                                    "type": "string",
+                                                    "format": "iri-reference"
+                                                }
+                                            }
+                                        },
+                                        "hydra:search": {
+                                            "type": "object",
+                                            "properties": {
+                                                "@type": {
+                                                    "type": "string"
+                                                },
+                                                "hydra:template": {
+                                                    "type": "string"
+                                                },
+                                                "hydra:variableRepresentation": {
+                                                    "type": "string"
+                                                },
+                                                "hydra:mapping": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "@type": {
+                                                                "type": "string"
+                                                            },
+                                                            "variable": {
+                                                                "type": "string"
+                                                            },
+                                                            "property": {
+                                                                "type": "string",
+                                                                "nullable": true
+                                                            },
+                                                            "required": {
+                                                                "type": "boolean"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "required": [
+                                        "hydra:member"
+                                    ]
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9"
+                                    }
+                                }
+                            },
+                            "text/html": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "id[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "style": "form",
+                        "explode": true
+                    },
+                    {
+                        "name": "domain",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "domain[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "style": "form",
+                        "explode": true
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "username[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "style": "form",
+                        "explode": true
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "description": "The collection page number",
+                        "schema": {
+                            "type": "integer",
+                            "default": 1
+                        }
+                    },
+                    {
+                        "name": "itemsPerPage",
+                        "in": "query",
+                        "required": false,
+                        "description": "The number of items per page",
+                        "schema": {
+                            "type": "integer",
+                            "default": 30,
+                            "minimum": 0
+                        }
+                    }
+                ]
+            },
+            "post": {
+                "tags": [
+                    "UserDomainMailbox"
+                ],
+                "operationId": "postUserDomainMailboxCollection",
+                "summary": "Creates a UserDomainMailbox resource.",
+                "responses": {
+                    "201": {
+                        "description": "UserDomainMailbox resource created",
+                        "content": {
+                            "application/ld+json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9:jsonld"
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9"
+                                }
+                            },
+                            "text/html": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9"
+                                }
+                            }
+                        },
+                        "links": {
+                            "GetUserDomainMailboxItem": {
+                                "parameters": {
+                                    "id": "$response.body#/id"
+                                },
+                                "operationId": "getUserDomainMailboxItem",
+                                "description": "The `id` value returned in the response can be used as the `id` parameter in `GET /user_domain_mailboxes/{id}`."
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid input"
+                    },
+                    "404": {
+                        "description": "Resource not found"
+                    }
+                },
+                "requestBody": {
+                    "content": {
+                        "application/ld+json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserDomainMailbox:26e994f28120c4b51733f4efd1c6a999:jsonld"
+                            }
+                        },
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserDomainMailbox:26e994f28120c4b51733f4efd1c6a999"
+                            }
+                        },
+                        "text/html": {
+                            "schema": {
+                                "$ref": "#/components/schemas/UserDomainMailbox:26e994f28120c4b51733f4efd1c6a999"
+                            }
+                        }
+                    },
+                    "description": "The new UserDomainMailbox resource"
+                }
+            }
+        },
+        "/user_domain_mailboxes/{id}": {
+            "get": {
+                "tags": [
+                    "UserDomainMailbox"
+                ],
+                "operationId": "getUserDomainMailboxItem",
+                "summary": "Retrieves a UserDomainMailboxOutputDto resource.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "UserDomainMailboxOutputDto resource response",
+                        "content": {
+                            "application/ld+json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9:jsonld"
+                                }
+                            },
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9"
+                                }
+                            },
+                            "text/html": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UserDomainMailbox:b24869693c225df47103d00fd93b91e9"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource not found"
+                    }
+                }
+            }
+        },
         "/user_has_roles": {
             "get": {
                 "tags": [
@@ -12796,58 +13101,6 @@
                     },
                     "template": {
                         "type": "string"
-                    },
-                    "active": {
-                        "type": "boolean"
-                    }
-                }
-            },
-            "BrandMailtemplateV": {
-                "type": "object",
-                "properties": {
-                    "template": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "lang": {
-                        "type": "string"
-                    },
-                    "item": {
-                        "description": "IMPLEMENTEZ le mapping dans l'entity\nTODO trouver comment le faire dynamiquement avec un listener doctrine",
-                        "type": "string",
-                        "format": "iri-reference"
-                    },
-                    "active": {
-                        "type": "boolean"
-                    }
-                }
-            },
-            "BrandMailtemplateV:jsonld": {
-                "type": "object",
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "template": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "lang": {
-                        "type": "string"
-                    },
-                    "item": {
-                        "description": "IMPLEMENTEZ le mapping dans l'entity\nTODO trouver comment le faire dynamiquement avec un listener doctrine",
-                        "type": "string",
-                        "format": "iri-reference"
                     },
                     "active": {
                         "type": "boolean"
@@ -23838,6 +24091,66 @@
                     }
                 }
             },
+            "StorageImageV": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "description": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "lang": {
+                        "type": "string"
+                    },
+                    "item": {
+                        "description": "IMPLEMENTEZ le mapping dans l'entity\nTODO trouver comment le faire dynamiquement avec un listener doctrine",
+                        "type": "string",
+                        "format": "iri-reference"
+                    },
+                    "active": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "StorageImageV:jsonld": {
+                "type": "object",
+                "properties": {
+                    "@context": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "@id": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "@type": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "description": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "lang": {
+                        "type": "string"
+                    },
+                    "item": {
+                        "description": "IMPLEMENTEZ le mapping dans l'entity\nTODO trouver comment le faire dynamiquement avec un listener doctrine",
+                        "type": "string",
+                        "format": "iri-reference"
+                    },
+                    "active": {
+                        "type": "boolean"
+                    }
+                }
+            },
             "StorageMedias": {
                 "type": "object",
                 "properties": {
@@ -25462,7 +25775,8 @@
                         "readOnly": true,
                         "type": "array",
                         "items": {
-                            "$ref": "#/components/schemas/UserDomainMailbox"
+                            "type": "string",
+                            "format": "iri-reference"
                         }
                     },
                     "id": {
@@ -25772,7 +26086,8 @@
                         "readOnly": true,
                         "type": "array",
                         "items": {
-                            "$ref": "#/components/schemas/UserDomainMailbox:jsonld"
+                            "type": "string",
+                            "format": "iri-reference"
                         }
                     },
                     "id": {
@@ -26029,71 +26344,66 @@
                     }
                 }
             },
-            "UserDomainMailbox": {
+            "UserDomainMailbox:26e994f28120c4b51733f4efd1c6a999": {
                 "type": "object",
+                "description": "",
                 "properties": {
-                    "userDomain": {
-                        "readOnly": true,
-                        "$ref": "#/components/schemas/UserDomain"
-                    },
-                    "domain": {
-                        "readOnly": true,
+                    "userDomainId": {
                         "type": "string"
                     },
                     "username": {
-                        "readOnly": true,
                         "type": "string"
                     },
                     "passwd": {
-                        "readOnly": true,
                         "type": "string"
-                    },
-                    "status": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "cronTracker": {
-                        "readOnly": true,
-                        "type": "boolean"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "addDt": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "updDt": {
-                        "readOnly": true,
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "createdAt": {
-                        "readOnly": true,
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "updatedAt": {
-                        "readOnly": true,
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "creator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
-                    },
-                    "updator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
                     }
                 }
             },
-            "UserDomainMailbox:jsonld": {
+            "UserDomainMailbox:26e994f28120c4b51733f4efd1c6a999:jsonld": {
                 "type": "object",
+                "description": "",
+                "properties": {
+                    "@context": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "@id": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "@type": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "userDomainId": {
+                        "type": "string"
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "passwd": {
+                        "type": "string"
+                    }
+                }
+            },
+            "UserDomainMailbox:b24869693c225df47103d00fd93b91e9": {
+                "type": "object",
+                "description": "",
+                "properties": {
+                    "userDomain": {
+                        "$ref": "#/components/schemas/UserDomain"
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "passwd": {
+                        "type": "string"
+                    }
+                }
+            },
+            "UserDomainMailbox:b24869693c225df47103d00fd93b91e9:jsonld": {
+                "type": "object",
+                "description": "",
                 "properties": {
                     "@context": {
                         "readOnly": true,
@@ -26108,62 +26418,13 @@
                         "type": "string"
                     },
                     "userDomain": {
-                        "readOnly": true,
                         "$ref": "#/components/schemas/UserDomain:jsonld"
                     },
-                    "domain": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
                     "username": {
-                        "readOnly": true,
                         "type": "string"
                     },
                     "passwd": {
-                        "readOnly": true,
                         "type": "string"
-                    },
-                    "status": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "cronTracker": {
-                        "readOnly": true,
-                        "type": "boolean"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "addDt": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "updDt": {
-                        "readOnly": true,
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "createdAt": {
-                        "readOnly": true,
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "updatedAt": {
-                        "readOnly": true,
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "creator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
-                    },
-                    "updator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
                     }
                 }
             },
@@ -26386,7 +26647,7 @@
                         "description": "IMPLEMENTEZ le mapping dans l'entity\nTODO trouver comment le faire dynamiquement avec un listener doctrine",
                         "type": "array",
                         "items": {
-                            "$ref": "#/components/schemas/BrandMailtemplateV"
+                            "$ref": "#/components/schemas/StorageImageV"
                         }
                     },
                     "defaultLang": {
@@ -26400,35 +26661,79 @@
                             "type": "string"
                         }
                     },
-                    "brand": {
-                        "readOnly": true,
-                        "type": "string",
-                        "format": "iri-reference"
+                    "weight": {
+                        "type": "integer"
                     },
-                    "name": {
-                        "readOnly": true,
-                        "description": "a l'air d'\u00eatre useless vu que c'est le nom de la brand qui est repris en fait.",
+                    "mimeType": {
                         "type": "string"
                     },
-                    "description": {
+                    "storageFolder": {
                         "readOnly": true,
-                        "description": "encore plus useless",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/StorageFolder"
+                            }
+                        ]
+                    },
+                    "transactionId": {
                         "type": "string",
                         "nullable": true
+                    },
+                    "width": {
+                        "readOnly": true
+                    },
+                    "height": {
+                        "readOnly": true
+                    },
+                    "dimensions": {
+                        "writeOnly": true,
+                        "type": "integer"
+                    },
+                    "ordering": {
+                        "type": "integer"
+                    },
+                    "folder": {
+                        "writeOnly": true,
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/StorageFolder"
+                            }
+                        ]
                     },
                     "id": {
                         "readOnly": true,
                         "type": "string"
                     },
-                    "creator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
+                    "storageName": {
+                        "type": "string"
                     },
-                    "updator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
+                    "storagePath": {
+                        "description": "TODO juste setter un champ.",
+                        "type": "string"
+                    },
+                    "publicPath": {
+                        "type": "string"
+                    },
+                    "privatefilepath": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "privateFilename": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "publicFilename": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "publicFilePath": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "site": {
+                        "$ref": "#/components/schemas/Site"
                     },
                     "addDt": {
                         "readOnly": true,
@@ -26448,6 +26753,28 @@
                         "readOnly": true,
                         "type": "string",
                         "format": "date-time",
+                        "nullable": true
+                    },
+                    "addUserId": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "updUserId": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "trashed": {
+                        "readOnly": true,
+                        "type": "boolean"
+                    },
+                    "trashDt": {
+                        "readOnly": true,
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "trashUserId": {
+                        "readOnly": true,
+                        "type": "string",
                         "nullable": true
                     }
                 }
@@ -26477,7 +26804,7 @@
                         "description": "IMPLEMENTEZ le mapping dans l'entity\nTODO trouver comment le faire dynamiquement avec un listener doctrine",
                         "type": "array",
                         "items": {
-                            "$ref": "#/components/schemas/BrandMailtemplateV:jsonld"
+                            "$ref": "#/components/schemas/StorageImageV:jsonld"
                         }
                     },
                     "defaultLang": {
@@ -26491,35 +26818,79 @@
                             "type": "string"
                         }
                     },
-                    "brand": {
-                        "readOnly": true,
-                        "type": "string",
-                        "format": "iri-reference"
+                    "weight": {
+                        "type": "integer"
                     },
-                    "name": {
-                        "readOnly": true,
-                        "description": "a l'air d'\u00eatre useless vu que c'est le nom de la brand qui est repris en fait.",
+                    "mimeType": {
                         "type": "string"
                     },
-                    "description": {
+                    "storageFolder": {
                         "readOnly": true,
-                        "description": "encore plus useless",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/StorageFolder:jsonld"
+                            }
+                        ]
+                    },
+                    "transactionId": {
                         "type": "string",
                         "nullable": true
+                    },
+                    "width": {
+                        "readOnly": true
+                    },
+                    "height": {
+                        "readOnly": true
+                    },
+                    "dimensions": {
+                        "writeOnly": true,
+                        "type": "integer"
+                    },
+                    "ordering": {
+                        "type": "integer"
+                    },
+                    "folder": {
+                        "writeOnly": true,
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/StorageFolder:jsonld"
+                            }
+                        ]
                     },
                     "id": {
                         "readOnly": true,
                         "type": "string"
                     },
-                    "creator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
+                    "storageName": {
+                        "type": "string"
                     },
-                    "updator": {
-                        "type": "string",
-                        "format": "iri-reference",
-                        "nullable": true
+                    "storagePath": {
+                        "description": "TODO juste setter un champ.",
+                        "type": "string"
+                    },
+                    "publicPath": {
+                        "type": "string"
+                    },
+                    "privatefilepath": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "privateFilename": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "publicFilename": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "publicFilePath": {
+                        "readOnly": true,
+                        "type": "string"
+                    },
+                    "site": {
+                        "$ref": "#/components/schemas/Site:jsonld"
                     },
                     "addDt": {
                         "readOnly": true,
@@ -26539,6 +26910,28 @@
                         "readOnly": true,
                         "type": "string",
                         "format": "date-time",
+                        "nullable": true
+                    },
+                    "addUserId": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "updUserId": {
+                        "type": "string",
+                        "nullable": true
+                    },
+                    "trashed": {
+                        "readOnly": true,
+                        "type": "boolean"
+                    },
+                    "trashDt": {
+                        "readOnly": true,
+                        "type": "integer",
+                        "nullable": true
+                    },
+                    "trashUserId": {
+                        "readOnly": true,
+                        "type": "string",
                         "nullable": true
                     }
                 }
