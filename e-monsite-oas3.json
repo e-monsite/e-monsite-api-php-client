@@ -26390,6 +26390,9 @@
                 "type": "object",
                 "description": "",
                 "properties": {
+                    "id": {
+                        "type": "string"
+                    },
                     "userDomain": {
                         "$ref": "#/components/schemas/UserDomain"
                     },
@@ -26397,6 +26400,9 @@
                         "type": "string"
                     },
                     "passwd": {
+                        "type": "string"
+                    },
+                    "status": {
                         "type": "string"
                     }
                 }
@@ -26417,6 +26423,9 @@
                         "readOnly": true,
                         "type": "string"
                     },
+                    "id": {
+                        "type": "string"
+                    },
                     "userDomain": {
                         "$ref": "#/components/schemas/UserDomain:jsonld"
                     },
@@ -26424,6 +26433,9 @@
                         "type": "string"
                     },
                     "passwd": {
+                        "type": "string"
+                    },
+                    "status": {
                         "type": "string"
                     }
                 }
