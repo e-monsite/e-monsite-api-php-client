@@ -1,6 +1,6 @@
 <?php
 /**
- * BrandMailtemplateVJsonldTest
+ * VersionableInterfaceJsonldStorageFolderTest
  *
  * PHP version 7.4
  *
@@ -31,15 +31,15 @@ namespace EmonsiteApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * BrandMailtemplateVJsonldTest Class Doc Comment
+ * VersionableInterfaceJsonldStorageFolderTest Class Doc Comment
  *
  * @category    Class
- * @description BrandMailtemplateVJsonld
+ * @description VersionableInterfaceJsonldStorageFolder
  * @package     EmonsiteApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class BrandMailtemplateVJsonldTest extends TestCase
+class VersionableInterfaceJsonldStorageFolderTest extends TestCase
 {
 
     /**
@@ -71,9 +71,9 @@ class BrandMailtemplateVJsonldTest extends TestCase
     }
 
     /**
-     * Test "BrandMailtemplateVJsonld"
+     * Test "VersionableInterfaceJsonldStorageFolder"
      */
-    public function testBrandMailtemplateVJsonld()
+    public function testVersionableInterfaceJsonldStorageFolder()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
@@ -107,36 +107,117 @@ class BrandMailtemplateVJsonldTest extends TestCase
     }
 
     /**
-     * Test attribute "template"
+     * Test attribute "dirtype"
      */
-    public function testPropertyTemplate()
+    public function testPropertyDirtype()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "lang"
+     * Test attribute "name"
      */
-    public function testPropertyLang()
+    public function testPropertyName()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "item"
+     * Test attribute "parent"
      */
-    public function testPropertyItem()
+    public function testPropertyParent()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "active"
+     * Test attribute "children"
      */
-    public function testPropertyActive()
+    public function testPropertyChildren()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "position"
+     */
+    public function testPropertyPosition()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "site"
+     */
+    public function testPropertySite()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "addDt"
+     */
+    public function testPropertyAddDt()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "updDt"
+     */
+    public function testPropertyUpdDt()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "createdAt"
+     */
+    public function testPropertyCreatedAt()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "updatedAt"
+     */
+    public function testPropertyUpdatedAt()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "addUserId"
+     */
+    public function testPropertyAddUserId()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "updUserId"
+     */
+    public function testPropertyUpdUserId()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');

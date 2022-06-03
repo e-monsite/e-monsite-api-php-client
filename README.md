@@ -192,6 +192,9 @@ Class | Method | HTTP request | Description
 *UserApi* | [**patchUserItem**](docs/Api/UserApi.md#patchuseritem) | **PATCH** /users/{id} | Updates the User resource.
 *UserApi* | [**postUserCollection**](docs/Api/UserApi.md#postusercollection) | **POST** /users | Creates a User resource.
 *UserApi* | [**pushNotifUserItem**](docs/Api/UserApi.md#pushnotifuseritem) | **POST** /me/test-push-notif | Push a test notification on the user device
+*UserDomainMailboxApi* | [**getUserDomainMailboxCollection**](docs/Api/UserDomainMailboxApi.md#getuserdomainmailboxcollection) | **GET** /user_domain_mailboxes | Retrieves the collection of UserDomainMailboxOutputDto resources.
+*UserDomainMailboxApi* | [**getUserDomainMailboxItem**](docs/Api/UserDomainMailboxApi.md#getuserdomainmailboxitem) | **GET** /user_domain_mailboxes/{id} | Retrieves a UserDomainMailboxOutputDto resource.
+*UserDomainMailboxApi* | [**postUserDomainMailboxCollection**](docs/Api/UserDomainMailboxApi.md#postuserdomainmailboxcollection) | **POST** /user_domain_mailboxes | Creates a UserDomainMailbox resource.
 *UserHasRoleApi* | [**deleteUserHasRoleItem**](docs/Api/UserHasRoleApi.md#deleteuserhasroleitem) | **DELETE** /user_has_roles/{id} | Removes the UserHasRole resource.
 *UserHasRoleApi* | [**getUserHasRoleCollection**](docs/Api/UserHasRoleApi.md#getuserhasrolecollection) | **GET** /user_has_roles | Retrieves the collection of UserHasRoleOutputDto resources.
 *UserHasRoleApi* | [**getUserHasRoleItem**](docs/Api/UserHasRoleApi.md#getuserhasroleitem) | **GET** /user_has_roles/{id} | Retrieves a UserHasRoleOutputDto resource.
@@ -266,8 +269,6 @@ Class | Method | HTTP request | Description
 - [Brand962c5489a05f3ff6192cd4c630d8abd7](docs/Model/Brand962c5489a05f3ff6192cd4c630d8abd7.md)
 - [BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626](docs/Model/BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626.md)
 - [BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld](docs/Model/BrandMailtemplateF7868dc2d61d9d5900e2966c0baf4626Jsonld.md)
-- [BrandMailtemplateV](docs/Model/BrandMailtemplateV.md)
-- [BrandMailtemplateVJsonld](docs/Model/BrandMailtemplateVJsonld.md)
 - [Branddomain5a892977f4b30fe6e5d02bbae1dcc678](docs/Model/Branddomain5a892977f4b30fe6e5d02bbae1dcc678.md)
 - [Branddomain5a892977f4b30fe6e5d02bbae1dcc678Jsonld](docs/Model/Branddomain5a892977f4b30fe6e5d02bbae1dcc678Jsonld.md)
 - [Category1244f72848b2e9f4bc7039366e5cef3e](docs/Model/Category1244f72848b2e9f4bc7039366e5cef3e.md)
@@ -399,6 +400,7 @@ Class | Method | HTTP request | Description
 - [GetSiteCollection200Response](docs/Model/GetSiteCollection200Response.md)
 - [GetStorageImageCollection200Response](docs/Model/GetStorageImageCollection200Response.md)
 - [GetUserCollection200Response](docs/Model/GetUserCollection200Response.md)
+- [GetUserDomainMailboxCollection200Response](docs/Model/GetUserDomainMailboxCollection200Response.md)
 - [GetUserHasRoleCollection200Response](docs/Model/GetUserHasRoleCollection200Response.md)
 - [Group799b1bea2ff8730b1a1a5b188922b633](docs/Model/Group799b1bea2ff8730b1a1a5b188922b633.md)
 - [Group799b1bea2ff8730b1a1a5b188922b633Jsonld](docs/Model/Group799b1bea2ff8730b1a1a5b188922b633Jsonld.md)
@@ -488,6 +490,8 @@ Class | Method | HTTP request | Description
 - [StorageImage292cb7fe7e2c3f669075bf385747b767](docs/Model/StorageImage292cb7fe7e2c3f669075bf385747b767.md)
 - [StorageImage64ebe0c84f35c94c053ca1a666bfce79](docs/Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79.md)
 - [StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld](docs/Model/StorageImage64ebe0c84f35c94c053ca1a666bfce79Jsonld.md)
+- [StorageImageV](docs/Model/StorageImageV.md)
+- [StorageImageVJsonld](docs/Model/StorageImageVJsonld.md)
 - [StorageMedias](docs/Model/StorageMedias.md)
 - [StorageMediasJsonld](docs/Model/StorageMediasJsonld.md)
 - [Structure](docs/Model/Structure.md)
@@ -515,8 +519,10 @@ Class | Method | HTTP request | Description
 - [UserDomainJsonld](docs/Model/UserDomainJsonld.md)
 - [UserDomainMailAlias](docs/Model/UserDomainMailAlias.md)
 - [UserDomainMailAliasJsonld](docs/Model/UserDomainMailAliasJsonld.md)
-- [UserDomainMailbox](docs/Model/UserDomainMailbox.md)
-- [UserDomainMailboxJsonld](docs/Model/UserDomainMailboxJsonld.md)
+- [UserDomainMailbox26e994f28120c4b51733f4efd1c6a999](docs/Model/UserDomainMailbox26e994f28120c4b51733f4efd1c6a999.md)
+- [UserDomainMailbox26e994f28120c4b51733f4efd1c6a999Jsonld](docs/Model/UserDomainMailbox26e994f28120c4b51733f4efd1c6a999Jsonld.md)
+- [UserDomainMailboxB24869693c225df47103d00fd93b91e9](docs/Model/UserDomainMailboxB24869693c225df47103d00fd93b91e9.md)
+- [UserDomainMailboxB24869693c225df47103d00fd93b91e9Jsonld](docs/Model/UserDomainMailboxB24869693c225df47103d00fd93b91e9Jsonld.md)
 - [UserHasRole589632707daa9dd4818942897415b76b](docs/Model/UserHasRole589632707daa9dd4818942897415b76b.md)
 - [UserHasRole589632707daa9dd4818942897415b76bJsonld](docs/Model/UserHasRole589632707daa9dd4818942897415b76bJsonld.md)
 - [UserHasRoleD91fd0c69421e5afa9bf303992483883](docs/Model/UserHasRoleD91fd0c69421e5afa9bf303992483883.md)
@@ -528,7 +534,11 @@ Class | Method | HTTP request | Description
 - [VersionInterface](docs/Model/VersionInterface.md)
 - [VersionInterfaceJsonld](docs/Model/VersionInterfaceJsonld.md)
 - [VersionableInterface](docs/Model/VersionableInterface.md)
+- [VersionableInterfaceFolder](docs/Model/VersionableInterfaceFolder.md)
 - [VersionableInterfaceJsonld](docs/Model/VersionableInterfaceJsonld.md)
+- [VersionableInterfaceJsonldFolder](docs/Model/VersionableInterfaceJsonldFolder.md)
+- [VersionableInterfaceJsonldStorageFolder](docs/Model/VersionableInterfaceJsonldStorageFolder.md)
+- [VersionableInterfaceStorageFolder](docs/Model/VersionableInterfaceStorageFolder.md)
 - [Webhook](docs/Model/Webhook.md)
 - [WebhookCall](docs/Model/WebhookCall.md)
 - [WebhookCallJsonld](docs/Model/WebhookCallJsonld.md)

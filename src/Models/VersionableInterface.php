@@ -60,19 +60,36 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'version' => '\EmonsiteApi\Models\VersionInterface[]',
-        'versions' => '\EmonsiteApi\Models\BrandMailtemplateV[]',
+        'versions' => '\EmonsiteApi\Models\StorageImageV[]',
         'defaultLang' => 'string',
         'versionByLang' => 'string[]',
-        'brand' => 'string',
-        'name' => 'string',
-        'description' => 'string',
+        'weight' => 'int',
+        'mimeType' => 'string',
+        'storageFolder' => '\EmonsiteApi\Models\VersionableInterfaceStorageFolder',
+        'transactionId' => 'string',
+        'width' => 'mixed',
+        'height' => 'mixed',
+        'dimensions' => 'int',
+        'ordering' => 'int',
+        'folder' => '\EmonsiteApi\Models\VersionableInterfaceFolder',
         'id' => 'string',
-        'creator' => 'string',
-        'updator' => 'string',
+        'storageName' => 'string',
+        'storagePath' => 'string',
+        'publicPath' => 'string',
+        'privatefilepath' => 'string',
+        'privateFilename' => 'string',
+        'publicFilename' => 'string',
+        'publicFilePath' => 'string',
+        'site' => '\EmonsiteApi\Models\Site',
         'addDt' => 'int',
         'updDt' => 'int',
         'createdAt' => '\DateTime',
-        'updatedAt' => '\DateTime'
+        'updatedAt' => '\DateTime',
+        'addUserId' => 'string',
+        'updUserId' => 'string',
+        'trashed' => 'bool',
+        'trashDt' => 'int',
+        'trashUserId' => 'string'
     ];
 
     /**
@@ -87,16 +104,33 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
         'versions' => null,
         'defaultLang' => null,
         'versionByLang' => null,
-        'brand' => 'iri-reference',
-        'name' => null,
-        'description' => null,
+        'weight' => null,
+        'mimeType' => null,
+        'storageFolder' => null,
+        'transactionId' => null,
+        'width' => null,
+        'height' => null,
+        'dimensions' => null,
+        'ordering' => null,
+        'folder' => null,
         'id' => null,
-        'creator' => 'iri-reference',
-        'updator' => 'iri-reference',
+        'storageName' => null,
+        'storagePath' => null,
+        'publicPath' => null,
+        'privatefilepath' => null,
+        'privateFilename' => null,
+        'publicFilename' => null,
+        'publicFilePath' => null,
+        'site' => null,
         'addDt' => null,
         'updDt' => null,
         'createdAt' => 'date-time',
-        'updatedAt' => 'date-time'
+        'updatedAt' => 'date-time',
+        'addUserId' => null,
+        'updUserId' => null,
+        'trashed' => null,
+        'trashDt' => null,
+        'trashUserId' => null
     ];
 
     /**
@@ -130,16 +164,33 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
         'versions' => 'versions',
         'defaultLang' => 'defaultLang',
         'versionByLang' => 'versionByLang',
-        'brand' => 'brand',
-        'name' => 'name',
-        'description' => 'description',
+        'weight' => 'weight',
+        'mimeType' => 'mimeType',
+        'storageFolder' => 'storageFolder',
+        'transactionId' => 'transactionId',
+        'width' => 'width',
+        'height' => 'height',
+        'dimensions' => 'dimensions',
+        'ordering' => 'ordering',
+        'folder' => 'folder',
         'id' => 'id',
-        'creator' => 'creator',
-        'updator' => 'updator',
+        'storageName' => 'storageName',
+        'storagePath' => 'storagePath',
+        'publicPath' => 'publicPath',
+        'privatefilepath' => 'privatefilepath',
+        'privateFilename' => 'privateFilename',
+        'publicFilename' => 'publicFilename',
+        'publicFilePath' => 'publicFilePath',
+        'site' => 'site',
         'addDt' => 'addDt',
         'updDt' => 'updDt',
         'createdAt' => 'createdAt',
-        'updatedAt' => 'updatedAt'
+        'updatedAt' => 'updatedAt',
+        'addUserId' => 'addUserId',
+        'updUserId' => 'updUserId',
+        'trashed' => 'trashed',
+        'trashDt' => 'trashDt',
+        'trashUserId' => 'trashUserId'
     ];
 
     /**
@@ -152,16 +203,33 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
         'versions' => 'setVersions',
         'defaultLang' => 'setDefaultLang',
         'versionByLang' => 'setVersionByLang',
-        'brand' => 'setBrand',
-        'name' => 'setName',
-        'description' => 'setDescription',
+        'weight' => 'setWeight',
+        'mimeType' => 'setMimeType',
+        'storageFolder' => 'setStorageFolder',
+        'transactionId' => 'setTransactionId',
+        'width' => 'setWidth',
+        'height' => 'setHeight',
+        'dimensions' => 'setDimensions',
+        'ordering' => 'setOrdering',
+        'folder' => 'setFolder',
         'id' => 'setId',
-        'creator' => 'setCreator',
-        'updator' => 'setUpdator',
+        'storageName' => 'setStorageName',
+        'storagePath' => 'setStoragePath',
+        'publicPath' => 'setPublicPath',
+        'privatefilepath' => 'setPrivatefilepath',
+        'privateFilename' => 'setPrivateFilename',
+        'publicFilename' => 'setPublicFilename',
+        'publicFilePath' => 'setPublicFilePath',
+        'site' => 'setSite',
         'addDt' => 'setAddDt',
         'updDt' => 'setUpdDt',
         'createdAt' => 'setCreatedAt',
-        'updatedAt' => 'setUpdatedAt'
+        'updatedAt' => 'setUpdatedAt',
+        'addUserId' => 'setAddUserId',
+        'updUserId' => 'setUpdUserId',
+        'trashed' => 'setTrashed',
+        'trashDt' => 'setTrashDt',
+        'trashUserId' => 'setTrashUserId'
     ];
 
     /**
@@ -174,16 +242,33 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
         'versions' => 'getVersions',
         'defaultLang' => 'getDefaultLang',
         'versionByLang' => 'getVersionByLang',
-        'brand' => 'getBrand',
-        'name' => 'getName',
-        'description' => 'getDescription',
+        'weight' => 'getWeight',
+        'mimeType' => 'getMimeType',
+        'storageFolder' => 'getStorageFolder',
+        'transactionId' => 'getTransactionId',
+        'width' => 'getWidth',
+        'height' => 'getHeight',
+        'dimensions' => 'getDimensions',
+        'ordering' => 'getOrdering',
+        'folder' => 'getFolder',
         'id' => 'getId',
-        'creator' => 'getCreator',
-        'updator' => 'getUpdator',
+        'storageName' => 'getStorageName',
+        'storagePath' => 'getStoragePath',
+        'publicPath' => 'getPublicPath',
+        'privatefilepath' => 'getPrivatefilepath',
+        'privateFilename' => 'getPrivateFilename',
+        'publicFilename' => 'getPublicFilename',
+        'publicFilePath' => 'getPublicFilePath',
+        'site' => 'getSite',
         'addDt' => 'getAddDt',
         'updDt' => 'getUpdDt',
         'createdAt' => 'getCreatedAt',
-        'updatedAt' => 'getUpdatedAt'
+        'updatedAt' => 'getUpdatedAt',
+        'addUserId' => 'getAddUserId',
+        'updUserId' => 'getUpdUserId',
+        'trashed' => 'getTrashed',
+        'trashDt' => 'getTrashDt',
+        'trashUserId' => 'getTrashUserId'
     ];
 
     /**
@@ -247,16 +332,33 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
         $this->container['versions'] = $data['versions'] ?? null;
         $this->container['defaultLang'] = $data['defaultLang'] ?? null;
         $this->container['versionByLang'] = $data['versionByLang'] ?? null;
-        $this->container['brand'] = $data['brand'] ?? null;
-        $this->container['name'] = $data['name'] ?? null;
-        $this->container['description'] = $data['description'] ?? null;
+        $this->container['weight'] = $data['weight'] ?? null;
+        $this->container['mimeType'] = $data['mimeType'] ?? null;
+        $this->container['storageFolder'] = $data['storageFolder'] ?? null;
+        $this->container['transactionId'] = $data['transactionId'] ?? null;
+        $this->container['width'] = $data['width'] ?? null;
+        $this->container['height'] = $data['height'] ?? null;
+        $this->container['dimensions'] = $data['dimensions'] ?? null;
+        $this->container['ordering'] = $data['ordering'] ?? null;
+        $this->container['folder'] = $data['folder'] ?? null;
         $this->container['id'] = $data['id'] ?? null;
-        $this->container['creator'] = $data['creator'] ?? null;
-        $this->container['updator'] = $data['updator'] ?? null;
+        $this->container['storageName'] = $data['storageName'] ?? null;
+        $this->container['storagePath'] = $data['storagePath'] ?? null;
+        $this->container['publicPath'] = $data['publicPath'] ?? null;
+        $this->container['privatefilepath'] = $data['privatefilepath'] ?? null;
+        $this->container['privateFilename'] = $data['privateFilename'] ?? null;
+        $this->container['publicFilename'] = $data['publicFilename'] ?? null;
+        $this->container['publicFilePath'] = $data['publicFilePath'] ?? null;
+        $this->container['site'] = $data['site'] ?? null;
         $this->container['addDt'] = $data['addDt'] ?? null;
         $this->container['updDt'] = $data['updDt'] ?? null;
         $this->container['createdAt'] = $data['createdAt'] ?? null;
         $this->container['updatedAt'] = $data['updatedAt'] ?? null;
+        $this->container['addUserId'] = $data['addUserId'] ?? null;
+        $this->container['updUserId'] = $data['updUserId'] ?? null;
+        $this->container['trashed'] = $data['trashed'] ?? null;
+        $this->container['trashDt'] = $data['trashDt'] ?? null;
+        $this->container['trashUserId'] = $data['trashUserId'] ?? null;
     }
 
     /**
@@ -310,7 +412,7 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets versions
      *
-     * @return \EmonsiteApi\Models\BrandMailtemplateV[]|null
+     * @return \EmonsiteApi\Models\StorageImageV[]|null
      */
     public function getVersions()
     {
@@ -320,7 +422,7 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets versions
      *
-     * @param \EmonsiteApi\Models\BrandMailtemplateV[]|null $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
+     * @param \EmonsiteApi\Models\StorageImageV[]|null $versions IMPLEMENTEZ le mapping dans l'entity TODO trouver comment le faire dynamiquement avec un listener doctrine
      *
      * @return self
      */
@@ -380,73 +482,217 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
     }
 
     /**
-     * Gets brand
+     * Gets weight
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getBrand()
+    public function getWeight()
     {
-        return $this->container['brand'];
+        return $this->container['weight'];
     }
 
     /**
-     * Sets brand
+     * Sets weight
      *
-     * @param string|null $brand brand
+     * @param int|null $weight weight
      *
      * @return self
      */
-    public function setBrand($brand)
+    public function setWeight($weight)
     {
-        $this->container['brand'] = $brand;
+        $this->container['weight'] = $weight;
 
         return $this;
     }
 
     /**
-     * Gets name
+     * Gets mimeType
      *
      * @return string|null
      */
-    public function getName()
+    public function getMimeType()
     {
-        return $this->container['name'];
+        return $this->container['mimeType'];
     }
 
     /**
-     * Sets name
+     * Sets mimeType
      *
-     * @param string|null $name a l'air d'être useless vu que c'est le nom de la brand qui est repris en fait.
+     * @param string|null $mimeType mimeType
      *
      * @return self
      */
-    public function setName($name)
+    public function setMimeType($mimeType)
     {
-        $this->container['name'] = $name;
+        $this->container['mimeType'] = $mimeType;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets storageFolder
      *
-     * @return string|null
+     * @return \EmonsiteApi\Models\VersionableInterfaceStorageFolder|null
      */
-    public function getDescription()
+    public function getStorageFolder()
     {
-        return $this->container['description'];
+        return $this->container['storageFolder'];
     }
 
     /**
-     * Sets description
+     * Sets storageFolder
      *
-     * @param string|null $description encore plus useless
+     * @param \EmonsiteApi\Models\VersionableInterfaceStorageFolder|null $storageFolder storageFolder
      *
      * @return self
      */
-    public function setDescription($description)
+    public function setStorageFolder($storageFolder)
     {
-        $this->container['description'] = $description;
+        $this->container['storageFolder'] = $storageFolder;
+
+        return $this;
+    }
+
+    /**
+     * Gets transactionId
+     *
+     * @return string|null
+     */
+    public function getTransactionId()
+    {
+        return $this->container['transactionId'];
+    }
+
+    /**
+     * Sets transactionId
+     *
+     * @param string|null $transactionId transactionId
+     *
+     * @return self
+     */
+    public function setTransactionId($transactionId)
+    {
+        $this->container['transactionId'] = $transactionId;
+
+        return $this;
+    }
+
+    /**
+     * Gets width
+     *
+     * @return mixed|null
+     */
+    public function getWidth()
+    {
+        return $this->container['width'];
+    }
+
+    /**
+     * Sets width
+     *
+     * @param mixed|null $width width
+     *
+     * @return self
+     */
+    public function setWidth($width)
+    {
+        $this->container['width'] = $width;
+
+        return $this;
+    }
+
+    /**
+     * Gets height
+     *
+     * @return mixed|null
+     */
+    public function getHeight()
+    {
+        return $this->container['height'];
+    }
+
+    /**
+     * Sets height
+     *
+     * @param mixed|null $height height
+     *
+     * @return self
+     */
+    public function setHeight($height)
+    {
+        $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /**
+     * Gets dimensions
+     *
+     * @return int|null
+     */
+    public function getDimensions()
+    {
+        return $this->container['dimensions'];
+    }
+
+    /**
+     * Sets dimensions
+     *
+     * @param int|null $dimensions dimensions
+     *
+     * @return self
+     */
+    public function setDimensions($dimensions)
+    {
+        $this->container['dimensions'] = $dimensions;
+
+        return $this;
+    }
+
+    /**
+     * Gets ordering
+     *
+     * @return int|null
+     */
+    public function getOrdering()
+    {
+        return $this->container['ordering'];
+    }
+
+    /**
+     * Sets ordering
+     *
+     * @param int|null $ordering ordering
+     *
+     * @return self
+     */
+    public function setOrdering($ordering)
+    {
+        $this->container['ordering'] = $ordering;
+
+        return $this;
+    }
+
+    /**
+     * Gets folder
+     *
+     * @return \EmonsiteApi\Models\VersionableInterfaceFolder|null
+     */
+    public function getFolder()
+    {
+        return $this->container['folder'];
+    }
+
+    /**
+     * Sets folder
+     *
+     * @param \EmonsiteApi\Models\VersionableInterfaceFolder|null $folder folder
+     *
+     * @return self
+     */
+    public function setFolder($folder)
+    {
+        $this->container['folder'] = $folder;
 
         return $this;
     }
@@ -476,49 +722,193 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
     }
 
     /**
-     * Gets creator
+     * Gets storageName
      *
      * @return string|null
      */
-    public function getCreator()
+    public function getStorageName()
     {
-        return $this->container['creator'];
+        return $this->container['storageName'];
     }
 
     /**
-     * Sets creator
+     * Sets storageName
      *
-     * @param string|null $creator creator
+     * @param string|null $storageName storageName
      *
      * @return self
      */
-    public function setCreator($creator)
+    public function setStorageName($storageName)
     {
-        $this->container['creator'] = $creator;
+        $this->container['storageName'] = $storageName;
 
         return $this;
     }
 
     /**
-     * Gets updator
+     * Gets storagePath
      *
      * @return string|null
      */
-    public function getUpdator()
+    public function getStoragePath()
     {
-        return $this->container['updator'];
+        return $this->container['storagePath'];
     }
 
     /**
-     * Sets updator
+     * Sets storagePath
      *
-     * @param string|null $updator updator
+     * @param string|null $storagePath TODO juste setter un champ.
      *
      * @return self
      */
-    public function setUpdator($updator)
+    public function setStoragePath($storagePath)
     {
-        $this->container['updator'] = $updator;
+        $this->container['storagePath'] = $storagePath;
+
+        return $this;
+    }
+
+    /**
+     * Gets publicPath
+     *
+     * @return string|null
+     */
+    public function getPublicPath()
+    {
+        return $this->container['publicPath'];
+    }
+
+    /**
+     * Sets publicPath
+     *
+     * @param string|null $publicPath publicPath
+     *
+     * @return self
+     */
+    public function setPublicPath($publicPath)
+    {
+        $this->container['publicPath'] = $publicPath;
+
+        return $this;
+    }
+
+    /**
+     * Gets privatefilepath
+     *
+     * @return string|null
+     */
+    public function getPrivatefilepath()
+    {
+        return $this->container['privatefilepath'];
+    }
+
+    /**
+     * Sets privatefilepath
+     *
+     * @param string|null $privatefilepath privatefilepath
+     *
+     * @return self
+     */
+    public function setPrivatefilepath($privatefilepath)
+    {
+        $this->container['privatefilepath'] = $privatefilepath;
+
+        return $this;
+    }
+
+    /**
+     * Gets privateFilename
+     *
+     * @return string|null
+     */
+    public function getPrivateFilename()
+    {
+        return $this->container['privateFilename'];
+    }
+
+    /**
+     * Sets privateFilename
+     *
+     * @param string|null $privateFilename privateFilename
+     *
+     * @return self
+     */
+    public function setPrivateFilename($privateFilename)
+    {
+        $this->container['privateFilename'] = $privateFilename;
+
+        return $this;
+    }
+
+    /**
+     * Gets publicFilename
+     *
+     * @return string|null
+     */
+    public function getPublicFilename()
+    {
+        return $this->container['publicFilename'];
+    }
+
+    /**
+     * Sets publicFilename
+     *
+     * @param string|null $publicFilename publicFilename
+     *
+     * @return self
+     */
+    public function setPublicFilename($publicFilename)
+    {
+        $this->container['publicFilename'] = $publicFilename;
+
+        return $this;
+    }
+
+    /**
+     * Gets publicFilePath
+     *
+     * @return string|null
+     */
+    public function getPublicFilePath()
+    {
+        return $this->container['publicFilePath'];
+    }
+
+    /**
+     * Sets publicFilePath
+     *
+     * @param string|null $publicFilePath publicFilePath
+     *
+     * @return self
+     */
+    public function setPublicFilePath($publicFilePath)
+    {
+        $this->container['publicFilePath'] = $publicFilePath;
+
+        return $this;
+    }
+
+    /**
+     * Gets site
+     *
+     * @return \EmonsiteApi\Models\Site|null
+     */
+    public function getSite()
+    {
+        return $this->container['site'];
+    }
+
+    /**
+     * Sets site
+     *
+     * @param \EmonsiteApi\Models\Site|null $site site
+     *
+     * @return self
+     */
+    public function setSite($site)
+    {
+        $this->container['site'] = $site;
 
         return $this;
     }
@@ -615,6 +1005,126 @@ class VersionableInterface implements ModelInterface, ArrayAccess, \JsonSerializ
     public function setUpdatedAt($updatedAt)
     {
         $this->container['updatedAt'] = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Gets addUserId
+     *
+     * @return string|null
+     */
+    public function getAddUserId()
+    {
+        return $this->container['addUserId'];
+    }
+
+    /**
+     * Sets addUserId
+     *
+     * @param string|null $addUserId addUserId
+     *
+     * @return self
+     */
+    public function setAddUserId($addUserId)
+    {
+        $this->container['addUserId'] = $addUserId;
+
+        return $this;
+    }
+
+    /**
+     * Gets updUserId
+     *
+     * @return string|null
+     */
+    public function getUpdUserId()
+    {
+        return $this->container['updUserId'];
+    }
+
+    /**
+     * Sets updUserId
+     *
+     * @param string|null $updUserId updUserId
+     *
+     * @return self
+     */
+    public function setUpdUserId($updUserId)
+    {
+        $this->container['updUserId'] = $updUserId;
+
+        return $this;
+    }
+
+    /**
+     * Gets trashed
+     *
+     * @return bool|null
+     */
+    public function getTrashed()
+    {
+        return $this->container['trashed'];
+    }
+
+    /**
+     * Sets trashed
+     *
+     * @param bool|null $trashed trashed
+     *
+     * @return self
+     */
+    public function setTrashed($trashed)
+    {
+        $this->container['trashed'] = $trashed;
+
+        return $this;
+    }
+
+    /**
+     * Gets trashDt
+     *
+     * @return int|null
+     */
+    public function getTrashDt()
+    {
+        return $this->container['trashDt'];
+    }
+
+    /**
+     * Sets trashDt
+     *
+     * @param int|null $trashDt trashDt
+     *
+     * @return self
+     */
+    public function setTrashDt($trashDt)
+    {
+        $this->container['trashDt'] = $trashDt;
+
+        return $this;
+    }
+
+    /**
+     * Gets trashUserId
+     *
+     * @return string|null
+     */
+    public function getTrashUserId()
+    {
+        return $this->container['trashUserId'];
+    }
+
+    /**
+     * Sets trashUserId
+     *
+     * @param string|null $trashUserId trashUserId
+     *
+     * @return self
+     */
+    public function setTrashUserId($trashUserId)
+    {
+        $this->container['trashUserId'] = $trashUserId;
 
         return $this;
     }

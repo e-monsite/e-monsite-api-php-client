@@ -109,7 +109,7 @@ class UserDomainErrorUserDomain implements ModelInterface, ArrayAccess, \JsonSer
         'checkAutoRenewAfter' => '\DateTime',
         'domainErrors' => '\EmonsiteApi\Models\UserDomainError[]',
         'mailAliases' => '\EmonsiteApi\Models\UserDomainMailAlias[]',
-        'mailboxes' => '\EmonsiteApi\Models\UserDomainMailbox[]',
+        'mailboxes' => 'string[]',
         'id' => 'string',
         'addDt' => 'int',
         'updDt' => 'int',
@@ -177,7 +177,7 @@ class UserDomainErrorUserDomain implements ModelInterface, ArrayAccess, \JsonSer
         'checkAutoRenewAfter' => 'date-time',
         'domainErrors' => null,
         'mailAliases' => null,
-        'mailboxes' => null,
+        'mailboxes' => 'iri-reference',
         'id' => null,
         'addDt' => null,
         'updDt' => null,
@@ -1750,7 +1750,7 @@ class UserDomainErrorUserDomain implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets mailboxes
      *
-     * @return \EmonsiteApi\Models\UserDomainMailbox[]|null
+     * @return string[]|null
      */
     public function getMailboxes()
     {
@@ -1760,7 +1760,7 @@ class UserDomainErrorUserDomain implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets mailboxes
      *
-     * @param \EmonsiteApi\Models\UserDomainMailbox[]|null $mailboxes mailboxes
+     * @param string[]|null $mailboxes mailboxes
      *
      * @return self
      */

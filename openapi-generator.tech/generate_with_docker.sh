@@ -1,5 +1,5 @@
 docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
-    -i https://raw.githubusercontent.com/e-monsite/e-monsite-api-php-client/main/e-monsite-oas3.json \
+    -i https://raw.githubusercontent.com/e-monsite/e-monsite-api-php-client/openapi-generator.tech/e-monsite-oas3.json \
     -g php \
     -o /local/out/php \
     -c /local/config.json \

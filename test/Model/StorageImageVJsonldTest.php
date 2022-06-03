@@ -1,6 +1,6 @@
 <?php
 /**
- * BrandMailtemplateVTest
+ * StorageImageVJsonldTest
  *
  * PHP version 7.4
  *
@@ -31,15 +31,15 @@ namespace EmonsiteApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * BrandMailtemplateVTest Class Doc Comment
+ * StorageImageVJsonldTest Class Doc Comment
  *
  * @category    Class
- * @description BrandMailtemplateV
+ * @description StorageImageVJsonld
  * @package     EmonsiteApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class BrandMailtemplateVTest extends TestCase
+class StorageImageVJsonldTest extends TestCase
 {
 
     /**
@@ -71,18 +71,54 @@ class BrandMailtemplateVTest extends TestCase
     }
 
     /**
-     * Test "BrandMailtemplateV"
+     * Test "StorageImageVJsonld"
      */
-    public function testBrandMailtemplateV()
+    public function testStorageImageVJsonld()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "template"
+     * Test attribute "context"
      */
-    public function testPropertyTemplate()
+    public function testPropertyContext()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "type"
+     */
+    public function testPropertyType()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "title"
+     */
+    public function testPropertyTitle()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "description"
+     */
+    public function testPropertyDescription()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');

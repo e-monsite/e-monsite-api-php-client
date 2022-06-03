@@ -143,27 +143,81 @@ class VersionableInterfaceJsonldTest extends TestCase
     }
 
     /**
-     * Test attribute "brand"
+     * Test attribute "weight"
      */
-    public function testPropertyBrand()
+    public function testPropertyWeight()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "name"
+     * Test attribute "mimeType"
      */
-    public function testPropertyName()
+    public function testPropertyMimeType()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "description"
+     * Test attribute "storageFolder"
      */
-    public function testPropertyDescription()
+    public function testPropertyStorageFolder()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "transactionId"
+     */
+    public function testPropertyTransactionId()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "width"
+     */
+    public function testPropertyWidth()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "height"
+     */
+    public function testPropertyHeight()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "dimensions"
+     */
+    public function testPropertyDimensions()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "ordering"
+     */
+    public function testPropertyOrdering()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "folder"
+     */
+    public function testPropertyFolder()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
@@ -179,18 +233,72 @@ class VersionableInterfaceJsonldTest extends TestCase
     }
 
     /**
-     * Test attribute "creator"
+     * Test attribute "storageName"
      */
-    public function testPropertyCreator()
+    public function testPropertyStorageName()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "updator"
+     * Test attribute "storagePath"
      */
-    public function testPropertyUpdator()
+    public function testPropertyStoragePath()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "publicPath"
+     */
+    public function testPropertyPublicPath()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "privatefilepath"
+     */
+    public function testPropertyPrivatefilepath()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "privateFilename"
+     */
+    public function testPropertyPrivateFilename()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "publicFilename"
+     */
+    public function testPropertyPublicFilename()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "publicFilePath"
+     */
+    public function testPropertyPublicFilePath()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "site"
+     */
+    public function testPropertySite()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
@@ -227,6 +335,51 @@ class VersionableInterfaceJsonldTest extends TestCase
      * Test attribute "updatedAt"
      */
     public function testPropertyUpdatedAt()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "addUserId"
+     */
+    public function testPropertyAddUserId()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "updUserId"
+     */
+    public function testPropertyUpdUserId()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "trashed"
+     */
+    public function testPropertyTrashed()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "trashDt"
+     */
+    public function testPropertyTrashDt()
+    {
+        // TODO: implement
+        $this->markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "trashUserId"
+     */
+    public function testPropertyTrashUserId()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');

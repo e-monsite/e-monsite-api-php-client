@@ -112,7 +112,7 @@ class UserDomainErrorJsonldUserDomain implements ModelInterface, ArrayAccess, \J
         'checkAutoRenewAfter' => '\DateTime',
         'domainErrors' => '\EmonsiteApi\Models\UserDomainErrorJsonld[]',
         'mailAliases' => '\EmonsiteApi\Models\UserDomainMailAliasJsonld[]',
-        'mailboxes' => '\EmonsiteApi\Models\UserDomainMailboxJsonld[]',
+        'mailboxes' => 'string[]',
         'id' => 'string',
         'addDt' => 'int',
         'updDt' => 'int',
@@ -183,7 +183,7 @@ class UserDomainErrorJsonldUserDomain implements ModelInterface, ArrayAccess, \J
         'checkAutoRenewAfter' => 'date-time',
         'domainErrors' => null,
         'mailAliases' => null,
-        'mailboxes' => null,
+        'mailboxes' => 'iri-reference',
         'id' => null,
         'addDt' => null,
         'updDt' => null,
@@ -1840,7 +1840,7 @@ class UserDomainErrorJsonldUserDomain implements ModelInterface, ArrayAccess, \J
     /**
      * Gets mailboxes
      *
-     * @return \EmonsiteApi\Models\UserDomainMailboxJsonld[]|null
+     * @return string[]|null
      */
     public function getMailboxes()
     {
@@ -1850,7 +1850,7 @@ class UserDomainErrorJsonldUserDomain implements ModelInterface, ArrayAccess, \J
     /**
      * Sets mailboxes
      *
-     * @param \EmonsiteApi\Models\UserDomainMailboxJsonld[]|null $mailboxes mailboxes
+     * @param string[]|null $mailboxes mailboxes
      *
      * @return self
      */

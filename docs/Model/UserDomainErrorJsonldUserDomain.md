@@ -57,7 +57,7 @@ Name | Type | Description | Notes
 **checkAutoRenewAfter** | **\DateTime** |  | [optional] [readonly]
 **domainErrors** | [**\EmonsiteApi\Models\UserDomainErrorJsonld[]**](UserDomainErrorJsonld.md) |  | [optional] [readonly]
 **mailAliases** | [**\EmonsiteApi\Models\UserDomainMailAliasJsonld[]**](UserDomainMailAliasJsonld.md) |  | [optional] [readonly]
-**mailboxes** | [**\EmonsiteApi\Models\UserDomainMailboxJsonld[]**](UserDomainMailboxJsonld.md) |  | [optional] [readonly]
+**mailboxes** | **string[]** |  | [optional] [readonly]
 **id** | **string** |  | [optional] [readonly]
 **addDt** | **int** |  | [optional] [readonly]
 **updDt** | **int** |  | [optional] [readonly]
